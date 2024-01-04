@@ -1,0 +1,13 @@
+[error] C:\Users\yashb\Documents\hello-world\webview-ui\project\Dependencies.scala:12:42: not found: value DependencyVersions
+[error]       "org.scalactic" %%% "scalactic"  % DependencyVersions.scalatest,
+[error]                                          ^
+[error] C:\Users\yashb\Documents\hello-world\webview-ui\project\Dependencies.scala:13:41: not found: value DependencyVersions
+[error]       "org.scalatest" %%% "scalatest" % DependencyVersions.scalatest % "test"
+[error]                                         ^
+[error] C:\Users\yashb\Documents\hello-world\webview-ui\project\Dependencies.scala:20:35: not found: value DependencyVersions
+[error]       "com.raquo" %%% "laminar" % DependencyVersions.laminar
+[error]                                   ^
+[error] C:\Users\yashb\Documents\hello-world\webview-ui\project\Dependencies.scala:26:37: not found: value DependencyVersions
+[error]       "com.lihaoyi" %%% "upickle" % DependencyVersions.`upickle`
+[error]                                     ^
+[error] four errors found

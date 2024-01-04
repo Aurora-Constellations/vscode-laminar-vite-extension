@@ -1,0 +1,24 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\yashb\Documents\hello-world\webview-ui\target\scala-3.3.1\livechart-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 24478 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 10198 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 48742 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: false[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 9651 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 34 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 8992 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 26532 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 21551 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 8099 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 31052 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Calculate Dependency Info: 483 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Analyze Modules: 5385 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Assemble Modules: 1153 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: 7303 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate Classes: 14307 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 1057 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 389 -- invalidated: 5[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 1601 -- invalidated: 15[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 20718 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 14196 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: total top-level trees: 5583; re-computed: 63[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: total modules: 7; re-written: 4[0m
