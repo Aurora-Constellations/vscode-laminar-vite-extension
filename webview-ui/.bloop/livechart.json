@@ -2,13 +2,13 @@
     "version": "1.4.0",
     "project": {
         "name": "livechart",
-        "directory": "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui",
-        "workspaceDir": "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui",
+        "directory": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui",
+        "workspaceDir": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui",
         "sources": [
-            "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\src\\main\\scala",
-            "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\src\\main\\scala-3",
-            "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\src\\main\\java",
-            "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\target\\scala-3.3.1\\src_managed\\main"
+            "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\src\\main\\scala",
+            "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\src\\main\\scala-3",
+            "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\src\\main\\java",
+            "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\target\\scala-3.3.1\\src_managed\\main"
         ],
         "dependencies": [
             
@@ -25,11 +25,11 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\raquo\\ew_sjs1_3\\0.1.2\\ew_sjs1_3-0.1.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\app\\tulz\\tuplez-full-light_sjs1_3\\0.4.0\\tuplez-full-light_sjs1_3-0.4.0.jar"
         ],
-        "out": "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\.bloop\\livechart",
-        "classesDir": "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\.bloop\\livechart\\scala-3\\classes",
+        "out": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\.bloop\\livechart",
+        "classesDir": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\.bloop\\livechart\\scala-3\\classes",
         "resources": [
-            "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\src\\main\\resources",
-            "C:\\Users\\yashb\\Documents\\hello-world\\webview-ui\\target\\scala-3.3.1\\resource_managed\\main"
+            "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\src\\main\\resources",
+            "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\target\\scala-3.3.1\\resource_managed\\main"
         ],
         "scala": {
             "organization": "org.scala-lang",

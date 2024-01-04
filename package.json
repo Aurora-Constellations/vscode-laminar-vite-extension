@@ -11,7 +11,7 @@
     "commands": [
       {
         "command": "hello-world.showHelloWorld",
-        "title": "Hello World (React + Vite): Show"
+        "title": "Hello World (Laminar + Vite): Show"
       }
     ]
   },

@@ -1,25 +1,25 @@
-[info] Full optimizing C:\Users\yashb\Documents\hello-world\webview-ui\target\scala-3.3.1\livechart-opt
-[debug] Linker: Compute reachability: 203945 us
-[debug] Linker: Assemble LinkedClasses: 13035 us
-[debug] Linker: Check IR: 66293 us
-[debug] Linker: 305339 us
+[info] Full optimizing C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\target\scala-3.3.1\livechart-opt
+[debug] Linker: Compute reachability: 343956 us
+[debug] Linker: Assemble LinkedClasses: 23735 us
+[debug] Linker: Check IR: 95242 us
+[debug] Linker: 489271 us
 [debug] Optimizer: Batch mode: true
-[debug] Optimizer: Incremental part: 137304 us
-[debug] Optimizer: Optimizing 3603 methods.
-[debug] Optimizer: Optimizer part: 320183 us
-[debug] Optimizer: 464166 us
-[debug] Refiner: Compute reachability: 34610 us
-[debug] Refiner: Assemble LinkedClasses: 4889 us
-[debug] Refiner: 41113 us
-[debug] Module Splitter: Calculate Dependency Info: 1909 us
-[debug] Module Splitter: Analyze Modules: 24361 us
-[debug] Module Splitter: Assemble Modules: 6582 us
-[debug] Module Splitter: 34155 us
-[debug] Emitter: Generate Classes: 249678 us
-[debug] Emitter: Write trees: 30648 us
-[debug] Emitter: Class tree cache stats: reused: 0 -- invalidated: 333
-[debug] Emitter: Method tree cache stats: reused: 0 -- invalidated: 1291
-[debug] Emitter: 306264 us
-[debug] BasicBackend: Write result: 96106 us
-[debug] BasicBackend: total top-level trees: 4694; re-computed: 4694
-[debug] BasicBackend: total modules: 4; re-written: 4
+[debug] Optimizer: Incremental part: 77457 us
+[debug] Optimizer: Optimizing 4695 methods.
+[debug] Optimizer: Optimizer part: 394667 us
+[debug] Optimizer: 485157 us
+[debug] Refiner: Compute reachability: 63570 us
+[debug] Refiner: Assemble LinkedClasses: 13738 us
+[debug] Refiner: 80026 us
+[debug] Module Splitter: Calculate Dependency Info: 3701 us
+[debug] Module Splitter: Analyze Modules: 42394 us
+[debug] Module Splitter: Assemble Modules: 10373 us
+[debug] Module Splitter: 58554 us
+[debug] Emitter: Generate Classes: 322869 us
+[debug] Emitter: Write trees: 30896 us
+[debug] Emitter: Class tree cache stats: reused: 0 -- invalidated: 412
+[debug] Emitter: Method tree cache stats: reused: 0 -- invalidated: 1765
+[debug] Emitter: 389644 us
+[debug] BasicBackend: Write result: 161988 us
+[debug] BasicBackend: total top-level trees: 5897; re-computed: 5897
+[debug] BasicBackend: total modules: 7; re-written: 7
