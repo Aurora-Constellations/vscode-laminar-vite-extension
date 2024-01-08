@@ -1,5 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\livechart\LiveChart.scala:93:114 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m93 |[0m            [33mif[0m (cellIndex <= dom.document.getElementById([31m"myTable"[0m).asInstanceOf[[35mHTMLTableElement[0m].rows(rowIndex).cells.length - [31m1[0m ) {[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                  value cells is not a member of org.scalajs.dom.Element[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\livechart\LiveChart.scala:48:54 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m48 |[0m      println(dom.document.activeElement.isInstanceOf[[35mHTMLBodyElement[0m])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                      ^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                         Not found: type HTMLBodyElement[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

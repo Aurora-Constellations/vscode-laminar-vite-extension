@@ -3,13 +3,13 @@ import * as $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6 from "./int
 import * as $j_livechart$002e$002dData$002dItem from "./livechart.-Data-Item.js";
 import * as $j_livechart$002e$002dModel from "./livechart.-Model.js";
 function $p_Llivechart_LiveChart$package$__handleCellClick$1__Lorg_scalajs_dom_MouseEvent__V($thiz, event) {
-  var domList = document.getElementsByClassName("selected");
+  var domList = document.getElementsByClassName("selectedCell");
   var this$3 = new $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
   var f = new $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$c_sjsr_AnonFunction1(((element) => {
-    element.classList.remove("selected")
+    element.classList.remove("selectedCell")
   }));
   $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$f_sc_IterableOps__map__F1__O(this$3, f);
-  event.target.className = "selected";
+  event.target.className = "selectedCell";
   var x = event.target.innerText;
   var this$5 = $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$m_s_Console$();
   var this$6 = this$5.out__Ljava_io_PrintStream();
@@ -120,7 +120,7 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
   var owner = this$15.unsafeWindowOwner__Lcom_raquo_laminar_api_Laminar$unsafeWindowOwner$();
   $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$f_Lcom_raquo_airstream_core_BaseObservable__foreach__F1__Lcom_raquo_airstream_ownership_Owner__Lcom_raquo_airstream_ownership_Subscription(this$20, onNext$2, owner);
   document.addEventListener("keydown", ((event$1) => {
-    var domList = document.getElementsByClassName("selected");
+    var domList = document.getElementsByClassName("selectedCell");
     var this$22 = new $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
     var this$23 = $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$f_sc_IterableOps__headOption__s_Option(this$22);
     if (this$23.isEmpty__Z()) {
@@ -140,30 +140,30 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
         var rowIndex = (cell.parentElement.rowIndex | 0);
         var cellIndex = (cell.cellIndex | 0);
         if ((rowIndex < (((-2) + (document.getElementById("myTable").rows.length | 0)) | 0))) {
-          cell.classList.remove("selected");
-          document.getElementById("myTable").rows[((1 + rowIndex) | 0)].cells[cellIndex].classList.add("selected")
+          cell.classList.remove("selectedCell");
+          document.getElementById("myTable").rows[((1 + rowIndex) | 0)].cells[cellIndex].classList.add("selectedCell")
         }
       };
       if ((event$1.key === "ArrowUp")) {
         var rowIndex$2 = (cell.parentElement.rowIndex | 0);
         var cellIndex$2 = (cell.cellIndex | 0);
         if ((rowIndex$2 > 1)) {
-          cell.classList.remove("selected");
-          document.getElementById("myTable").rows[(((-1) + rowIndex$2) | 0)].cells[cellIndex$2].classList.add("selected")
+          cell.classList.remove("selectedCell");
+          document.getElementById("myTable").rows[(((-1) + rowIndex$2) | 0)].cells[cellIndex$2].classList.add("selectedCell")
         }
       };
       if ((event$1.key === "ArrowLeft")) {
         var rowIndex$3 = (cell.parentElement.rowIndex | 0);
         var cellIndex$3 = (cell.cellIndex | 0);
         if ((cellIndex$3 >= 1)) {
-          cell.classList.remove("selected");
-          document.getElementById("myTable").rows[rowIndex$3].cells[(((-1) + cellIndex$3) | 0)].classList.add("selected")
+          cell.classList.remove("selectedCell");
+          document.getElementById("myTable").rows[rowIndex$3].cells[(((-1) + cellIndex$3) | 0)].classList.add("selectedCell")
         }
       };
       if ((event$1.key === "ArrowRight")) {
         var rowIndex$4 = (cell.parentElement.rowIndex | 0);
         var cellIndex$4 = (cell.cellIndex | 0);
-        return ((cellIndex$4 < (((-1) + (document.getElementById("myTable").rows[rowIndex$4].cells.length | 0)) | 0)) ? (cell.classList.remove("selected"), document.getElementById("myTable").rows[rowIndex$4].cells[((1 + cellIndex$4) | 0)].classList.add("selected"), (void 0)) : (void 0))
+        return ((cellIndex$4 < (((-1) + (document.getElementById("myTable").rows[rowIndex$4].cells.length | 0)) | 0)) ? (cell.classList.remove("selectedCell"), document.getElementById("myTable").rows[rowIndex$4].cells[((1 + cellIndex$4) | 0)].classList.add("selectedCell"), (void 0)) : (void 0))
       } else {
         return (void 0)
       }

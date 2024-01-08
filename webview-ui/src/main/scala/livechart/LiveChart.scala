@@ -44,57 +44,58 @@ def LiveChart(): Unit = {
   )
 
   dom.document.addEventListener("keydown", (event: dom.KeyboardEvent) => {
-      var selectedCell = dom.document.getElementsByClassName("selected").headOption.map(_.asInstanceOf[HTMLTableCellElement])
+      var selectedCell = dom.document.getElementsByClassName("selectedCell").headOption.map(_.asInstanceOf[HTMLTableCellElement])
+      var tableIsFocused = dom.document.activeElement.isInstanceOf[HTMLBodyElement]
 
       selectedCell match{
         case None => null
         case Some(cell) => {
-          if (event.key == "ArrowDown") {
+          if (event.key == "ArrowDown" && tableIsFocused) {
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex
             // Move to the cell below, max -2 for the footer
             if (rowIndex < dom.document.getElementById("myTable").asInstanceOf[HTMLTableElement].rows.length - 2) {
-              cell.classList.remove("selected")
+              cell.classList.remove("selectedCell")
               dom.document.getElementById("myTable")
                 .asInstanceOf[HTMLTableElement].rows(rowIndex + 1)
-                .asInstanceOf[HTMLTableRowElement].cells(cellIndex).asInstanceOf[HTMLTableCellElement].classList.add("selected")
+                .asInstanceOf[HTMLTableRowElement].cells(cellIndex).asInstanceOf[HTMLTableCellElement].classList.add("selectedCell")
             }
           }
-          if (event.key == "ArrowUp") {
+          if (event.key == "ArrowUp" && tableIsFocused) {
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex
             // Move to the cell above
             if (rowIndex > 1) {
-              cell.classList.remove("selected")
+              cell.classList.remove("selectedCell")
               dom.document.getElementById("myTable")
                 .asInstanceOf[HTMLTableElement].rows(rowIndex - 1)
-                .asInstanceOf[HTMLTableRowElement].cells(cellIndex).asInstanceOf[HTMLTableCellElement].classList.add("selected")
+                .asInstanceOf[HTMLTableRowElement].cells(cellIndex).asInstanceOf[HTMLTableCellElement].classList.add("selectedCell")
             }
           }
-          if (event.key == "ArrowLeft") {
+          if (event.key == "ArrowLeft" && tableIsFocused) {
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex
             // Move to the cell left
             if (cellIndex >= 1) {
-              cell.classList.remove("selected")
+              cell.classList.remove("selectedCell")
               dom.document.getElementById("myTable")
                 .asInstanceOf[HTMLTableElement].rows(rowIndex)
-                .asInstanceOf[HTMLTableRowElement].cells(cellIndex - 1).asInstanceOf[HTMLTableCellElement].classList.add("selected")
+                .asInstanceOf[HTMLTableRowElement].cells(cellIndex - 1).asInstanceOf[HTMLTableCellElement].classList.add("selectedCell")
             }
           }
-          if (event.key == "ArrowRight") {
+          if (event.key == "ArrowRight" && tableIsFocused) {
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex
             // Move to the cell left
             if (cellIndex < dom.document.getElementById("myTable").asInstanceOf[HTMLTableElement].rows(rowIndex).asInstanceOf[HTMLTableRowElement].cells.length - 1 ) {
-              cell.classList.remove("selected")
+              cell.classList.remove("selectedCell")
               dom.document.getElementById("myTable")
                 .asInstanceOf[HTMLTableElement].rows(rowIndex)
-                .asInstanceOf[HTMLTableRowElement].cells(cellIndex + 1).asInstanceOf[HTMLTableCellElement].classList.add("selected")
+                .asInstanceOf[HTMLTableRowElement].cells(cellIndex + 1).asInstanceOf[HTMLTableCellElement].classList.add("selectedCell")
             }
           }
         }
@@ -131,8 +132,8 @@ end renderDataTable
 
 def renderDataItem(id: DataItemID, item: DataItem): Element =
     def handleCellClick(event: MouseEvent): Unit = {
-      dom.document.getElementsByClassName("selected").map(element => element.classList.remove("selected"))
-      event.target.asInstanceOf[HTMLTableCellElement].className = "selected"
+      dom.document.getElementsByClassName("selectedCell").map(element => element.classList.remove("selectedCell"))
+      event.target.asInstanceOf[HTMLTableCellElement].className = "selectedCell"
       println(event.target.asInstanceOf[HTMLTableCellElement].innerText)
     }
 
@@ -154,6 +155,7 @@ import org.scalajs.dom.HTMLTableRowElement
 import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import org.scalajs.dom.html
+import org.scalajs.dom.HTMLBodyElement
 
 final class DataItemID
 
