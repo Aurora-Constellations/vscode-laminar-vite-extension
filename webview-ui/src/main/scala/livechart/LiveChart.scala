@@ -134,7 +134,6 @@ def renderDataItem(id: DataItemID, item: DataItem): Element =
     def handleCellClick(event: MouseEvent): Unit = {
       dom.document.getElementsByClassName("selectedCell").map(element => element.classList.remove("selectedCell"))
       event.target.asInstanceOf[HTMLTableCellElement].className = "selectedCell"
-      println(event.target.asInstanceOf[HTMLTableCellElement].innerText)
     }
 
     tr(

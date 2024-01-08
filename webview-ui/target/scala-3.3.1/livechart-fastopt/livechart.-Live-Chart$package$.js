@@ -9,11 +9,7 @@ function $p_Llivechart_LiveChart$package$__handleCellClick$1__Lorg_scalajs_dom_M
     element.classList.remove("selectedCell")
   }));
   $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$f_sc_IterableOps__map__F1__O(this$3, f);
-  event.target.className = "selectedCell";
-  var x = $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$as_T(event.target.innerText);
-  var this$5 = $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$m_s_Console$();
-  var this$6 = $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$n(this$5.out__Ljava_io_PrintStream());
-  this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+  event.target.className = "selectedCell"
 }
 export { $p_Llivechart_LiveChart$package$__handleCellClick$1__Lorg_scalajs_dom_MouseEvent__V as $p_Llivechart_LiveChart$package$__handleCellClick$1__Lorg_scalajs_dom_MouseEvent__V };
 /** @constructor */

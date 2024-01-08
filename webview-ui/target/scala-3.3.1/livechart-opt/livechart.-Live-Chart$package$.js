@@ -9,11 +9,7 @@ function $p_Llivechart_LiveChart$package$__handleCellClick$1__Lorg_scalajs_dom_M
     element.classList.remove("selectedCell")
   }));
   $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$f_sc_IterableOps__map__F1__O(this$3, f);
-  event.target.className = "selectedCell";
-  var x = event.target.innerText;
-  var this$5 = $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$m_s_Console$();
-  var this$6 = this$5.out__Ljava_io_PrintStream();
-  this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"))
+  event.target.className = "selectedCell"
 }
 export { $p_Llivechart_LiveChart$package$__handleCellClick$1__Lorg_scalajs_dom_MouseEvent__V as $p_Llivechart_LiveChart$package$__handleCellClick$1__Lorg_scalajs_dom_MouseEvent__V };
 /** @constructor */
@@ -129,6 +125,7 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
       var arg1$3 = this$23.get__O();
       var selectedCell = new $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$c_s_Some(arg1$3)
     };
+    var tableIsFocused = (!(!(document.activeElement instanceof HTMLBodyElement)));
     var x5 = selectedCell;
     var x = $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$m_s_None$();
     if ((x === x5)) {
@@ -136,7 +133,7 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
     };
     if ((x5 instanceof $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$c_s_Some)) {
       var cell = x5.s_Some__f_value;
-      if ((event$1.key === "ArrowDown")) {
+      if (((event$1.key === "ArrowDown") && tableIsFocused)) {
         var rowIndex = (cell.parentElement.rowIndex | 0);
         var cellIndex = (cell.cellIndex | 0);
         if ((rowIndex < (((-2) + (document.getElementById("myTable").rows.length | 0)) | 0))) {
@@ -144,7 +141,7 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
           document.getElementById("myTable").rows[((1 + rowIndex) | 0)].cells[cellIndex].classList.add("selectedCell")
         }
       };
-      if ((event$1.key === "ArrowUp")) {
+      if (((event$1.key === "ArrowUp") && tableIsFocused)) {
         var rowIndex$2 = (cell.parentElement.rowIndex | 0);
         var cellIndex$2 = (cell.cellIndex | 0);
         if ((rowIndex$2 > 1)) {
@@ -152,7 +149,7 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
           document.getElementById("myTable").rows[(((-1) + rowIndex$2) | 0)].cells[cellIndex$2].classList.add("selectedCell")
         }
       };
-      if ((event$1.key === "ArrowLeft")) {
+      if (((event$1.key === "ArrowLeft") && tableIsFocused)) {
         var rowIndex$3 = (cell.parentElement.rowIndex | 0);
         var cellIndex$3 = (cell.cellIndex | 0);
         if ((cellIndex$3 >= 1)) {
@@ -160,7 +157,7 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
           document.getElementById("myTable").rows[rowIndex$3].cells[(((-1) + cellIndex$3) | 0)].classList.add("selectedCell")
         }
       };
-      if ((event$1.key === "ArrowRight")) {
+      if (((event$1.key === "ArrowRight") && tableIsFocused)) {
         var rowIndex$4 = (cell.parentElement.rowIndex | 0);
         var cellIndex$4 = (cell.cellIndex | 0);
         return ((cellIndex$4 < (((-1) + (document.getElementById("myTable").rows[rowIndex$4].cells.length | 0)) | 0)) ? (cell.classList.remove("selectedCell"), document.getElementById("myTable").rows[rowIndex$4].cells[((1 + cellIndex$4) | 0)].classList.add("selectedCell"), (void 0)) : (void 0))

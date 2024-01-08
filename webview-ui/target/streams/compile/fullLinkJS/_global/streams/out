@@ -1,25 +1,25 @@
 [info] Full optimizing C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\target\scala-3.3.1\livechart-opt
-[debug] Linker: Compute reachability: 347068 us
-[debug] Linker: Assemble LinkedClasses: 33442 us
-[debug] Linker: Check IR: 105476 us
-[debug] Linker: 508936 us
+[debug] Linker: Compute reachability: 380475 us
+[debug] Linker: Assemble LinkedClasses: 24636 us
+[debug] Linker: Check IR: 199935 us
+[debug] Linker: 631603 us
 [debug] Optimizer: Batch mode: true
-[debug] Optimizer: Incremental part: 76318 us
+[debug] Optimizer: Incremental part: 174822 us
 [debug] Optimizer: Optimizing 4695 methods.
-[debug] Optimizer: Optimizer part: 532280 us
-[debug] Optimizer: 618265 us
-[debug] Refiner: Compute reachability: 59588 us
-[debug] Refiner: Assemble LinkedClasses: 7429 us
-[debug] Refiner: 68950 us
-[debug] Module Splitter: Calculate Dependency Info: 2942 us
-[debug] Module Splitter: Analyze Modules: 33307 us
-[debug] Module Splitter: Assemble Modules: 9182 us
-[debug] Module Splitter: 47096 us
-[debug] Emitter: Generate Classes: 291945 us
-[debug] Emitter: Write trees: 28758 us
+[debug] Optimizer: Optimizer part: 942632 us
+[debug] Optimizer: 1141507 us
+[debug] Refiner: Compute reachability: 95026 us
+[debug] Refiner: Assemble LinkedClasses: 16502 us
+[debug] Refiner: 116161 us
+[debug] Module Splitter: Calculate Dependency Info: 4915 us
+[debug] Module Splitter: Analyze Modules: 60392 us
+[debug] Module Splitter: Assemble Modules: 13193 us
+[debug] Module Splitter: 81449 us
+[debug] Emitter: Generate Classes: 553102 us
+[debug] Emitter: Write trees: 56757 us
 [debug] Emitter: Class tree cache stats: reused: 0 -- invalidated: 412
 [debug] Emitter: Method tree cache stats: reused: 0 -- invalidated: 1765
-[debug] Emitter: 347796 us
-[debug] BasicBackend: Write result: 155330 us
+[debug] Emitter: 667467 us
+[debug] BasicBackend: Write result: 205572 us
 [debug] BasicBackend: total top-level trees: 5897; re-computed: 5897
 [debug] BasicBackend: total modules: 7; re-written: 7

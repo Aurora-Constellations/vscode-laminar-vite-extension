@@ -13,7 +13,17 @@
         "command": "hello-world.showHelloWorld",
         "title": "Hello World (Laminar + Vite): Show"
       }
-    ]
+    ],
+    "views": {
+      "patient-tracker-view": [
+        { "type": "webview","id": "aurora.patientTracker","name": "Patient Tracker","icon": "assets/patient.png" }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {"id": "patient-tracker-view","title": "Patient Tracker","icon": "assets/patient.png"}
+      ]
+    }
   },
   "scripts": {
     "install:all": "npm install && cd webview-ui && npm install",
