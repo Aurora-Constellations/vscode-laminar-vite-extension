@@ -6,11 +6,21 @@ import scala.scalajs.js.annotation.*
 import org.scalajs.dom
 import com.raquo.laminar.api.L.{*, given} 
 
-val model = new Model
-import model.*
+import org.scalajs.dom.HTMLTableElement
+import org.scalajs.dom.HTMLTableRowElement
+import org.scalajs.dom.HTMLTableCellElement
+import org.scalajs.dom.html
+import org.scalajs.dom.HTMLBodyElement
+
+import components.renderDataTable
+import models.Model
+
 
 @main
 def LiveChart(): Unit = {
+
+  // Get data model
+  val model = new Model
 
   val allowedIcons = List("🎉", "🚀", "🍉")
   val iconVar = Var(initial = allowedIcons.head)
@@ -39,7 +49,7 @@ def LiveChart(): Unit = {
           placeholder("Search")
         ),
       ),
-      renderDataTable(),
+      renderDataTable(model),
     )
   )
 
@@ -107,74 +117,8 @@ def LiveChart(): Unit = {
 }
 end LiveChart
 
-def renderDataTable(): Element =
-    table(
-      idAttr := "myTable",
-      width := "100%",
-      thead(
-        border := "1px solid grey",
-        tr(th("Label"), th("Price"), th("Count"), th("Full price"), th("Action"))
-      ),
-      tbody(
-        children <-- dataSignal.map(data => data.map { item =>
-          renderDataItem(item.id, item)
-        }),
-      ),
-      tfoot(tr(
-        td(button("➕")),
-        td(),
-        td(),
-        td(child.text <-- dataSignal.map(data => "%.2f".format(data.map(_.fullPrice).sum))),
-        td(),
-      )),
-    )
-end renderDataTable
-
-def renderDataItem(id: DataItemID, item: DataItem): Element =
-    def handleCellClick(event: MouseEvent): Unit = {
-      dom.document.getElementsByClassName("selectedCell").map(element => element.classList.remove("selectedCell"))
-      event.target.asInstanceOf[HTMLTableCellElement].className = "selectedCell"
-    }
-
-    tr(
-      td(item.label, onClick --> handleCellClick),
-      td(item.price, onClick --> handleCellClick),
-      td(item.count, onClick --> handleCellClick),
-      td("%.2f".format(item.fullPrice), onClick --> handleCellClick),
-      td(button("🗑️"), onClick --> handleCellClick),
-    )
-end renderDataItem
 
 
 
 
-import scala.util.Random
-import org.scalajs.dom.HTMLTableElement
-import org.scalajs.dom.HTMLTableRowElement
-import org.scalajs.dom.HTMLTableCellElement
-import org.scalajs.dom.MouseEvent
-import org.scalajs.dom.html
-import org.scalajs.dom.HTMLBodyElement
 
-final class DataItemID
-
-case class DataItem(id: DataItemID, label: String, price: Double, count: Int):
-  def fullPrice: Double = price * count
-
-object DataItem:
-  def apply(): DataItem =
-    DataItem(DataItemID(), "?", Random.nextDouble(), Random.nextInt(5) + 1)
-end DataItem
-
-type DataList = List[DataItem]
-
-final class Model:
-  val dataVar: Var[DataList] = Var(List(DataItem(DataItemID(), "one", 1.0, 1), DataItem(DataItemID(), "two", 3.0, 2)))
-  val dataSignal = dataVar.signal
-
-  def addDataItem(item: DataItem): Unit =
-    dataVar.update(data => data :+ item)
-
-  def removeDataItem(id: DataItemID): Unit =
-    dataVar.update(data => data.filter(_.id != id))
-end Model

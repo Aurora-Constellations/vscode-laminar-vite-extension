@@ -1,25 +1,25 @@
-[info] Full optimizing C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\target\scala-3.3.1\livechart-opt
-[debug] Linker: Compute reachability: 380475 us
-[debug] Linker: Assemble LinkedClasses: 24636 us
-[debug] Linker: Check IR: 199935 us
-[debug] Linker: 631603 us
+[info] Full optimizing C:\Users\Darien\GitHub\vscode-laminar-vite-extension\webview-ui\target\scala-3.3.1\livechart-opt
+[debug] Linker: Compute reachability: 190823 us
+[debug] Linker: Assemble LinkedClasses: 26273 us
+[debug] Linker: Check IR: 88928 us
+[debug] Linker: 323710 us
 [debug] Optimizer: Batch mode: true
-[debug] Optimizer: Incremental part: 174822 us
+[debug] Optimizer: Incremental part: 166786 us
 [debug] Optimizer: Optimizing 4695 methods.
-[debug] Optimizer: Optimizer part: 942632 us
-[debug] Optimizer: 1141507 us
-[debug] Refiner: Compute reachability: 95026 us
-[debug] Refiner: Assemble LinkedClasses: 16502 us
-[debug] Refiner: 116161 us
-[debug] Module Splitter: Calculate Dependency Info: 4915 us
-[debug] Module Splitter: Analyze Modules: 60392 us
-[debug] Module Splitter: Assemble Modules: 13193 us
-[debug] Module Splitter: 81449 us
-[debug] Emitter: Generate Classes: 553102 us
-[debug] Emitter: Write trees: 56757 us
+[debug] Optimizer: Optimizer part: 346543 us
+[debug] Optimizer: 524913 us
+[debug] Refiner: Compute reachability: 44154 us
+[debug] Refiner: Assemble LinkedClasses: 6662 us
+[debug] Refiner: 53762 us
+[debug] Module Splitter: Calculate Dependency Info: 5537 us
+[debug] Module Splitter: Analyze Modules: 56375 us
+[debug] Module Splitter: Assemble Modules: 15675 us
+[debug] Module Splitter: 80462 us
+[debug] Emitter: Generate Classes: 239684 us
+[debug] Emitter: Write trees: 17679 us
 [debug] Emitter: Class tree cache stats: reused: 0 -- invalidated: 412
 [debug] Emitter: Method tree cache stats: reused: 0 -- invalidated: 1765
-[debug] Emitter: 667467 us
-[debug] BasicBackend: Write result: 205572 us
+[debug] Emitter: 290747 us
+[debug] BasicBackend: Write result: 118440 us
 [debug] BasicBackend: total top-level trees: 5897; re-computed: 5897
 [debug] BasicBackend: total modules: 7; re-written: 7

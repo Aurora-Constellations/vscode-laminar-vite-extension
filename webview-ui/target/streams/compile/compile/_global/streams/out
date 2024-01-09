@@ -1,7 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\livechart\LiveChart.scala:48:54 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m48 |[0m      println(dom.document.activeElement.isInstanceOf[[35mHTMLBodyElement[0m])[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                      ^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                         Not found: type HTMLBodyElement[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: C:\Users\Darien\GitHub\vscode-laminar-vite-extension\webview-ui\src\main\scala\components\Table.scala:47:0 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m47 |[0mend renderDataItem[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0man identifier expected, but unindent found[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
