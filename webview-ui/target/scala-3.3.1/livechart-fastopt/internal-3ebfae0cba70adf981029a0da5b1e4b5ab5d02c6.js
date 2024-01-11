@@ -3591,11 +3591,12 @@ function $h_Lcomponents_Table$package$() {
 export { $h_Lcomponents_Table$package$ as $h_Lcomponents_Table$package$ };
 $h_Lcomponents_Table$package$.prototype = $c_Lcomponents_Table$package$.prototype;
 $c_Lcomponents_Table$package$.prototype.renderDataTable__Lmodels_Model__Lcom_raquo_laminar_nodes_ReactiveElement = (function(model) {
-  var $x_31 = $n($n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).div__Lcom_raquo_laminar_tags_HtmlTag());
-  var $x_30 = $m_sr_ScalaRunTime$();
-  var $x_29 = $n($n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).Lcom_raquo_laminar_api_package$$anon$1__f_className).$colon$eq__T__Lcom_raquo_laminar_modifiers_CompositeKeySetter("table-container");
-  var $x_28 = $n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).table__Lcom_raquo_laminar_tags_HtmlTag();
-  var $x_27 = $m_sr_ScalaRunTime$();
+  var $x_32 = $n($n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).div__Lcom_raquo_laminar_tags_HtmlTag());
+  var $x_31 = $m_sr_ScalaRunTime$();
+  var $x_30 = $n($n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).Lcom_raquo_laminar_api_package$$anon$1__f_className).$colon$eq__T__Lcom_raquo_laminar_modifiers_CompositeKeySetter("table-container");
+  var $x_29 = $n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).table__Lcom_raquo_laminar_tags_HtmlTag();
+  var $x_28 = $m_sr_ScalaRunTime$();
+  var $x_27 = $n($n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).idAttr__Lcom_raquo_laminar_keys_HtmlProp()).$colon$eq__O__Lcom_raquo_laminar_modifiers_KeySetter("myTable");
   var $x_26 = $n($n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).thead__Lcom_raquo_laminar_tags_HtmlTag());
   var $x_25 = $m_sr_ScalaRunTime$();
   var $x_24 = $n($m_Lcom_raquo_laminar_api_package$().Lcom_raquo_laminar_api_package$__f_L).tr__Lcom_raquo_laminar_tags_HtmlTag();
@@ -3704,7 +3705,7 @@ $c_Lcomponents_Table$package$.prototype.renderDataTable__Lmodels_Model__Lcom_raq
     return $n($x_3).format$extension__T__sci_Seq__T("%.2f", $n($x_2).genericWrapArray__O__sci_ArraySeq(new $ac_O([$f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$11, num)])))
   }));
   var textSource = new $c_Lcom_raquo_airstream_misc_MapSignal(this$12, project$1, $m_s_None$());
-  return $n($x_31).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_30).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$x_29, $n($x_28).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_27).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$x_20, $x_17, $n($x_16).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_15).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$n($x_14).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_13).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$x_8, $x_7, $x_6, $n($x_5).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_4).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$m_Lcom_raquo_laminar_modifiers_ChildTextInserter$().apply__Lcom_raquo_airstream_core_Observable__Lcom_raquo_laminar_modifiers_RenderableText__Lcom_raquo_laminar_modifiers_Inserter(textSource, $m_Lcom_raquo_laminar_modifiers_RenderableText$().Lcom_raquo_laminar_modifiers_RenderableText$__f_stringRenderable)])))])))])))])))])))
+  return $n($x_32).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_31).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$x_30, $n($x_29).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_28).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$x_27, $x_20, $x_17, $n($x_16).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_15).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$n($x_14).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_13).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$x_8, $x_7, $x_6, $n($x_5).apply__sci_Seq__Lcom_raquo_laminar_nodes_ReactiveHtmlElement($n($x_4).wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_raquo_laminar_modifiers_Modifier.getArrayOf().constr)([$m_Lcom_raquo_laminar_modifiers_ChildTextInserter$().apply__Lcom_raquo_airstream_core_Observable__Lcom_raquo_laminar_modifiers_RenderableText__Lcom_raquo_laminar_modifiers_Inserter(textSource, $m_Lcom_raquo_laminar_modifiers_RenderableText$().Lcom_raquo_laminar_modifiers_RenderableText$__f_stringRenderable)])))])))])))])))])))
 });
 $c_Lcomponents_Table$package$.prototype.renderDataItem__Lmodels_RowData__Lcom_raquo_laminar_nodes_ReactiveElement = (function(item) {
   var row = $n(item).getAsHTML__Lcom_raquo_laminar_nodes_ReactiveHtmlElement();
@@ -5165,7 +5166,14 @@ $c_Lmodels_TableModel$package$.prototype.handleCellClick__Lorg_scalajs_dom_Mouse
     element.classList.remove("selectedCell")
   }));
   $f_sc_IterableOps__map__F1__O(this$3, f);
-  event.target.className = "selectedCell"
+  var domList$1 = document.getElementsByClassName("selectedRow");
+  var this$5 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList$1);
+  var f$1 = new $c_sjsr_AnonFunction1(((element$2) => {
+    element$2.classList.remove("selectedRow")
+  }));
+  $f_sc_IterableOps__map__F1__O(this$5, f$1);
+  event.target.className = "selectedCell";
+  event.target.parentElement.className = "selectedRow"
 });
 var $d_Lmodels_TableModel$package$ = new $TypeData().initClass({
   Lmodels_TableModel$package$: 0
@@ -25805,6 +25813,8 @@ function $c_Lcom_raquo_laminar_api_package$$anon$1() {
   this.Lcom_raquo_laminar_api_package$$anon$1__f_thbitmap$1 = false;
   this.Lcom_raquo_laminar_api_package$$anon$1__f_value$lzy1 = null;
   this.Lcom_raquo_laminar_api_package$$anon$1__f_valuebitmap$1 = false;
+  this.Lcom_raquo_laminar_api_package$$anon$1__f_idAttr$lzy1 = null;
+  this.Lcom_raquo_laminar_api_package$$anon$1__f_idAttrbitmap$1 = false;
   this.Lcom_raquo_laminar_api_package$$anon$1__f_placeholder$lzy1 = null;
   this.Lcom_raquo_laminar_api_package$$anon$1__f_placeholderbitmap$1 = false;
   this.Lcom_raquo_laminar_api_package$$anon$1__f_onClick$lzy1 = null;
@@ -25936,6 +25946,14 @@ $c_Lcom_raquo_laminar_api_package$$anon$1.prototype.value__Lcom_raquo_laminar_ke
     this.Lcom_raquo_laminar_api_package$$anon$1__f_valuebitmap$1 = true
   };
   return this.Lcom_raquo_laminar_api_package$$anon$1__f_value$lzy1
+});
+$c_Lcom_raquo_laminar_api_package$$anon$1.prototype.idAttr__Lcom_raquo_laminar_keys_HtmlProp = (function() {
+  if ((!this.Lcom_raquo_laminar_api_package$$anon$1__f_idAttrbitmap$1)) {
+    var codec = $m_Lcom_raquo_laminar_codecs_package$().Lcom_raquo_laminar_codecs_package$__f_StringAsIsCodec;
+    this.Lcom_raquo_laminar_api_package$$anon$1__f_idAttr$lzy1 = new $c_Lcom_raquo_laminar_keys_HtmlProp("id", codec);
+    this.Lcom_raquo_laminar_api_package$$anon$1__f_idAttrbitmap$1 = true
+  };
+  return this.Lcom_raquo_laminar_api_package$$anon$1__f_idAttr$lzy1
 });
 $c_Lcom_raquo_laminar_api_package$$anon$1.prototype.placeholder__Lcom_raquo_laminar_keys_HtmlProp = (function() {
   if ((!this.Lcom_raquo_laminar_api_package$$anon$1__f_placeholderbitmap$1)) {

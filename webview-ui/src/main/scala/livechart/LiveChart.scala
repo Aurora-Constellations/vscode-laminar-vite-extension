@@ -40,30 +40,41 @@ def LiveChart(): Unit = {
         case None => null
         case Some(cell) => {
           if (event.key == "ArrowDown" && tableIsFocused) {
+            event.preventDefault()
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex
             // Move to the cell below, max -2 for the footer
             if (rowIndex < dom.document.getElementById("myTable").asInstanceOf[HTMLTableElement].rows.length - 2) {
               cell.classList.remove("selectedCell")
+              cell.parentElement.classList.remove("selectedRow")
               dom.document.getElementById("myTable")
                 .asInstanceOf[HTMLTableElement].rows(rowIndex + 1)
                 .asInstanceOf[HTMLTableRowElement].cells(cellIndex).asInstanceOf[HTMLTableCellElement].classList.add("selectedCell")
+              dom.document.getElementById("myTable")
+                .asInstanceOf[HTMLTableElement].rows(rowIndex + 1)
+                .asInstanceOf[HTMLTableRowElement].classList.add("selectedRow")
             }
           }
           if (event.key == "ArrowUp" && tableIsFocused) {
+            event.preventDefault()
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex
             // Move to the cell above
             if (rowIndex > 1) {
               cell.classList.remove("selectedCell")
+              cell.parentElement.classList.remove("selectedRow")
               dom.document.getElementById("myTable")
                 .asInstanceOf[HTMLTableElement].rows(rowIndex - 1)
                 .asInstanceOf[HTMLTableRowElement].cells(cellIndex).asInstanceOf[HTMLTableCellElement].classList.add("selectedCell")
+              dom.document.getElementById("myTable")
+                .asInstanceOf[HTMLTableElement].rows(rowIndex - 1)
+                .asInstanceOf[HTMLTableRowElement].classList.add("selectedRow")
             }
           }
           if (event.key == "ArrowLeft" && tableIsFocused) {
+            event.preventDefault()
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex
@@ -76,6 +87,7 @@ def LiveChart(): Unit = {
             }
           }
           if (event.key == "ArrowRight" && tableIsFocused) {
+            event.preventDefault()
             // Get the current row and cell index
             val rowIndex = cell.parentElement.asInstanceOf[HTMLTableRowElement].rowIndex
             val cellIndex = cell.cellIndex

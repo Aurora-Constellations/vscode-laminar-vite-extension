@@ -131,5 +131,9 @@ table {
 }
 
 .selectedCell {
-  background-color:  rgb(71, 71, 71);
+  background-color:  rgb(104, 104, 104);
+}
+
+.selectedRow {
+  background-color:  rgb(53, 53, 53);
 }

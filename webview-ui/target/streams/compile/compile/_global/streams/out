@@ -1,7 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\components\Table.scala:17:17 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m            model.headers.map([36mheader[0m => {[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                 ^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                 expression expected but [31m'.'[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\components\Table.scala:41:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m41 |[0m      console.log(event.target.asInstanceOf[[35mHTMLTableCellElement[0m].parentElement)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      Not found: console[0m
 [0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
 [0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

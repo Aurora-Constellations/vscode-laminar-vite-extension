@@ -31,23 +31,9 @@ final class Model:
 
 end Model
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def handleCellClick(event: MouseEvent): Unit = {
       dom.document.getElementsByClassName("selectedCell").map(element => element.classList.remove("selectedCell"))
+      dom.document.getElementsByClassName("selectedRow").map(element => element.classList.remove("selectedRow"))
       event.target.asInstanceOf[HTMLTableCellElement].className = "selectedCell"
+      event.target.asInstanceOf[HTMLTableCellElement].parentElement.className = "selectedRow"
 }

@@ -10,6 +10,7 @@ def renderDataTable(model: Model): Element =
   div(
     className := "table-container",
     table(
+      idAttr := "myTable",
       thead(
         tr(
             model.headers.map(header => {
@@ -33,13 +34,8 @@ def renderDataTable(model: Model): Element =
 end renderDataTable
 
 def renderDataItem(item: RowData): Element =
-    def handleCellClick(event: MouseEvent): Unit = {
-      dom.document.getElementsByClassName("selectedCell").map(element => element.classList.remove("selectedCell"))
-      event.target.asInstanceOf[HTMLTableCellElement].className = "selectedCell"
-    }
 
     val row = item.getAsHTML()
     row
 
-    
 end renderDataItem
