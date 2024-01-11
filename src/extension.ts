@@ -16,7 +16,7 @@ export function activate(context: ExtensionContext) {
     const provider = new AuroraProvider(context.extensionUri);
 
     // Register the provider for a Webview View
-    const webviewViewDisposable = vscode.window.registerWebviewViewProvider(
+    const webviewViewDisposable = vscode.window.registerWebviewViewProvider( 
       AuroraProvider.viewType,
       provider,
       {

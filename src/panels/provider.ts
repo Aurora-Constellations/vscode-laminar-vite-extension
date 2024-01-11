@@ -9,7 +9,7 @@ import {
 import { getUri } from "../utilities/getUri";
 import { getNonce } from "../utilities/getNonce";
 
-export class AuroraProvider implements WebviewViewProvider {
+export class AuroraProvider implements WebviewViewProvider { 
   public static readonly viewType = "aurora.patientTracker";
 
   constructor(private readonly _extensionUri: Uri) {}

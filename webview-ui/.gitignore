@@ -34,7 +34,7 @@ tmp
 dist
 .idea
 *.iml
-/out
+out
 .idea_modules
 .classpath
 .project

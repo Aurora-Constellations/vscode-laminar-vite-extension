@@ -34,7 +34,6 @@ def renderToolbar(searchByOption: List[String], showOptions: List[String]): Elem
           alignSelf :="center",
           marginLeft := "25px",
           marginRight := "5px",
-
           "Show:"
         ),
         select(

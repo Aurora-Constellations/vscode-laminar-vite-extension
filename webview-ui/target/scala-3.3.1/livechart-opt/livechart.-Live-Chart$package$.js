@@ -48,22 +48,29 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
     if ((x1 instanceof $j_internal$002d3ebfae0cba70adf981029a0da5b1e4b5ab5d02c6.$c_s_Some)) {
       var cell = x1.s_Some__f_value;
       if (((event.key === "ArrowDown") && tableIsFocused)) {
+        event.preventDefault();
         var rowIndex = (cell.parentElement.rowIndex | 0);
         var cellIndex = (cell.cellIndex | 0);
         if ((rowIndex < (((-2) + (document.getElementById("myTable").rows.length | 0)) | 0))) {
           cell.classList.remove("selectedCell");
-          document.getElementById("myTable").rows[((1 + rowIndex) | 0)].cells[cellIndex].classList.add("selectedCell")
+          cell.parentElement.classList.remove("selectedRow");
+          document.getElementById("myTable").rows[((1 + rowIndex) | 0)].cells[cellIndex].classList.add("selectedCell");
+          document.getElementById("myTable").rows[((1 + rowIndex) | 0)].classList.add("selectedRow")
         }
       };
       if (((event.key === "ArrowUp") && tableIsFocused)) {
+        event.preventDefault();
         var rowIndex$2 = (cell.parentElement.rowIndex | 0);
         var cellIndex$2 = (cell.cellIndex | 0);
         if ((rowIndex$2 > 1)) {
           cell.classList.remove("selectedCell");
-          document.getElementById("myTable").rows[(((-1) + rowIndex$2) | 0)].cells[cellIndex$2].classList.add("selectedCell")
+          cell.parentElement.classList.remove("selectedRow");
+          document.getElementById("myTable").rows[(((-1) + rowIndex$2) | 0)].cells[cellIndex$2].classList.add("selectedCell");
+          document.getElementById("myTable").rows[(((-1) + rowIndex$2) | 0)].classList.add("selectedRow")
         }
       };
       if (((event.key === "ArrowLeft") && tableIsFocused)) {
+        event.preventDefault();
         var rowIndex$3 = (cell.parentElement.rowIndex | 0);
         var cellIndex$3 = (cell.cellIndex | 0);
         if ((cellIndex$3 >= 1)) {
@@ -72,6 +79,7 @@ $c_Llivechart_LiveChart$package$.prototype.LiveChart__V = (function() {
         }
       };
       if (((event.key === "ArrowRight") && tableIsFocused)) {
+        event.preventDefault();
         var rowIndex$4 = (cell.parentElement.rowIndex | 0);
         var cellIndex$4 = (cell.cellIndex | 0);
         return ((cellIndex$4 < (((-1) + (document.getElementById("myTable").rows[rowIndex$4].cells.length | 0)) | 0)) ? (cell.classList.remove("selectedCell"), document.getElementById("myTable").rows[rowIndex$4].cells[((1 + cellIndex$4) | 0)].classList.add("selectedCell"), (void 0)) : (void 0))

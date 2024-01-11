@@ -100,6 +100,8 @@ button:focus-visible {
 thead {
   /* display: block; */
   background-color:  rgb(43, 43, 43);
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
 }
 
 tbody {
@@ -126,7 +128,7 @@ table {
 }
 
 .table-container {
-  height: calc(100vh - 60px); /* Calculate height minus the toolbar height */
+  height: calc(100vh - 82px); /* Calculate height minus the toolbar height, 82 is arbitrary */
   overflow: auto; /* Hide overflow for the container */
 }
 
