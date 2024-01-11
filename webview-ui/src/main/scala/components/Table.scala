@@ -7,12 +7,10 @@ import org.scalajs.dom.MouseEvent
 import models.*
 
 def renderDataTable(model: Model): Element =
-
+  div(
+    className := "table-container",
     table(
-      idAttr := "myTable",
-      width := "100%",
       thead(
-        border := "1px solid grey",
         tr(
             model.headers.map(header => {
                 th(header)
@@ -21,7 +19,7 @@ def renderDataTable(model: Model): Element =
       ),
       tbody(
         children <-- model.dataSignal.map(data => data.map { item =>
-          renderDataItem(item.id, item)
+          renderDataItem(item)
         }),
       ),
       tfoot(tr(
@@ -29,18 +27,18 @@ def renderDataTable(model: Model): Element =
         td(),
         td(),
         td(child.text <-- model.dataSignal.map(data => "%.2f".format(data.map(_.fullPrice).sum))),
-        td(),
       )),
     )
+  )
 end renderDataTable
 
-def renderDataItem(id: DataItemID, item: DataItem): Element =
+def renderDataItem(item: RowData): Element =
     def handleCellClick(event: MouseEvent): Unit = {
       dom.document.getElementsByClassName("selectedCell").map(element => element.classList.remove("selectedCell"))
       event.target.asInstanceOf[HTMLTableCellElement].className = "selectedCell"
     }
 
-    val row = item.getAsRow()
+    val row = item.getAsHTML()
     row
 
     

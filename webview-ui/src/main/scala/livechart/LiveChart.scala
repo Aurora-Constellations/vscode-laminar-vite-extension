@@ -14,6 +14,7 @@ import org.scalajs.dom.HTMLBodyElement
 
 import components.renderDataTable
 import models.Model
+import components.renderToolbar
 
 
 @main
@@ -21,34 +22,12 @@ def LiveChart(): Unit = {
 
   // Get data model
   val model = new Model
-
-  val allowedIcons = List("🎉", "🚀", "🍉")
-  val iconVar = Var(initial = allowedIcons.head)
   
   renderOnDomContentLoaded(
     dom.document.body,
     div(
       width := "100%",
-      div(
-        display := "flex",
-        marginBottom := "2rem",
-        justifyContent := "space-around",
-        select(
-          onChange.mapToValue --> iconVar.writer,
-          value <-- iconVar.signal,
-          allowedIcons.map(icon => option(value(icon), icon))
-        ),
-        button(
-          tpe := "button", 
-          "Click me!",
-          onClick --> { event => println("Clicked") }
-        ),
-        input(
-          padding := "10px",
-          width := " 25rem",
-          placeholder("Search")
-        ),
-      ),
+      renderToolbar(model.searchByOption, model.showOptions),
       renderDataTable(model),
     )
   )

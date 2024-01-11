@@ -26,7 +26,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  overflow: hidden;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -97,12 +98,38 @@ button:focus-visible {
 }
 
 thead {
+  /* display: block; */
   background-color:  rgb(43, 43, 43);
+}
+
+tbody {
+  overflow-x: scroll;
+  overflow-y: scroll;
 }
 
 td {
   padding-left: 5px;
 }
+
+table {
+  width: 100%;
+  table-layout: fixed; /* Fixed table layout for consistent column widths */
+  border-collapse: collapse;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.toolbar {
+  display: flex;
+  width: "100%";
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  height: calc(100vh - 60px); /* Calculate height minus the toolbar height */
+  overflow: auto; /* Hide overflow for the container */
+}
+
 .selectedCell {
   background-color:  rgb(71, 71, 71);
 }
