@@ -25,10 +25,9 @@ case class RowData(id: CellData[String], label: CellData[String], price: CellDat
 final class Model:
   val dataVar: Var[List[RowData]] = Var(genDummydata(100))
   val dataSignal = dataVar.signal
-  val headers: List[String] = dataVar.now().head.productElementNames.toList
+  val headers: List[String] = dataVar.now().head.productElementNames.toList 
   val searchByOption: List[String] = headers
   val showOptions: List[String] = List("All", "Flagged")
-
 end Model
 
 def handleCellClick(event: MouseEvent): Unit = {

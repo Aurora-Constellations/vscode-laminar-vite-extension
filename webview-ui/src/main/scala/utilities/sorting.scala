@@ -2,7 +2,7 @@ package utilities
 
 object SortGrid {
 
-      // Enumeration to represent the sort order
+  // Enumeration to represent the sort order
   object SortOrder extends Enumeration {
     type SortOrder = Value
     val Ascending, Descending = Value

@@ -5,6 +5,7 @@ import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import models.*
+import utilities.SearchGrid.searchGrid
 
 def renderToolbar(searchByOption: List[String], showOptions: List[String]): Element =
 
@@ -26,9 +27,11 @@ def renderToolbar(searchByOption: List[String], showOptions: List[String]): Elem
           searchByOption.map(icon => option(value(icon), icon))
         ),
         input(
+          idAttr := "search-input",
           padding := "10px",
           width := "300px",
-          placeholder("Search")
+          placeholder("Search"),
+          onKeyUp --> searchGrid
         ),
         div(
           alignSelf :="center",

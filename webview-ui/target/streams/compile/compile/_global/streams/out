@@ -1,11 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\components\Table.scala:8:26 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m[33mimport[0m utilities.SortGrid.ascendingSort[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                          ^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m          value ascendingSort is not a member of object utilities.SortGrid[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\components\Table.scala:9:7 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m9 |[0m[33mimport[0m SortOrder._[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m       ^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m       Not found: SortOrder[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E178] Type Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\utilities\searching.scala:26:8 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m        print;n(row)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m        ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m        missing argument list for value of type Any => Unit[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: C:\Users\yashb\Documents\vscode-laminar-vite-extension\webview-ui\src\main\scala\utilities\searching.scala:26:14 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m        print;n(row)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m              ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Not found: n[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

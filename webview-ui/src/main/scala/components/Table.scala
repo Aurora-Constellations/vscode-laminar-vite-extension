@@ -5,8 +5,8 @@ import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import models.*
-import utilities.SortGrid.ascendingSort
-import SortOrder._
+import utilities.SortGrid.SortOrder.*
+import utilities.SortGrid.*
 
 var ascendingSort = true
 def setAscendingSort(value: Boolean): Unit = {
@@ -58,6 +58,7 @@ def renderDataTable(model: Model): Element =
         )
       ),
       tbody(
+        idAttr := "myTableBody",
         children <-- model.dataSignal.map(data => data.map { item =>
           renderDataItem(item)
         }),
