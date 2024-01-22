@@ -11,10 +11,13 @@ import org.scalajs.dom.HTMLTableRowElement
 import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.html
 import org.scalajs.dom.HTMLBodyElement
+import org.scalajs.dom.FocusEvent
+import org.scalajs.dom.KeyboardEvent
 
 import components.renderDataTable
 import models.Model
 import components.renderToolbar
+import org.scalajs.dom.HTMLInputElement
 
 
 @main
@@ -35,10 +38,13 @@ def LiveChart(): Unit = {
   dom.document.addEventListener("keydown", (event: dom.KeyboardEvent) => {
       var selectedCell = dom.document.getElementsByClassName("selectedCell").headOption.map(_.asInstanceOf[HTMLTableCellElement])
       var tableIsFocused = dom.document.activeElement.isInstanceOf[HTMLBodyElement]
+      var inputIsFocused = dom.document.activeElement.isInstanceOf[HTMLInputElement]
 
-      selectedCell match{
+      selectedCell match {
         case None => null
         case Some(cell) => {
+          
+
           if (event.key == "ArrowDown" && tableIsFocused) {
             event.preventDefault()
             // Get the current row and cell index
@@ -98,6 +104,28 @@ def LiveChart(): Unit = {
                 .asInstanceOf[HTMLTableElement].rows(rowIndex)
                 .asInstanceOf[HTMLTableRowElement].cells(cellIndex + 1).asInstanceOf[HTMLTableCellElement].classList.add("selectedCell")
             }
+          }
+          if (event.ctrlKey && event.key == "Enter" && tableIsFocused) {
+            event.preventDefault()
+            val clickedCell = cell
+            val originalValue = clickedCell.innerText
+            clickedCell.innerHTML = "<input id='cell-input'/>"
+            clickedCell.children.map(child => 
+              val input = child.asInstanceOf[dom.html.Input]
+              input.style.width = "90%"
+              input.value = originalValue
+              input.onkeydown = (event: KeyboardEvent) => {
+                event.key match {
+                  case "Enter" => {
+                    clickedCell.innerHTML = ""
+                    clickedCell.innerText = event.currentTarget.asInstanceOf[dom.html.Input].value
+                  }
+                  case _ =>
+                }
+              }
+              input.onblur = (event: FocusEvent) => {clickedCell.innerText = originalValue }
+              input.focus()
+            )
           }
         }
       }
