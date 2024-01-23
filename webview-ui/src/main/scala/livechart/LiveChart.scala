@@ -13,8 +13,7 @@ import org.scalajs.dom.html
 import org.scalajs.dom.HTMLBodyElement
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.KeyboardEvent
-
-import components.renderDataTable
+import components.Table
 import models.Model
 import components.renderToolbar
 import org.scalajs.dom.HTMLInputElement
@@ -31,7 +30,7 @@ def LiveChart(): Unit = {
     div(
       width := "100%",
       renderToolbar(model.searchByOption, model.showOptions),
-      renderDataTable(model),
+      Table(model).render(),
     )
   )
 

@@ -9,7 +9,7 @@ object SortGrid {
   }
   import SortOrder._
   
-    
+  @FunctionalInterface
   def sortGrid(sortOrder: SortOrder)(a: String, b: String): Int = {
     val (aValue, bValue) = (parseValue(a), parseValue(b))
 
