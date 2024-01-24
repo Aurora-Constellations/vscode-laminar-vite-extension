@@ -1,4 +1,4 @@
-package components
+package components.table
 
 import models.Model
 import components.utils.AuroraElement

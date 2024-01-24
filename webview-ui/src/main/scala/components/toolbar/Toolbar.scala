@@ -1,4 +1,4 @@
-package components
+package components.toolbar
 
 import org.scalajs.dom
 import com.raquo.laminar.api.L.{*, given}
@@ -6,45 +6,21 @@ import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import models.*
 import utilities.SearchGrid.searchGrid
+import components.button.Button 
 
-def renderToolbar(searchByOption: List[String], showOptions: List[String]): Element =
+case class Toolbar(searchByOption: List[String], showOptions: List[String]) {
 
-    val searchByOptionVar = Var(initial = searchByOption.head)
-    val showOptionsVar = Var(initial = showOptions.head)
-
+  def render(): Element = {
     div(
         className :="toolbar",
         // justifyContent := "space-around",
-        div(
-          alignSelf :="center",
-          marginRight := "5px",
-          "Search By:"
-        ),
-        select(
-          placeholder := "Search by",
-          onChange.mapToValue --> searchByOptionVar.writer,
-          value <-- searchByOptionVar.signal,
-          searchByOption.map(icon => option(value(icon), icon))
-        ),
-        input(
-          idAttr := "search-input",
-          padding := "10px",
-          width := "300px",
-          placeholder("Search"),
-          onKeyUp --> searchGrid
-        ),
-        div(
-          alignSelf :="center",
-          marginLeft := "25px",
-          marginRight := "5px",
-          "Show:"
-        ),
-        select(
-          placeholder := "Show",
-          onChange.mapToValue --> showOptionsVar.writer,
-          value <-- showOptionsVar.signal,
-          showOptions.map(icon => option(value(icon), icon))
-        ),
-        button("➕")
+        Text("Search By:", ml = "").render(),
+        Select(searchByOption).render(),
+        SearchInput().render(),
+        Text("Show:").render(),
+        Select(showOptions).render(),
+        Button("➕").render()
       )
-end renderToolbar
+  }
+
+}
