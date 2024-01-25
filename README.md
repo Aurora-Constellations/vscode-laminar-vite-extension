@@ -2,7 +2,7 @@
 
 This is an implementation of the default [Hello World](https://github.com/microsoft/vscode-webview-ui-toolkit-samples/tree/main/default/hello-world) sample extension that demonstrates how to set up and use a Scala.js + Laminar + [Vite](https://vitejs.dev/) webview extension.
 
-![A screenshot of the sample extension.](./assets/hello-world.png)
+Changes have been made to show a toolbar and table example instead of hello world
 
 ## Documentation
 
