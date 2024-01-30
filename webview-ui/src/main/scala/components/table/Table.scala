@@ -7,13 +7,13 @@ import com.raquo.laminar.api.L.{*, given}
 case class Table(model: Model) extends AuroraElement {
     def render(): Element = {
         div(
-            className := "table-container",
-            table(
+          className := "table-container",
+          table(
             idAttr := "myTable",
             TableHeader(model).render(),
             TableBody(model).render(),
-            TableFooter(model).render(),
-            )
+            TableFooter(model).render()
+          )
         )
     }
 }

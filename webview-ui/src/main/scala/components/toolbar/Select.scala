@@ -3,12 +3,12 @@ package components.toolbar
 import models.Model
 import components.utils.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
-import models.RowData
+
 import utilities.SearchGrid.searchGrid
 
 case class Select(options: List[String]) extends AuroraElement {
 
-    val optionsVar = Var(initial = options.head)
+    val optionsVar = Var(initial = options.headOption.getOrElse("All"))
 
     def render(): Element = {
         select(
@@ -17,5 +17,5 @@ case class Select(options: List[String]) extends AuroraElement {
           options.map(icon => option(value(icon), icon))
         )
     }
-    
+
 }

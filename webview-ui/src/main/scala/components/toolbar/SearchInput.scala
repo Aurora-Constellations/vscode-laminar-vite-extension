@@ -3,7 +3,7 @@ package components.toolbar
 import models.Model
 import components.utils.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
-import models.RowData
+
 import utilities.SearchGrid.searchGrid
 
 case class SearchInput() extends AuroraElement {
@@ -17,5 +17,5 @@ case class SearchInput() extends AuroraElement {
           onKeyUp --> searchGrid
         )
     }
-    
+
 }

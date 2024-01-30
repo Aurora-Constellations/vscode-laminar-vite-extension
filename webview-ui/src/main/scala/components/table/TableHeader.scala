@@ -28,15 +28,16 @@ case class TableHeader(model: Model) extends AuroraElement {
 
         // Sort the rows based on the content of the clicked column using the sortGrid function
         val sortedRows = rowsList.sortBy { row =>
-        val cellValue = row.children.item(columnIndex).textContent
-        cellValue
+            val cellValue = row.children.item(columnIndex).textContent
+            cellValue
         }(sortGrid(currentSortOrder))
 
         // Update the sort order for the column
-        val newSortOrder = if (currentSortOrder == Ascending) Descending else Ascending
+        val newSortOrder =
+            if (currentSortOrder == Ascending) Descending else Ascending
         sortOrderMap += (columnIndex -> newSortOrder)
 
-        // Clear the table body 
+        // Clear the table body
         val tableBody = dom.document.querySelector("tbody")
         tableBody.innerHTML = ""
 
@@ -46,11 +47,11 @@ case class TableHeader(model: Model) extends AuroraElement {
 
     def render(): Element = {
         thead(
-            tr(
-                model.headers.map(header => {
-                    th(header, onClick --> onHeaderClick)
-                }),
-            )
+          tr(
+            model.headers.map(header => {
+                th(header, onClick --> onHeaderClick)
+            })
+          )
         )
     }
 }
