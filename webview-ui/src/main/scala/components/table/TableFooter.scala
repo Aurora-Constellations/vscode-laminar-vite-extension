@@ -1,10 +1,9 @@
 package components.table
 
-import models.Model
 import components.utils.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 
-case class TableFooter(model: Model) extends AuroraElement {
+case class TableFooter() extends AuroraElement {
     def render(): Element = {
         tfoot(
           tr(

@@ -6,21 +6,24 @@ import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import models.*
 import utilities.SearchGrid.searchGrid
-import components.button.Button 
+import components.button.Button
 
-case class Toolbar(searchByOption: List[String], showOptions: List[String]) {
+trait Toolbar[T] {
 
-  def render(): Element = {
-    div(
-        className :="toolbar",
-        // justifyContent := "space-around",
-        Text("Search By:", ml = "").render(),
-        Select(searchByOption).render(),
-        SearchInput().render(),
-        Text("Show:").render(),
-        Select(showOptions).render(),
-        Button("➕").render()
-      )
-  }
+    val searchByOption: List[String]
+    val showOptions: List[String]
+
+    def renderToolbar(): Element = {
+        div(
+          className := "toolbar",
+          // justifyContent := "space-around",
+          Text("Search By:", ml = "").render(),
+          Select(searchByOption).render(),
+          SearchInput().render(),
+          Text("Show:").render(),
+          Select(showOptions).render(),
+          Button("➕").render()
+        )
+    }
 
 }

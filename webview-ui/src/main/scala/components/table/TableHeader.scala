@@ -1,13 +1,12 @@
 package components.table
 
-import models.Model
 import components.utils.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 import utilities.SortGrid.SortOrder.*
 import utilities.SortGrid.*
 import org.scalajs.dom
 
-case class TableHeader(model: Model) extends AuroraElement {
+case class TableHeader(headers: List[String]) extends AuroraElement {
 
     var ascendingSort = true
     def setAscendingSort(value: Boolean): Unit = {
@@ -48,7 +47,7 @@ case class TableHeader(model: Model) extends AuroraElement {
     def render(): Element = {
         thead(
           tr(
-            model.headers.map(header => {
+            headers.map(header => {
                 th(header, onClick --> onHeaderClick)
             })
           )

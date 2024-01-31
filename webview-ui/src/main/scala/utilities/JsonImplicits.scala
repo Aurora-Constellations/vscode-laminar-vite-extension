@@ -13,9 +13,9 @@ object JsonImplicits {
     implicit val patientDecoder: Decoder[Patient] = deriveDecoder[Patient]
     implicit val patientEncoder: Encoder[Patient] = deriveEncoder[Patient]
 
-    implicit val sqlDateEncoder: Encoder[Date] =
+    implicit val dateEncoder: Encoder[Date] =
         Encoder.encodeString.contramap((date: Date) => date.toString())
-    implicit val sqlDateDecoder: Decoder[Date] = Decoder.instance { cursor =>
+    implicit val dateDecoder: Decoder[Date] = Decoder.instance { cursor =>
         cursor.as[String].flatMap { str =>
             try Right(new Date(str))
             catch {

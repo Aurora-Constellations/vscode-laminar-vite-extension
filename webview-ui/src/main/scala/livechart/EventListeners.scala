@@ -10,7 +10,6 @@ import org.scalajs.dom.HTMLBodyElement
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.KeyboardEvent
 import components.table.Table
-import models.Model
 import components.toolbar.Toolbar
 import org.scalajs.dom.HTMLInputElement
 

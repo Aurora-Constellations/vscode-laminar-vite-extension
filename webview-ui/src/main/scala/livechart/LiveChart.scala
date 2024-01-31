@@ -14,7 +14,7 @@ import org.scalajs.dom.HTMLBodyElement
 import org.scalajs.dom.FocusEvent
 import org.scalajs.dom.KeyboardEvent
 import components.table.Table
-import models.Model
+import models.AuroraTracker
 import components.toolbar.Toolbar
 import org.scalajs.dom.HTMLInputElement
 
@@ -30,14 +30,13 @@ import scala.scalajs.js.JSON
 def LiveChart(): Unit = {
 
     // Get data model
-    val model = new Model
+    val model = new AuroraTracker()
 
     renderOnDomContentLoaded(
       dom.document.body,
       div(
         width := "100%",
-        Toolbar(model.searchByOption, model.showOptions).render(),
-        Table(model).render()
+        AuroraTracker().render()
       )
     )
     addEventListeners()

@@ -1,14 +1,6 @@
 package types
 
 import scala.scalajs.js.Date
-import scala.reflect.runtime.universe._
-import org.scalajs.dom.Element
-import com.raquo.laminar.api.L.{*, given}
-import components.table.TableCell
-
-trait Model {
-    val headers: List[String]
-}
 
 case class Patient(
     unitNumber: String,
@@ -33,21 +25,4 @@ case class Patient(
     attending: Option[String],
     collab1: Option[String],
     collab2: Option[String]
-) extends Model {
-
-    val headers: List[String] = this.productElementNames.toList
-
-    val rowDataVar = Var(List(this.unitNumber))
-    def getAsTableRow() = {
-        tr(
-          width := "100%",
-          TableCell(this.unitNumber).render(),
-          TableCell(this.firstName).render(),
-          TableCell(this.lastName).render(),
-          TableCell(this.sex).render(),
-          TableCell(this.dob.toDateString()).render(),
-          TableCell(this.flag.getOrElse("")).render(),
-          TableCell(this.hosp.getOrElse("")).render()
-        )
-    }
-}
+)
