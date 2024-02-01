@@ -13,7 +13,7 @@ case class Select(options: List[String]) extends AuroraElement {
         select(
           onChange.mapToValue --> optionsVar.writer,
           value <-- optionsVar.signal,
-          options.map(icon => option(value(icon), icon))
+          options.map(opt => option(value(opt), opt))
         )
     }
 

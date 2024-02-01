@@ -47,6 +47,7 @@ case class TableHeader(headers: List[String]) extends AuroraElement {
     def render(): Element = {
         thead(
           tr(
+            idAttr := "myTableHeader",
             headers.map(header => {
                 th(header, onClick --> onHeaderClick)
             })

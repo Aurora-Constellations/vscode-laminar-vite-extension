@@ -71,5 +71,5 @@ class AuroraTracker() extends Table[Patient] with Toolbar[Patient] {
      * Toolbar functions and variables. Change these as needed to correspond with the type of the data items
      */
     val searchByOption: List[String] = headers
-    val showOptions: List[String] = List("All", "Flagged")
+    val showOptions: List[String] = List("Flagged")
 }

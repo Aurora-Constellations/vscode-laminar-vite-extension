@@ -18,10 +18,11 @@ trait Toolbar[T] {
           className := "toolbar",
           // justifyContent := "space-around",
           Text("Search By:", ml = "").render(),
-          Select(searchByOption).render(),
-          SearchInput().render(),
+          Search("All" :: searchByOption).render(),
+          // Select(searchByOption).render(),
+          // SearchInput().render(),
           Text("Show:").render(),
-          Select(showOptions).render(),
+          Select("All" :: showOptions).render(),
           Button("➕").render()
         )
     }

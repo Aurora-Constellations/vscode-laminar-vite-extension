@@ -8,6 +8,7 @@ import org.scalajs.dom
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.FocusEvent
 
+// TODO refactor input toggling
 case class TableCell(content: String) extends AuroraElement {
 
     def handleCellClick(event: MouseEvent): Unit = {
