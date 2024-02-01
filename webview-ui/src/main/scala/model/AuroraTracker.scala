@@ -20,6 +20,7 @@ import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLTableRowElement
 import components.toolbar.Toolbar
 
+// TODO allow actions/buttons to be added to toolbar
 class AuroraTracker() extends Table[Patient] with Toolbar[Patient] {
 
     def render() = {
