@@ -29,7 +29,6 @@ def addEventListeners(): Unit = {
           selectedCell match {
               case None => null
               case Some(cell) => {
-
                   if (event.key == "ArrowDown" && tableIsFocused) {
                       event.preventDefault()
                       // Get the current row and cell index
@@ -161,6 +160,10 @@ def addEventListeners(): Unit = {
                                           event.currentTarget
                                               .asInstanceOf[dom.html.Input]
                                               .value
+                                  }
+                                  case "Escape" => {
+                                      clickedCell.innerHTML = ""
+                                      clickedCell.innerText = originalValue
                                   }
                                   case _ =>
                               }

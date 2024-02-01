@@ -41,6 +41,10 @@ case class TableCell(content: String) extends AuroraElement {
                             .asInstanceOf[dom.html.Input]
                             .value
                     }
+                    case "Escape" => {
+                        clickedCell.innerHTML = ""
+                        clickedCell.innerText = originalValue
+                    }
                     case _ =>
                 }
             }

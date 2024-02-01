@@ -29,9 +29,6 @@ import scala.scalajs.js.JSON
 @main
 def LiveChart(): Unit = {
 
-    // Get data model
-    val model = new AuroraTracker()
-
     renderOnDomContentLoaded(
       dom.document.body,
       div(

@@ -20,7 +20,7 @@ import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLTableRowElement
 import components.toolbar.Toolbar
 
-case class AuroraTracker() extends Table[Patient] with Toolbar[Patient] {
+class AuroraTracker() extends Table[Patient] with Toolbar[Patient] {
 
     def render() = {
         div(
@@ -46,6 +46,7 @@ case class AuroraTracker() extends Table[Patient] with Toolbar[Patient] {
     def getAsTableRow(
         item: Patient
     ): ReactiveHtmlElement[HTMLTableRowElement] = {
+
         tr(
           width := "100%",
           TableCell(item.unitNumber).render(),
