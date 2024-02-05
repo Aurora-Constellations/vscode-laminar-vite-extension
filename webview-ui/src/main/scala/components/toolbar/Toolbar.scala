@@ -5,7 +5,6 @@ import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import models.*
-import utilities.SearchGrid.searchGrid
 import components.button.Button
 
 trait Toolbar[T] {

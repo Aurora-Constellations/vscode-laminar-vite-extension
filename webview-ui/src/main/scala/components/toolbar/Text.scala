@@ -3,8 +3,6 @@ package components.toolbar
 import components.utils.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 
-import utilities.SearchGrid.searchGrid
-
 case class Text(
     value: String,
     as: String = "center",

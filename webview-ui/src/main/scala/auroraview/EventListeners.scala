@@ -1,4 +1,4 @@
-package livechart
+package auroraview
 
 import org.scalajs.dom
 import com.raquo.laminar.api.L.{*, given}
@@ -12,6 +12,7 @@ import org.scalajs.dom.KeyboardEvent
 import components.table.Table
 import components.toolbar.Toolbar
 import org.scalajs.dom.HTMLInputElement
+import components.table.toggleInput
 
 def addEventListeners(): Unit = {
     dom.document.addEventListener(
@@ -23,8 +24,6 @@ def addEventListeners(): Unit = {
               .map(_.asInstanceOf[HTMLTableCellElement])
           var tableIsFocused =
               dom.document.activeElement.isInstanceOf[HTMLBodyElement]
-          var inputIsFocused =
-              dom.document.activeElement.isInstanceOf[HTMLInputElement]
 
           selectedCell match {
               case None => null
@@ -145,34 +144,7 @@ def addEventListeners(): Unit = {
                   }
                   if (event.ctrlKey && event.key == "Enter" && tableIsFocused) {
                       event.preventDefault()
-                      val clickedCell = cell
-                      val originalValue = clickedCell.innerText
-                      clickedCell.innerHTML = "<input id='cell-input'/>"
-                      clickedCell.children.map(child =>
-                          val input = child.asInstanceOf[dom.html.Input]
-                          input.style.width = "90%"
-                          input.value = originalValue
-                          input.onkeydown = (event: KeyboardEvent) => {
-                              event.key match {
-                                  case "Enter" => {
-                                      clickedCell.innerHTML = ""
-                                      clickedCell.innerText =
-                                          event.currentTarget
-                                              .asInstanceOf[dom.html.Input]
-                                              .value
-                                  }
-                                  case "Escape" => {
-                                      clickedCell.innerHTML = ""
-                                      clickedCell.innerText = originalValue
-                                  }
-                                  case _ =>
-                              }
-                          }
-                          input.onblur = (event: FocusEvent) => {
-                              clickedCell.innerText = originalValue
-                          }
-                          input.focus()
-                      )
+                      toggleInput(cell)
                   }
               }
           }

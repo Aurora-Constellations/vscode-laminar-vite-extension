@@ -21,7 +21,7 @@ import org.scalajs.dom.HTMLTableRowElement
 import components.toolbar.Toolbar
 
 // TODO allow actions/buttons to be added to toolbar
-class AuroraTracker() extends Table[Patient] with Toolbar[Patient] {
+class AuroraViewModel() extends Table[Patient] with Toolbar[Patient] {
 
     def render() = {
         div(
@@ -34,7 +34,7 @@ class AuroraTracker() extends Table[Patient] with Toolbar[Patient] {
     /*
      * Table functions and variables. Change these as needed to correspond with the type of the data items
      */
-    val dataUrl = "https://localhost:9000/patients"
+    val dataUrl = "http://192.168.250.125:9000/patients"
     val headers: List[String] = List(
       "Unit Number",
       "First Name",

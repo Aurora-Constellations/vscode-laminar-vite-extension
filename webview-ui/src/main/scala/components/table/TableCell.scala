@@ -7,52 +7,51 @@ import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.FocusEvent
+import components.utils.DomUtils.removeClassnameFromAll
+import components.utils.DomUtils.addClassnameToElement
 
-// TODO refactor input toggling
+def toggleInput(cell: HTMLTableCellElement): Unit = {
+    val originalValue = cell.innerText
+    cell.innerHTML = "<input id='cell-input'/>"
+    cell.children.map(child =>
+        val input = child.asInstanceOf[dom.html.Input]
+        input.style.width = "90%"
+        input.value = originalValue
+        input.onkeydown = (e: KeyboardEvent) => {
+            e.key match {
+                case "Enter" => {
+                    cell.innerHTML = ""
+                    cell.innerText = e.currentTarget
+                        .asInstanceOf[dom.html.Input]
+                        .value
+
+                }
+                case "Escape" => {
+                    cell.innerHTML = ""
+                    cell.innerText = originalValue
+                }
+                case _ =>
+            }
+        }
+        input.onblur = (event: FocusEvent) => {
+            cell.innerText = originalValue
+        }
+        input.focus()
+    )
+}
+
 case class TableCell(content: String) extends AuroraElement {
 
     def handleCellClick(event: MouseEvent): Unit = {
-        dom.document
-            .getElementsByClassName("selectedCell")
-            .map(element => element.classList.remove("selectedCell"))
-        dom.document
-            .getElementsByClassName("selectedRow")
-            .map(element => element.classList.remove("selectedRow"))
-        event.target.asInstanceOf[HTMLTableCellElement].className =
-            "selectedCell"
-        event.target
-            .asInstanceOf[HTMLTableCellElement]
-            .parentElement
-            .className = "selectedRow"
-    }
-
-    def handleCellDblClick(event: MouseEvent): Unit = {
-        val clickedCell = event.currentTarget.asInstanceOf[dom.html.TableCell]
-        val originalValue = clickedCell.innerText
-        clickedCell.innerHTML = "<input id='cell-input'/>"
-        clickedCell.children.map(child =>
-            val input = child.asInstanceOf[dom.html.Input]
-            input.style.width = "90%"
-            input.value = originalValue
-            input.onkeydown = (event: KeyboardEvent) => {
-                event.key match {
-                    case "Enter" => {
-                        clickedCell.innerHTML = ""
-                        clickedCell.innerText = event.currentTarget
-                            .asInstanceOf[dom.html.Input]
-                            .value
-                    }
-                    case "Escape" => {
-                        clickedCell.innerHTML = ""
-                        clickedCell.innerText = originalValue
-                    }
-                    case _ =>
-                }
-            }
-            input.onblur = (event: FocusEvent) => {
-                clickedCell.innerText = originalValue
-            }
-            input.focus()
+        removeClassnameFromAll("selectedCell")
+        removeClassnameFromAll("selectedRow")
+        addClassnameToElement(
+          "selectedCell",
+          event.target.asInstanceOf[HTMLTableCellElement]
+        )
+        addClassnameToElement(
+          "selectedRow",
+          event.target.asInstanceOf[HTMLTableCellElement].parentElement
         )
     }
 
@@ -60,7 +59,9 @@ case class TableCell(content: String) extends AuroraElement {
         td(
           content,
           onClick --> handleCellClick,
-          onDblClick --> handleCellDblClick
+          onDblClick --> { (e) =>
+              toggleInput(e.currentTarget.asInstanceOf[HTMLTableCellElement])
+          }
         )
     }
 

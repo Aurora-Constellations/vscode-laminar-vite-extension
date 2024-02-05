@@ -3,7 +3,6 @@ package components.toolbar
 import components.utils.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 
-import utilities.SearchGrid.searchGrid
 import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom
 import org.scalajs.dom.HTMLInputElement
@@ -21,8 +20,6 @@ case class Search(options: List[String]) extends AuroraElement {
     val optionsVar = Var(initial = options.headOption.getOrElse("All"))
 
     def searchGrid(event: KeyboardEvent, opt: StrictSignal[String]): Unit = {
-        println(opt.now())
-
         val input = dom.document
             .getElementById("search-input")
             .asInstanceOf[HTMLInputElement]

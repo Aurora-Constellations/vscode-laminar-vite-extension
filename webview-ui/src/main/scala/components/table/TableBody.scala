@@ -23,9 +23,10 @@ case class TableBody[T](
     def render(): Element = {
         tbody(
           // Fetch the data on component mount, update table
-          FetchStream.get(dataUrl) --> { responseText =>
-              jsonDecoder(responseText)
-                  .map(item => dataVar.update(_ :+ item))
+          FetchStream.get(dataUrl, _.headers(("Authorization", ""))) --> {
+              responseText =>
+                  jsonDecoder(responseText)
+                      .map(item => dataVar.update(_ :+ item))
           },
           idAttr := "myTableBody",
           children <-- dataSignal.map(data =>
