@@ -3,6 +3,9 @@ import org.scalajs.linker.interface.ModuleSplitStyle
 lazy val livechart = project
     .in(file("."))
     .enablePlugins(ScalaJSPlugin) // Enable the Scala.js plugin in this project
+    .enablePlugins(
+      ScalablyTypedConverterPlugin
+    ) // Enable ScalablyTyped for vscode API
     .settings(
       scalaVersion := "3.3.1",
 
@@ -17,12 +20,15 @@ lazy val livechart = project
        *   (in particular, for the standard library)
        */
       scalaJSLinkerConfig ~= {
-          _.withModuleKind(ModuleKind.ESModule)
+          _.withModuleKind(ModuleKind.CommonJSModule)
               .withModuleSplitStyle(
                 ModuleSplitStyle.SmallModulesFor(List("livechart"))
               )
       },
-
+      Compile / npmDependencies ++= Seq(
+        // "vscode-webview" -> "1.57.0",
+        "@types/vscode-webview" -> "^1.57.0"
+      ),
       /* Depend on the scalajs-dom library.
        * It provides static types for the browser DOM APIs.
        */

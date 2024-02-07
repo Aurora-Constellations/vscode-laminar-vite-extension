@@ -9,6 +9,11 @@ import {
 import { getUri } from "../utilities/getUri"
 import { getNonce } from "../utilities/getNonce"
 
+type BasicMessage = {
+	command: string
+	content: string
+}
+
 export class AuroraProvider implements WebviewViewProvider {
 	public static readonly viewType = "aurora.patientTracker"
 
@@ -76,10 +81,15 @@ export class AuroraProvider implements WebviewViewProvider {
 	}
 
 	private _setWebviewMessageListener(webviewView: WebviewView) {
-		// webviewView.webview.onDidReceiveMessage((message) => {
-		//   const command = message.command;
-		//   const messageLifecycle = AllExtensionMessages.filter(lc => lc.id == command)
-		//   messageLifecycle.length == 0? console.log("Message handler not found for: "+message.command) : messageLifecycle[0].onReceive(webviewView, message)
-		// });
+		webviewView.webview.onDidReceiveMessage((messageJson) => {
+			const message: BasicMessage = JSON.parse(messageJson)
+			console.log("got a message from the webview!")
+			console.log(message)
+			console.log((message as BasicMessage).content)
+			console.log((message as BasicMessage).command)
+			//   const command = message.command;
+			//   const messageLifecycle = AllExtensionMessages.filter(lc => lc.id == command)
+			//   messageLifecycle.length == 0? console.log("Message handler not found for: "+message.command) : messageLifecycle[0].onReceive(webviewView, message)
+		})
 	}
 }

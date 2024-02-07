@@ -22,6 +22,7 @@
             "C:\\Users\\yashb\\.sbt\\boot\\scala-2.12.17\\lib\\scala-library.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.13\\sbt-bloop-1.5.13.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\sbt-scalajs_2.12_1.0\\1.15.0\\sbt-scalajs-1.15.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\sbt-converter_2.12_1.0\\1.0.0-beta44\\sbt-converter-1.0.0-beta44.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\main_2.12\\1.8.2\\main_2.12-1.8.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\io_2.12\\1.8.0\\io_2.12-1.8.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\bloop-config_2.12\\1.5.5\\bloop-config_2.12-1.5.5.jar",
@@ -30,6 +31,9 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\portable-scala\\sbt-platform-deps_2.12_1.0\\1.0.2\\sbt-platform-deps-1.0.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-js-envs_2.12\\1.4.0\\scalajs-js-envs_2.12-1.4.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-env-nodejs_2.12\\1.4.0\\scalajs-env-nodejs_2.12-1.4.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\importer-portable_2.12\\1.0.0-beta44\\importer-portable_2.12-1.0.0-beta44.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-scalajs-bundler_2.12_1.0\\0.21.1\\sbt-scalajs-bundler-0.21.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\s3\\2.15.28\\s3-2.15.28.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\logic_2.12\\1.8.2\\logic_2.12-1.8.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\actions_2.12\\1.8.2\\actions_2.12-1.8.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\main-settings_2.12\\1.8.2\\main-settings_2.12-1.8.2.jar",
@@ -39,7 +43,7 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\scripted-plugin_2.12\\1.8.2\\scripted-plugin_2.12-1.8.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\zinc-lm-integration_2.12\\1.8.2\\zinc-lm-integration_2.12-1.8.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\util-logging_2.12\\1.8.2\\util-logging_2.12-1.8.2.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.1.0\\scala-xml_2.12-2.1.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.2.0\\scala-xml_2.12-2.2.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\launcher-interface\\1.4.1\\launcher-interface-1.4.1.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\ben-manes\\caffeine\\caffeine\\2.8.5\\caffeine-2.8.5.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\get-coursier\\lm-coursier-shaded_2.12\\2.0.15\\lm-coursier-shaded_2.12-2.0.15.jar",
@@ -57,7 +61,25 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-ir_2.12\\1.15.0\\scalajs-ir_2.12-1.15.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-logging_2.12\\1.1.1\\scalajs-logging_2.12-1.1.1.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.1\\jimfs-1.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.2\\jimfs-1.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\ts_2.12\\1.0.0-beta44\\ts_2.12-1.0.0-beta44.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\scalajs_2.12\\1.0.0-beta44\\scalajs_2.12-1.0.0-beta44.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\phases_2.12\\1.0.0-beta44\\phases_2.12-1.0.0-beta44.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-json_2.12\\2.9.2\\play-json_2.12-2.9.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-xml-protocol\\2.15.28\\aws-xml-protocol-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\protocol-core\\2.15.28\\protocol-core-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\arns\\2.15.28\\arns-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\profiles\\2.15.28\\profiles-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\sdk-core\\2.15.28\\sdk-core-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\auth\\2.15.28\\auth-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\http-client-spi\\2.15.28\\http-client-spi-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\regions\\2.15.28\\regions-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\annotations\\2.15.28\\annotations-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\utils\\2.15.28\\utils-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-core\\2.15.28\\aws-core-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\metrics-spi\\2.15.28\\metrics-spi-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\apache-client\\2.15.28\\apache-client-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\netty-nio-client\\2.15.28\\netty-nio-client-2.15.28.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\util-relation_2.12\\1.8.2\\util-relation_2.12-1.8.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\completion_2.12\\1.8.2\\completion_2.12-1.8.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\task-system_2.12\\1.8.2\\task-system_2.12-1.8.2.jar",
@@ -91,7 +113,30 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\jcraft\\jsch\\0.1.54\\jsch-0.1.54.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\eed3si9n\\gigahorse-apache-http_2.12\\0.7.0\\gigahorse-apache-http_2.12-0.7.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\ivy\\ivy\\2.3.0-sbt-a8f9eb5bf09d0539ea3658a2c2d4e09755b5133e\\ivy-2.3.0-sbt-a8f9eb5bf09d0539ea3658a2c2d4e09755b5133e.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\18.0\\guava-18.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\30.1-android\\guava-30.1-android.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\core_2.12\\1.0.0-beta44\\core_2.12-1.0.0-beta44.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\logging_2.12\\1.0.0-beta44\\logging_2.12-1.0.0-beta44.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-functional_2.12\\2.9.2\\play-functional_2.12-2.9.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.10.5\\jackson-core-2.10.5.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.10.5\\jackson-annotations-2.10.5.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.5\\jackson-datatype-jdk8-2.10.5.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.10.5\\jackson-datatype-jsr310-2.10.5.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.10.5.1\\jackson-databind-2.10.5.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-query-protocol\\2.15.28\\aws-query-protocol-2.15.28.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\eventstream\\eventstream\\1.0.1\\eventstream-1.0.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpclient\\4.5.13\\httpclient-4.5.13.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpcore\\4.4.13\\httpcore-4.4.13.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.53.Final\\netty-codec-http-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http2\\4.1.53.Final\\netty-codec-http2-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.53.Final\\netty-codec-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.53.Final\\netty-transport-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.53.Final\\netty-common-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.53.Final\\netty-buffer-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.53.Final\\netty-handler-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.53.Final\\netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams-http\\2.0.4\\netty-reactive-streams-http-2.0.4.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline-reader\\3.19.0\\jline-reader-3.19.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline-builtins\\3.19.0\\jline-builtins-3.19.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-agent\\1.8.2\\test-agent-1.8.2.jar",
@@ -103,17 +148,39 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\zinc-persist_2.12\\1.8.0\\zinc-persist_2.12-1.8.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\eed3si9n\\sjson-new-murmurhash_2.12\\0.9.1\\sjson-new-murmurhash_2.12-0.9.1.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\ipcsocket\\ipcsocket\\1.6.2\\ipcsocket-1.6.2.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\net\\openhft\\zero-allocation-hashing\\0.10.1\\zero-allocation-hashing-0.10.1.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\fusesource\\jansi\\jansi\\2.1.0\\jansi-2.1.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\eed3si9n\\gigahorse-core_2.12\\0.7.0\\gigahorse-core_2.12-0.7.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\eed3si9n\\shaded-apache-httpasyncclient\\0.7.0\\shaded-apache-httpasyncclient-0.7.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-compat-qual\\2.5.5\\checker-compat-qual-2.5.5.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.3\\j2objc-annotations-1.3.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\ammonite-ops_2.12\\2.4.0\\ammonite-ops_2.12-2.4.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\os-lib_2.12\\0.9.1\\os-lib_2.12-0.9.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.3.1\\sourcecode_2.12-0.3.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-generic_2.12\\0.13.0-shaded-2\\circe-generic_2.12-0.13.0-shaded-2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-jackson29_2.12\\0.13.0-shaded-2\\circe-jackson29_2.12-0.13.0-shaded-2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.4.0\\fansi_2.12-0.4.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.53.Final\\netty-resolver-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.53.Final\\netty-transport-native-unix-common-4.1.53.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams\\2.0.4\\netty-reactive-streams-2.0.4.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\jline\\jline-style\\3.19.0\\jline-style-3.19.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\zinc-persist-core-assembly\\1.8.0\\zinc-persist-core-assembly-1.8.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\sbinary_2.12\\0.5.1\\sbinary_2.12-0.5.1.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.12\\0.6.1\\ssl-config-core_2.12-0.6.1.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.2\\config-1.4.2.jar"
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\geny_2.12\\1.0.0\\geny_2.12-1.0.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-core_2.12\\0.13.0-shaded-2\\circe-core_2.12-0.13.0-shaded-2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\config\\1.4.2\\config-1.4.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-numbers_2.12\\0.13.0-shaded-2\\circe-numbers_2.12-0.13.0-shaded-2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.12\\2.1.0\\cats-core_2.12-2.1.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-macros_2.12\\2.1.0\\cats-macros_2.12-2.1.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.12\\2.1.0\\cats-kernel_2.12-2.1.0.jar"
         ],
         "out": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\project\\.bloop\\webview-ui-build",
         "classesDir": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\project\\.bloop\\webview-ui-build\\scala-2.12\\sbt-1.0\\classes",
@@ -158,8 +225,8 @@
                 "import _root_.sbt._",
                 "import _root_.sbt.Keys._",
                 "import _root_.sbt.nio.Keys._",
-                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._, _root_.org.portablescala.sbtplatformdeps.PlatformDepsPlugin.autoImport._",
-                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.org.scalajs.sbtplugin.ScalaJSJUnitPlugin, _root_.org.scalajs.sbtplugin.ScalaJSPlugin, _root_.org.portablescala.sbtplatformdeps.PlatformDepsPlugin"
+                "import _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.bloop.integrations.sbt.BloopPlugin.autoImport._, _root_.org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._, _root_.org.scalablytyped.converter.plugin.ScalablyTypedConverterExternalNpmPlugin.autoImport._, _root_.org.scalablytyped.converter.plugin.ScalablyTypedConverterGenSourcePlugin.autoImport._, _root_.org.scalablytyped.converter.plugin.ScalablyTypedConverterPlugin.autoImport._, _root_.org.scalablytyped.converter.plugin.ScalablyTypedPluginBase.autoImport._, _root_.org.portablescala.sbtplatformdeps.PlatformDepsPlugin.autoImport._, _root_.scalajsbundler.sbtplugin.ScalaJSBundlerPlugin.autoImport._",
+                "import _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.bloop.integrations.sbt.BloopPlugin, _root_.org.scalajs.sbtplugin.ScalaJSJUnitPlugin, _root_.org.scalajs.sbtplugin.ScalaJSPlugin, _root_.org.scalablytyped.converter.plugin.ScalablyTypedConverterExternalNpmPlugin, _root_.org.scalablytyped.converter.plugin.ScalablyTypedConverterGenSourcePlugin, _root_.org.scalablytyped.converter.plugin.ScalablyTypedConverterPlugin, _root_.org.scalablytyped.converter.plugin.ScalablyTypedPluginBase, _root_.org.portablescala.sbtplatformdeps.PlatformDepsPlugin, _root_.scalajsbundler.sbtplugin.ScalaJSBundlerPlugin"
             ]
         },
         "test": {
@@ -232,19 +299,93 @@
                 "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\project\\.bloop\\webview-ui-build\\scala-2.12\\sbt-1.0\\classes",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.13\\sbt-bloop-1.5.13.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\sbt-scalajs_2.12_1.0\\1.15.0\\sbt-scalajs-1.15.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\sbt-converter_2.12_1.0\\1.0.0-beta44\\sbt-converter-1.0.0-beta44.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\bloop-config_2.12\\1.5.5\\bloop-config_2.12-1.5.5.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-linker-interface_2.12\\1.15.0\\scalajs-linker-interface_2.12-1.15.0.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-sbt-test-adapter_2.12\\1.15.0\\scalajs-sbt-test-adapter_2.12-1.15.0.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\portable-scala\\sbt-platform-deps_2.12_1.0\\1.0.2\\sbt-platform-deps-1.0.2.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-js-envs_2.12\\1.4.0\\scalajs-js-envs_2.12-1.4.0.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-env-nodejs_2.12\\1.4.0\\scalajs-env-nodejs_2.12-1.4.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\importer-portable_2.12\\1.0.0-beta44\\importer-portable_2.12-1.0.0-beta44.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-scalajs-bundler_2.12_1.0\\0.21.1\\sbt-scalajs-bundler-0.21.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\s3\\2.15.28\\s3-2.15.28.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\plokhotnyuk\\jsoniter-scala\\jsoniter-scala-core_2.12\\2.4.0\\jsoniter-scala-core_2.12-2.4.0.jar",
                 "C:\\Users\\yashb\\.sbt\\boot\\scala-2.12.17\\lib\\scala-library.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-ir_2.12\\1.15.0\\scalajs-ir_2.12-1.15.0.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-logging_2.12\\1.1.1\\scalajs-logging_2.12-1.1.1.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar",
-                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.1\\jimfs-1.1.jar",
-                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\18.0\\guava-18.0.jar"
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.2\\jimfs-1.2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\ts_2.12\\1.0.0-beta44\\ts_2.12-1.0.0-beta44.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\scalajs_2.12\\1.0.0-beta44\\scalajs_2.12-1.0.0-beta44.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\phases_2.12\\1.0.0-beta44\\phases_2.12-1.0.0-beta44.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-json_2.12\\2.9.2\\play-json_2.12-2.9.2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-xml-protocol\\2.15.28\\aws-xml-protocol-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\protocol-core\\2.15.28\\protocol-core-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\arns\\2.15.28\\arns-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\profiles\\2.15.28\\profiles-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\sdk-core\\2.15.28\\sdk-core-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\auth\\2.15.28\\auth-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\http-client-spi\\2.15.28\\http-client-spi-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\regions\\2.15.28\\regions-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\annotations\\2.15.28\\annotations-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\utils\\2.15.28\\utils-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-core\\2.15.28\\aws-core-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\metrics-spi\\2.15.28\\metrics-spi-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\apache-client\\2.15.28\\apache-client-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\netty-nio-client\\2.15.28\\netty-nio-client-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\30.1-android\\guava-30.1-android.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\core_2.12\\1.0.0-beta44\\core_2.12-1.0.0-beta44.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\logging_2.12\\1.0.0-beta44\\logging_2.12-1.0.0-beta44.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.2.0\\scala-xml_2.12-2.2.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-functional_2.12\\2.9.2\\play-functional_2.12-2.9.2.jar",
+                "C:\\Users\\yashb\\.sbt\\boot\\scala-2.12.17\\lib\\scala-reflect.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.10.5\\jackson-core-2.10.5.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.10.5\\jackson-annotations-2.10.5.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.5\\jackson-datatype-jdk8-2.10.5.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.10.5\\jackson-datatype-jsr310-2.10.5.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.10.5.1\\jackson-databind-2.10.5.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-query-protocol\\2.15.28\\aws-query-protocol-2.15.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\slf4j\\slf4j-api\\1.7.28\\slf4j-api-1.7.28.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\eventstream\\eventstream\\1.0.1\\eventstream-1.0.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpclient\\4.5.13\\httpclient-4.5.13.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpcore\\4.4.13\\httpcore-4.4.13.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.53.Final\\netty-codec-http-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http2\\4.1.53.Final\\netty-codec-http2-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.53.Final\\netty-codec-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.53.Final\\netty-transport-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.53.Final\\netty-common-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.53.Final\\netty-buffer-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.53.Final\\netty-handler-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.53.Final\\netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams-http\\2.0.4\\netty-reactive-streams-http-2.0.4.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-compat-qual\\2.5.5\\checker-compat-qual-2.5.5.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\errorprone\\error_prone_annotations\\2.3.4\\error_prone_annotations-2.3.4.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.3\\j2objc-annotations-1.3.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\ammonite-ops_2.12\\2.4.0\\ammonite-ops_2.12-2.4.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\os-lib_2.12\\0.9.1\\os-lib_2.12-0.9.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.3.1\\sourcecode_2.12-0.3.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-generic_2.12\\0.13.0-shaded-2\\circe-generic_2.12-0.13.0-shaded-2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-jackson29_2.12\\0.13.0-shaded-2\\circe-jackson29_2.12-0.13.0-shaded-2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.4.0\\fansi_2.12-0.4.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.53.Final\\netty-resolver-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.53.Final\\netty-transport-native-unix-common-4.1.53.Final.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams\\2.0.4\\netty-reactive-streams-2.0.4.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_2.12\\2.4.1\\scala-collection-compat_2.12-2.4.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\geny_2.12\\1.0.0\\geny_2.12-1.0.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-core_2.12\\0.13.0-shaded-2\\circe-core_2.12-0.13.0-shaded-2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-numbers_2.12\\0.13.0-shaded-2\\circe-numbers_2.12-0.13.0-shaded-2.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.12\\2.1.0\\cats-core_2.12-2.1.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-macros_2.12\\2.1.0\\cats-macros_2.12-2.1.0.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.12\\2.1.0\\cats-kernel_2.12-2.1.0.jar"
             ]
         },
         "resolution": {
@@ -280,6 +421,23 @@
                             "name": "sbt-scalajs",
                             "classifier": "sources",
                             "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\sbt-scalajs_2.12_1.0\\1.15.0\\sbt-scalajs-1.15.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.converter",
+                    "name": "sbt-converter",
+                    "version": "1.0.0-beta44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-converter",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\sbt-converter_2.12_1.0\\1.0.0-beta44\\sbt-converter-1.0.0-beta44.jar"
+                        },
+                        {
+                            "name": "sbt-converter",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\sbt-converter_2.12_1.0\\1.0.0-beta44\\sbt-converter-1.0.0-beta44-sources.jar"
                         }
                     ]
                 },
@@ -386,6 +544,57 @@
                     ]
                 },
                 {
+                    "organization": "org.scalablytyped.converter",
+                    "name": "importer-portable_2.12",
+                    "version": "1.0.0-beta44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "importer-portable_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\importer-portable_2.12\\1.0.0-beta44\\importer-portable_2.12-1.0.0-beta44.jar"
+                        },
+                        {
+                            "name": "importer-portable_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\importer-portable_2.12\\1.0.0-beta44\\importer-portable_2.12-1.0.0-beta44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "ch.epfl.scala",
+                    "name": "sbt-scalajs-bundler",
+                    "version": "0.21.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sbt-scalajs-bundler",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-scalajs-bundler_2.12_1.0\\0.21.1\\sbt-scalajs-bundler-0.21.1.jar"
+                        },
+                        {
+                            "name": "sbt-scalajs-bundler",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-scalajs-bundler_2.12_1.0\\0.21.1\\sbt-scalajs-bundler-0.21.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "s3",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "s3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\s3\\2.15.28\\s3-2.15.28.jar"
+                        },
+                        {
+                            "name": "s3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\s3\\2.15.28\\s3-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "com.github.plokhotnyuk.jsoniter-scala",
                     "name": "jsoniter-scala-core_2.12",
                     "version": "2.4.0",
@@ -473,34 +682,1151 @@
                 {
                     "organization": "com.google.jimfs",
                     "name": "jimfs",
-                    "version": "1.1",
+                    "version": "1.2",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "jimfs",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.1\\jimfs-1.1.jar"
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.2\\jimfs-1.2.jar"
                         },
                         {
                             "name": "jimfs",
                             "classifier": "sources",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.1\\jimfs-1.1-sources.jar"
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\jimfs\\jimfs\\1.2\\jimfs-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.converter",
+                    "name": "ts_2.12",
+                    "version": "1.0.0-beta44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ts_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\ts_2.12\\1.0.0-beta44\\ts_2.12-1.0.0-beta44.jar"
+                        },
+                        {
+                            "name": "ts_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\ts_2.12\\1.0.0-beta44\\ts_2.12-1.0.0-beta44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.converter",
+                    "name": "scalajs_2.12",
+                    "version": "1.0.0-beta44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalajs_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\scalajs_2.12\\1.0.0-beta44\\scalajs_2.12-1.0.0-beta44.jar"
+                        },
+                        {
+                            "name": "scalajs_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\scalajs_2.12\\1.0.0-beta44\\scalajs_2.12-1.0.0-beta44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.converter",
+                    "name": "phases_2.12",
+                    "version": "1.0.0-beta44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "phases_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\phases_2.12\\1.0.0-beta44\\phases_2.12-1.0.0-beta44.jar"
+                        },
+                        {
+                            "name": "phases_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\phases_2.12\\1.0.0-beta44\\phases_2.12-1.0.0-beta44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-json_2.12",
+                    "version": "2.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-json_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-json_2.12\\2.9.2\\play-json_2.12-2.9.2.jar"
+                        },
+                        {
+                            "name": "play-json_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-json_2.12\\2.9.2\\play-json_2.12-2.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "aws-xml-protocol",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aws-xml-protocol",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-xml-protocol\\2.15.28\\aws-xml-protocol-2.15.28.jar"
+                        },
+                        {
+                            "name": "aws-xml-protocol",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-xml-protocol\\2.15.28\\aws-xml-protocol-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "protocol-core",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "protocol-core",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\protocol-core\\2.15.28\\protocol-core-2.15.28.jar"
+                        },
+                        {
+                            "name": "protocol-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\protocol-core\\2.15.28\\protocol-core-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "arns",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "arns",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\arns\\2.15.28\\arns-2.15.28.jar"
+                        },
+                        {
+                            "name": "arns",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\arns\\2.15.28\\arns-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "profiles",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "profiles",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\profiles\\2.15.28\\profiles-2.15.28.jar"
+                        },
+                        {
+                            "name": "profiles",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\profiles\\2.15.28\\profiles-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "sdk-core",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sdk-core",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\sdk-core\\2.15.28\\sdk-core-2.15.28.jar"
+                        },
+                        {
+                            "name": "sdk-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\sdk-core\\2.15.28\\sdk-core-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "auth",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "auth",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\auth\\2.15.28\\auth-2.15.28.jar"
+                        },
+                        {
+                            "name": "auth",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\auth\\2.15.28\\auth-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "http-client-spi",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "http-client-spi",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\http-client-spi\\2.15.28\\http-client-spi-2.15.28.jar"
+                        },
+                        {
+                            "name": "http-client-spi",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\http-client-spi\\2.15.28\\http-client-spi-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "regions",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "regions",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\regions\\2.15.28\\regions-2.15.28.jar"
+                        },
+                        {
+                            "name": "regions",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\regions\\2.15.28\\regions-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "annotations",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "annotations",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\annotations\\2.15.28\\annotations-2.15.28.jar"
+                        },
+                        {
+                            "name": "annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\annotations\\2.15.28\\annotations-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "utils",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "utils",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\utils\\2.15.28\\utils-2.15.28.jar"
+                        },
+                        {
+                            "name": "utils",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\utils\\2.15.28\\utils-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "aws-core",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aws-core",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-core\\2.15.28\\aws-core-2.15.28.jar"
+                        },
+                        {
+                            "name": "aws-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-core\\2.15.28\\aws-core-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "metrics-spi",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "metrics-spi",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\metrics-spi\\2.15.28\\metrics-spi-2.15.28.jar"
+                        },
+                        {
+                            "name": "metrics-spi",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\metrics-spi\\2.15.28\\metrics-spi-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "apache-client",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "apache-client",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\apache-client\\2.15.28\\apache-client-2.15.28.jar"
+                        },
+                        {
+                            "name": "apache-client",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\apache-client\\2.15.28\\apache-client-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "netty-nio-client",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-nio-client",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\netty-nio-client\\2.15.28\\netty-nio-client-2.15.28.jar"
+                        },
+                        {
+                            "name": "netty-nio-client",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\netty-nio-client\\2.15.28\\netty-nio-client-2.15.28-sources.jar"
                         }
                     ]
                 },
                 {
                     "organization": "com.google.guava",
                     "name": "guava",
-                    "version": "18.0",
+                    "version": "30.1-android",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "guava",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\18.0\\guava-18.0.jar"
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\30.1-android\\guava-30.1-android.jar"
                         },
                         {
                             "name": "guava",
                             "classifier": "sources",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\18.0\\guava-18.0-sources.jar"
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\guava\\30.1-android\\guava-30.1-android-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.converter",
+                    "name": "core_2.12",
+                    "version": "1.0.0-beta44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "core_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\core_2.12\\1.0.0-beta44\\core_2.12-1.0.0-beta44.jar"
+                        },
+                        {
+                            "name": "core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\core_2.12\\1.0.0-beta44\\core_2.12-1.0.0-beta44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.converter",
+                    "name": "logging_2.12",
+                    "version": "1.0.0-beta44",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "logging_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\logging_2.12\\1.0.0-beta44\\logging_2.12-1.0.0-beta44.jar"
+                        },
+                        {
+                            "name": "logging_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\logging_2.12\\1.0.0-beta44\\logging_2.12-1.0.0-beta44-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-parser-combinators_2.12",
+                    "version": "1.1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-parser-combinators_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2.jar"
+                        },
+                        {
+                            "name": "scala-parser-combinators_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.12",
+                    "version": "2.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.2.0\\scala-xml_2.12-2.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.2.0\\scala-xml_2.12-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.play",
+                    "name": "play-functional_2.12",
+                    "version": "2.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "play-functional_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-functional_2.12\\2.9.2\\play-functional_2.12-2.9.2.jar"
+                        },
+                        {
+                            "name": "play-functional_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\play\\play-functional_2.12\\2.9.2\\play-functional_2.12-2.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.12.17",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "C:\\Users\\yashb\\.sbt\\boot\\scala-2.12.17\\lib\\scala-reflect.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.17\\scala-reflect-2.12.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-core",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-core",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.10.5\\jackson-core-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-core",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-core\\2.10.5\\jackson-core-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-annotations",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-annotations",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.10.5\\jackson-annotations-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.10.5\\jackson-annotations-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jdk8",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.5\\jackson-datatype-jdk8-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jdk8",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jdk8\\2.10.5\\jackson-datatype-jdk8-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.datatype",
+                    "name": "jackson-datatype-jsr310",
+                    "version": "2.10.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.10.5\\jackson-datatype-jsr310-2.10.5.jar"
+                        },
+                        {
+                            "name": "jackson-datatype-jsr310",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\datatype\\jackson-datatype-jsr310\\2.10.5\\jackson-datatype-jsr310-2.10.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.fasterxml.jackson.core",
+                    "name": "jackson-databind",
+                    "version": "2.10.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jackson-databind",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.10.5.1\\jackson-databind-2.10.5.1.jar"
+                        },
+                        {
+                            "name": "jackson-databind",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.10.5.1\\jackson-databind-2.10.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.awssdk",
+                    "name": "aws-query-protocol",
+                    "version": "2.15.28",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "aws-query-protocol",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-query-protocol\\2.15.28\\aws-query-protocol-2.15.28.jar"
+                        },
+                        {
+                            "name": "aws-query-protocol",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\awssdk\\aws-query-protocol\\2.15.28\\aws-query-protocol-2.15.28-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.reactivestreams",
+                    "name": "reactive-streams",
+                    "version": "1.0.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "reactive-streams",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3.jar"
+                        },
+                        {
+                            "name": "reactive-streams",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "software.amazon.eventstream",
+                    "name": "eventstream",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "eventstream",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\eventstream\\eventstream\\1.0.1\\eventstream-1.0.1.jar"
+                        },
+                        {
+                            "name": "eventstream",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\software\\amazon\\eventstream\\eventstream\\1.0.1\\eventstream-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.httpcomponents",
+                    "name": "httpclient",
+                    "version": "4.5.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "httpclient",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpclient\\4.5.13\\httpclient-4.5.13.jar"
+                        },
+                        {
+                            "name": "httpclient",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpclient\\4.5.13\\httpclient-4.5.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.httpcomponents",
+                    "name": "httpcore",
+                    "version": "4.4.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "httpcore",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpcore\\4.4.13\\httpcore-4.4.13.jar"
+                        },
+                        {
+                            "name": "httpcore",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\httpcomponents\\httpcore\\4.4.13\\httpcore-4.4.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.53.Final\\netty-codec-http-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.53.Final\\netty-codec-http-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http2",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http2",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http2\\4.1.53.Final\\netty-codec-http2-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http2",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http2\\4.1.53.Final\\netty-codec-http2-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.53.Final\\netty-codec-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.53.Final\\netty-codec-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.53.Final\\netty-transport-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.53.Final\\netty-transport-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.53.Final\\netty-common-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.53.Final\\netty-common-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.53.Final\\netty-buffer-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.53.Final\\netty-buffer-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.53.Final\\netty-handler-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.53.Final\\netty-handler-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.netty",
+                    "name": "netty-reactive-streams-http",
+                    "version": "2.0.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-reactive-streams-http",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams-http\\2.0.4\\netty-reactive-streams-http-2.0.4.jar"
+                        },
+                        {
+                            "name": "netty-reactive-streams-http",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams-http\\2.0.4\\netty-reactive-streams-http-2.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "failureaccess",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "failureaccess",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1.jar"
+                        },
+                        {
+                            "name": "failureaccess",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\failureaccess\\1.0.1\\failureaccess-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.guava",
+                    "name": "listenablefuture",
+                    "version": "9999.0-empty-to-avoid-conflict-with-guava",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "listenablefuture",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\guava\\listenablefuture\\9999.0-empty-to-avoid-conflict-with-guava\\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.code.findbugs",
+                    "name": "jsr305",
+                    "version": "3.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "jsr305",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2.jar"
+                        },
+                        {
+                            "name": "jsr305",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\code\\findbugs\\jsr305\\3.0.2\\jsr305-3.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.checkerframework",
+                    "name": "checker-compat-qual",
+                    "version": "2.5.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "checker-compat-qual",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-compat-qual\\2.5.5\\checker-compat-qual-2.5.5.jar"
+                        },
+                        {
+                            "name": "checker-compat-qual",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\checkerframework\\checker-compat-qual\\2.5.5\\checker-compat-qual-2.5.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.google.j2objc",
+                    "name": "j2objc-annotations",
+                    "version": "1.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "j2objc-annotations",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.3\\j2objc-annotations-1.3.jar"
+                        },
+                        {
+                            "name": "j2objc-annotations",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\j2objc\\j2objc-annotations\\1.3\\j2objc-annotations-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "ammonite-ops_2.12",
+                    "version": "2.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "ammonite-ops_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\ammonite-ops_2.12\\2.4.0\\ammonite-ops_2.12-2.4.0.jar"
+                        },
+                        {
+                            "name": "ammonite-ops_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\ammonite-ops_2.12\\2.4.0\\ammonite-ops_2.12-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "os-lib_2.12",
+                    "version": "0.9.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "os-lib_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\os-lib_2.12\\0.9.1\\os-lib_2.12-0.9.1.jar"
+                        },
+                        {
+                            "name": "os-lib_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\os-lib_2.12\\0.9.1\\os-lib_2.12-0.9.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "sourcecode_2.12",
+                    "version": "0.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sourcecode_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.3.1\\sourcecode_2.12-0.3.1.jar"
+                        },
+                        {
+                            "name": "sourcecode_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\sourcecode_2.12\\0.3.1\\sourcecode_2.12-0.3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.circe013",
+                    "name": "circe-generic_2.12",
+                    "version": "0.13.0-shaded-2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-generic_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-generic_2.12\\0.13.0-shaded-2\\circe-generic_2.12-0.13.0-shaded-2.jar"
+                        },
+                        {
+                            "name": "circe-generic_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-generic_2.12\\0.13.0-shaded-2\\circe-generic_2.12-0.13.0-shaded-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.circe013",
+                    "name": "circe-jackson29_2.12",
+                    "version": "0.13.0-shaded-2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-jackson29_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-jackson29_2.12\\0.13.0-shaded-2\\circe-jackson29_2.12-0.13.0-shaded-2.jar"
+                        },
+                        {
+                            "name": "circe-jackson29_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-jackson29_2.12\\0.13.0-shaded-2\\circe-jackson29_2.12-0.13.0-shaded-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "fansi_2.12",
+                    "version": "0.4.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "fansi_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.4.0\\fansi_2.12-0.4.0.jar"
+                        },
+                        {
+                            "name": "fansi_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\fansi_2.12\\0.4.0\\fansi_2.12-0.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-logging",
+                    "name": "commons-logging",
+                    "version": "1.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-logging",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2.jar"
+                        },
+                        {
+                            "name": "commons-logging",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-logging\\commons-logging\\1.2\\commons-logging-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-codec",
+                    "name": "commons-codec",
+                    "version": "1.11",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-codec",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11.jar"
+                        },
+                        {
+                            "name": "commons-codec",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\commons-codec\\commons-codec\\1.11\\commons-codec-1.11-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.53.Final\\netty-resolver-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.53.Final\\netty-resolver-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.1.53.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.53.Final\\netty-transport-native-unix-common-4.1.53.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.53.Final\\netty-transport-native-unix-common-4.1.53.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.netty",
+                    "name": "netty-reactive-streams",
+                    "version": "2.0.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-reactive-streams",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams\\2.0.4\\netty-reactive-streams-2.0.4.jar"
+                        },
+                        {
+                            "name": "netty-reactive-streams",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\netty\\netty-reactive-streams\\2.0.4\\netty-reactive-streams-2.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "geny_2.12",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "geny_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\geny_2.12\\1.0.0\\geny_2.12-1.0.0.jar"
+                        },
+                        {
+                            "name": "geny_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\geny_2.12\\1.0.0\\geny_2.12-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.circe013",
+                    "name": "circe-core_2.12",
+                    "version": "0.13.0-shaded-2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-core_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-core_2.12\\0.13.0-shaded-2\\circe-core_2.12-0.13.0-shaded-2.jar"
+                        },
+                        {
+                            "name": "circe-core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-core_2.12\\0.13.0-shaded-2\\circe-core_2.12-0.13.0-shaded-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.chuusai",
+                    "name": "shapeless_2.12",
+                    "version": "2.3.3",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "shapeless_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3.jar"
+                        },
+                        {
+                            "name": "shapeless_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\chuusai\\shapeless_2.12\\2.3.3\\shapeless_2.12-2.3.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped.circe013",
+                    "name": "circe-numbers_2.12",
+                    "version": "0.13.0-shaded-2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "circe-numbers_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-numbers_2.12\\0.13.0-shaded-2\\circe-numbers_2.12-0.13.0-shaded-2.jar"
+                        },
+                        {
+                            "name": "circe-numbers_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\circe013\\circe-numbers_2.12\\0.13.0-shaded-2\\circe-numbers_2.12-0.13.0-shaded-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-core_2.12",
+                    "version": "2.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-core_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.12\\2.1.0\\cats-core_2.12-2.1.0.jar"
+                        },
+                        {
+                            "name": "cats-core_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_2.12\\2.1.0\\cats-core_2.12-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "macro-compat_2.12",
+                    "version": "1.1.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "macro-compat_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1.jar"
+                        },
+                        {
+                            "name": "macro-compat_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\macro-compat_2.12\\1.1.1\\macro-compat_2.12-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-macros_2.12",
+                    "version": "2.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-macros_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-macros_2.12\\2.1.0\\cats-macros_2.12-2.1.0.jar"
+                        },
+                        {
+                            "name": "cats-macros_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-macros_2.12\\2.1.0\\cats-macros_2.12-2.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.typelevel",
+                    "name": "cats-kernel_2.12",
+                    "version": "2.1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "cats-kernel_2.12",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.12\\2.1.0\\cats-kernel_2.12-2.1.0.jar"
+                        },
+                        {
+                            "name": "cats-kernel_2.12",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_2.12\\2.1.0\\cats-kernel_2.12-2.1.0-sources.jar"
                         }
                     ]
                 },
@@ -705,23 +2031,6 @@
                             "name": "util-logging_2.12",
                             "classifier": "sources",
                             "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\util-logging_2.12\\1.8.2\\util-logging_2.12-1.8.2-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.scala-lang.modules",
-                    "name": "scala-xml_2.12",
-                    "version": "2.1.0",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-xml_2.12",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.1.0\\scala-xml_2.12-2.1.0.jar"
-                        },
-                        {
-                            "name": "scala-xml_2.12",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\2.1.0\\scala-xml_2.12-2.1.0-sources.jar"
                         }
                     ]
                 },
@@ -1355,23 +2664,6 @@
                     ]
                 },
                 {
-                    "organization": "org.scala-lang",
-                    "name": "scala-reflect",
-                    "version": "2.12.17",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-reflect",
-                            "path": "C:\\Users\\yashb\\.sbt\\boot\\scala-2.12.17\\lib\\scala-reflect.jar"
-                        },
-                        {
-                            "name": "scala-reflect",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.17\\scala-reflect-2.12.17-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "org.checkerframework",
                     "name": "checker-qual",
                     "version": "3.4.1",
@@ -1695,23 +2987,6 @@
                     ]
                 },
                 {
-                    "organization": "org.scala-lang.modules",
-                    "name": "scala-parser-combinators_2.12",
-                    "version": "1.1.2",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "scala-parser-combinators_2.12",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2.jar"
-                        },
-                        {
-                            "name": "scala-parser-combinators_2.12",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-parser-combinators_2.12\\1.1.2\\scala-parser-combinators_2.12-1.1.2-sources.jar"
-                        }
-                    ]
-                },
-                {
                     "organization": "net.openhft",
                     "name": "zero-allocation-hashing",
                     "version": "0.10.1",
@@ -1844,23 +3119,6 @@
                             "name": "ssl-config-core_2.12",
                             "classifier": "sources",
                             "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\typesafe\\ssl-config-core_2.12\\0.6.1\\ssl-config-core_2.12-0.6.1-sources.jar"
-                        }
-                    ]
-                },
-                {
-                    "organization": "org.reactivestreams",
-                    "name": "reactive-streams",
-                    "version": "1.0.3",
-                    "configurations": "default",
-                    "artifacts": [
-                        {
-                            "name": "reactive-streams",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3.jar"
-                        },
-                        {
-                            "name": "reactive-streams",
-                            "classifier": "sources",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\reactivestreams\\reactive-streams\\1.0.3\\reactive-streams-1.0.3-sources.jar"
                         }
                     ]
                 },

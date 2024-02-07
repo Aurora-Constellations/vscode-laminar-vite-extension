@@ -22,6 +22,8 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\circe\\circe-generic_sjs1_3\\0.14.3\\circe-generic_sjs1_3-0.14.3.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\circe\\circe-parser_sjs1_3\\0.14.3\\circe-parser_sjs1_3-0.14.3.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.12\\scala-reflect-2.13.12.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\olvind\\scalablytyped-runtime_sjs1_3\\2.4.2\\scalablytyped-runtime_sjs1_3-2.4.2.jar",
+            "C:\\Users\\yashb\\.ivy2\\local\\org.scalablytyped\\vscode-webview_sjs1_3\\1.57.5-2783c5\\jars\\vscode-webview_sjs1_3.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.12\\scala-library-2.13.12.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-javalib\\1.15.0\\scalajs-javalib-1.15.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\scalajs-scalalib_2.13\\2.13.12%2B1.15.0\\scalajs-scalalib_2.13-2.13.12%2B1.15.0.jar",
@@ -313,6 +315,40 @@
                             "name": "scala-reflect",
                             "classifier": "sources",
                             "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.12\\scala-reflect-2.13.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.olvind",
+                    "name": "scalablytyped-runtime_sjs1_3",
+                    "version": "2.4.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalablytyped-runtime_sjs1_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\olvind\\scalablytyped-runtime_sjs1_3\\2.4.2\\scalablytyped-runtime_sjs1_3-2.4.2.jar"
+                        },
+                        {
+                            "name": "scalablytyped-runtime_sjs1_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\olvind\\scalablytyped-runtime_sjs1_3\\2.4.2\\scalablytyped-runtime_sjs1_3-2.4.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalablytyped",
+                    "name": "vscode-webview_sjs1_3",
+                    "version": "1.57.5-2783c5",
+                    "configurations": "compile",
+                    "artifacts": [
+                        {
+                            "name": "vscode-webview_sjs1_3",
+                            "path": "C:\\Users\\yashb\\.ivy2\\local\\org.scalablytyped\\vscode-webview_sjs1_3\\1.57.5-2783c5\\jars\\vscode-webview_sjs1_3.jar"
+                        },
+                        {
+                            "name": "vscode-webview_sjs1_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\.ivy2\\local\\org.scalablytyped\\vscode-webview_sjs1_3\\1.57.5-2783c5\\srcs\\vscode-webview_sjs1_3-sources.jar"
                         }
                     ]
                 },
