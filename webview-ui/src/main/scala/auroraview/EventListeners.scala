@@ -14,7 +14,8 @@ import components.toolbar.Toolbar
 import org.scalajs.dom.HTMLInputElement
 import components.table.toggleInput
 
-def addEventListeners(): Unit = {
+def addEventListeners[T](dataVar: Var[List[T]]): Unit = {
+
     dom.document.addEventListener(
       "keydown",
       (event: dom.KeyboardEvent) => {
@@ -144,7 +145,7 @@ def addEventListeners(): Unit = {
                   }
                   if (event.ctrlKey && event.key == "Enter" && tableIsFocused) {
                       event.preventDefault()
-                      toggleInput(cell)
+                      toggleInput(cell, dataVar)
                   }
               }
           }

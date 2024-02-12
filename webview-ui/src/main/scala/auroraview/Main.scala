@@ -6,6 +6,7 @@ import typings.vscodeWebview.mod.global.*
 import models.AuroraViewModel
 import types.BasicMessage
 import scala.scalajs.js
+import types.Patient
 
 @main
 def Main(): Unit = {
@@ -14,10 +15,10 @@ def Main(): Unit = {
       dom.document.body,
       div(
         width := "100%",
-        AuroraViewModel().render()
+        AuroraViewModel(Var(List.empty[Patient])).render()
       )
     )
-    addEventListeners()
+
     println(BasicMessage("something", "Hello!").toJson())
     acquireVsCodeApi().postMessage(
       BasicMessage("something", "Hello!").toJson()

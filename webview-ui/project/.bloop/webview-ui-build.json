@@ -20,7 +20,7 @@
         "classpath": [
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\sbt\\1.8.2\\sbt-1.8.2.jar",
             "C:\\Users\\yashb\\.sbt\\boot\\scala-2.12.17\\lib\\scala-library.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.13\\sbt-bloop-1.5.13.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.15\\sbt-bloop-1.5.15.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\sbt-scalajs_2.12_1.0\\1.15.0\\sbt-scalajs-1.15.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\sbt-converter_2.12_1.0\\1.0.0-beta44\\sbt-converter-1.0.0-beta44.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\main_2.12\\1.8.2\\main_2.12-1.8.2.jar",
@@ -297,7 +297,7 @@
             },
             "classpath": [
                 "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\project\\.bloop\\webview-ui-build\\scala-2.12\\sbt-1.0\\classes",
-                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.13\\sbt-bloop-1.5.13.jar",
+                "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.15\\sbt-bloop-1.5.15.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-js\\sbt-scalajs_2.12_1.0\\1.15.0\\sbt-scalajs-1.15.0.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalablytyped\\converter\\sbt-converter_2.12_1.0\\1.0.0-beta44\\sbt-converter-1.0.0-beta44.jar",
                 "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\bloop-config_2.12\\1.5.5\\bloop-config_2.12-1.5.5.jar",
@@ -393,17 +393,17 @@
                 {
                     "organization": "ch.epfl.scala",
                     "name": "sbt-bloop",
-                    "version": "1.5.13",
+                    "version": "1.5.15",
                     "configurations": "default",
                     "artifacts": [
                         {
                             "name": "sbt-bloop",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.13\\sbt-bloop-1.5.13.jar"
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.15\\sbt-bloop-1.5.15.jar"
                         },
                         {
                             "name": "sbt-bloop",
                             "classifier": "sources",
-                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.13\\sbt-bloop-1.5.13-sources.jar"
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\scala\\sbt-bloop_2.12_1.0\\1.5.15\\sbt-bloop-1.5.15-sources.jar"
                         }
                     ]
                 },

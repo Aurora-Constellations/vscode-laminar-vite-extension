@@ -7,7 +7,7 @@ import org.scalajs.dom.MouseEvent
 import models.*
 import components.button.Button
 
-trait Toolbar[T] {
+trait Toolbar[T](dataVar: Var[List[T]]) {
 
     val searchByOption: List[String]
     val showOptions: List[String]
@@ -22,7 +22,7 @@ trait Toolbar[T] {
           // SearchInput().render(),
           Text("Show:").render(),
           Select("All" :: showOptions).render(),
-          Button("➕").render()
+          Button[T]("➕", dataVar).render()
         )
     }
 

@@ -37,5 +37,14 @@ lazy val livechart = project
       libraryDependencies += "io.circe" %%% "circe-core" % "0.14.3",
       libraryDependencies += "io.circe" %%% "circe-generic" % "0.14.3",
       libraryDependencies += "io.circe" %%% "circe-parser" % "0.14.3",
-      libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.13.12"
+      libraryDependencies += "org.scala-lang" % "scala-reflect" % "2.13.12",
+      // libraryDependencies += "com.softwaremill.sttp.client4" %%% "core" % "4.0.0-M9",
+      // libraryDependencies ++= List(
+      //   "com.softwaremill.sttp.client4" %% "core" % "4.0.0-M9"
+      // )
+      libraryDependencies += "dev.zio" %% "zio" % "2.0.13",
+      libraryDependencies += "dev.zio" %% "zio-http" % "3.0.0-RC1",
+
+      // Specify the main class here
+      mainClass := Some("auroraview.Main")
     )

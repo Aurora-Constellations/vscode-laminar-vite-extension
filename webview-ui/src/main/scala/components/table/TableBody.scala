@@ -17,7 +17,9 @@ case class TableBody[T](
     dataVar: Var[List[T]],
     dataSignal: StrictSignal[List[T]],
     jsonDecoder: (jsonString: String) => List[T],
-    getAsTableRow: (item: T) => ReactiveHtmlElement[HTMLTableRowElement]
+    getAsTableRow: (
+        item: T
+    ) => ReactiveHtmlElement[HTMLTableRowElement]
 ) extends AuroraElement {
 
     def render(): Element = {

@@ -9,8 +9,20 @@ import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.FocusEvent
 import components.utils.DomUtils.removeClassnameFromAll
 import components.utils.DomUtils.addClassnameToElement
+// import models.dbUtils.update
 
-def toggleInput(cell: HTMLTableCellElement): Unit = {
+//   val patient = items
+//       .find(_.asInstanceOf[Patient].unitNumber == "TB00000000")
+//       .get
+//       .asInstanceOf[Patient]
+//   val updatedPatient = patient
+//   updatedPatient.firstName = "Did this change?"
+//   items.updated(
+//     items.indexOf(patient),
+//     updatedPatient.asInstanceOf[T]
+//   )
+
+def toggleInput[T](cell: HTMLTableCellElement, data: Var[List[T]]): Unit = {
     val originalValue = cell.innerText
     cell.innerHTML = "<input id='cell-input'/>"
     cell.children.map(child =>
@@ -24,7 +36,9 @@ def toggleInput(cell: HTMLTableCellElement): Unit = {
                     cell.innerText = e.currentTarget
                         .asInstanceOf[dom.html.Input]
                         .value
-
+                    val row = cell.parentElement.asInstanceOf[dom.html.TableRow]
+                    // update(row, data)
+                    // val updatedPatient = data.filter(patient => patient._1 == row.)
                 }
                 case "Escape" => {
                     cell.innerHTML = ""
@@ -40,7 +54,8 @@ def toggleInput(cell: HTMLTableCellElement): Unit = {
     )
 }
 
-case class TableCell(content: String) extends AuroraElement {
+case class TableCell[T](content: String, dataVar: Var[List[T]])
+    extends AuroraElement {
 
     def handleCellClick(event: MouseEvent): Unit = {
         removeClassnameFromAll("selectedCell")
@@ -60,7 +75,10 @@ case class TableCell(content: String) extends AuroraElement {
           content,
           onClick --> handleCellClick,
           onDblClick --> { (e) =>
-              toggleInput(e.currentTarget.asInstanceOf[HTMLTableCellElement])
+              toggleInput[T](
+                e.currentTarget.asInstanceOf[HTMLTableCellElement],
+                dataVar
+              )
           }
         )
     }

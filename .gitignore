@@ -1,5 +1,6 @@
 node_modules/
 out/
+package-lock.json
 
 
 # scala related
@@ -28,3 +29,5 @@ dist
 .DS_Store
 null
 webview-ui/project/
+webview-ui/package-lock.json
+webview-ui/package-lock.json
