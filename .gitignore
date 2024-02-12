@@ -5,6 +5,7 @@ package-lock.json
 
 # scala related
 logs
+webview-ui/package-lock.json
 webview-ui/project/**
 webview-ui/target/**
 webview-ui/target/build/**
