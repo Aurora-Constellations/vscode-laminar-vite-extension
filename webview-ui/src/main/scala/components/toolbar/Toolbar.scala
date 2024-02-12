@@ -6,8 +6,9 @@ import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import models.*
 import components.button.Button
+import model.AuroraDataModel
 
-trait Toolbar[T](dataVar: Var[List[T]]) {
+trait Toolbar[T](dataModel: AuroraDataModel) {
 
     val searchByOption: List[String]
     val showOptions: List[String]
@@ -22,7 +23,7 @@ trait Toolbar[T](dataVar: Var[List[T]]) {
           // SearchInput().render(),
           Text("Show:").render(),
           Select("All" :: showOptions).render(),
-          Button[T]("➕", dataVar).render()
+          Button[T]("➕", dataModel).render()
         )
     }
 

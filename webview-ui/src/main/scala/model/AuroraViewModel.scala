@@ -21,16 +21,17 @@ import org.scalajs.dom.HTMLTableRowElement
 import components.toolbar.Toolbar
 import auroraview.addEventListeners
 import org.scalajs.dom.BodyInit
+import model.AuroraDataModel
 // import sttp.client4._
 // import sttp.client4.httpclient.HttpClientSyncBackend
 
 // TODO Refactor these so they are more abstracted and higher level
 // object dbUtils {
-//     def update[T](row: dom.html.TableRow, dataVar: Var[List[T]]): Unit = {
-//         println(dataVar)
+//     def update[T](row: dom.html.TableRow, model.dataModelVar: Var[List[T]]): Unit = {
+//         println(model.dataModelVar)
 //         val unitNumber = row.cells(0).asInstanceOf[dom.html.TableCell].innerText
 //         println(unitNumber)
-//         val updatedPatient = dataVar
+//         val updatedPatient = model.dataModelVar
 //             .asInstanceOf[Var[List[Patient]]]
 //             .signal
 //             .now()
@@ -64,14 +65,14 @@ import org.scalajs.dom.BodyInit
 // }
 
 // TODO allow actions/buttons to be added to toolbar
-class AuroraViewModel(dataVar: Var[List[Patient]])
-    extends Table[Patient](dataVar)
-    with Toolbar[Patient](dataVar) {
+class RenderView(model: AuroraDataModel)
+    extends Table[Patient](model)
+    with Toolbar[Patient](model) {
 
-    // val dataVar: Var[List[Patient]] = Var(List.empty[Patient])
+    // val model.dataModelVar: Var[List[Patient]] = Var(List.empty[Patient])
 
     def render() = {
-        addEventListeners[Patient](dataVar)
+        addEventListeners[Patient](model)
         div(
           width := "100%",
           renderToolbar(),
@@ -92,7 +93,7 @@ class AuroraViewModel(dataVar: Var[List[Patient]])
           _.body(JSON.stringify(newDataItem.asInstanceOf[scala.scalajs.js.Any]))
         ) --> { responseText =>
             // jsonDecoder(responseText)
-            //     .map(item => dataVar.update(_ :+ item))
+            //     .map(item => model.dataModelVar.update(_ :+ item))
         }
     }
     val headers: List[String] = List(
@@ -110,22 +111,34 @@ class AuroraViewModel(dataVar: Var[List[Patient]])
 
         tr(
           width := "100%",
-          TableCell[Patient](item.unitNumber, dataVar).render(),
-          TableCell[Patient](item.firstName, dataVar).render(),
-          TableCell[Patient](item.lastName, dataVar).render(),
-          TableCell[Patient](item.sex, dataVar).render(),
-          TableCell[Patient](item.dob, dataVar).render(),
-          TableCell[Patient](item.flag.getOrElse(""), dataVar).render(),
-          TableCell[Patient](item.hosp.getOrElse(""), dataVar).render()
+          TableCell[Patient](
+            item.unitNumber,
+            model,
+            "unitNumber",
+            item
+          )
+              .render(),
+          TableCell[Patient](item.firstName, model, "firstName", item)
+              .render(),
+          TableCell[Patient](item.lastName, model, "lastName", item)
+              .render(),
+          TableCell[Patient](item.sex, model, "sex", item).render(),
+          TableCell[Patient](item.dob, model, "dob", item).render(),
+          TableCell[Patient](
+            item.flag.getOrElse(""),
+            model,
+            "flag",
+            item
+          )
+              .render(),
+          TableCell[Patient](
+            item.hosp.getOrElse(""),
+            model,
+            "hosp",
+            item
+          )
+              .render()
         )
-    }
-
-    def decodeJson(jsonString: String): List[Patient] = {
-        decode[List[Patient]](jsonString) match {
-            case Right(patients) => patients
-            case Left(error) =>
-                throw new RuntimeException(s"Failed to parse JSON: $error")
-        }
     }
 
     /*

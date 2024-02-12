@@ -12,9 +12,11 @@ import org.scalajs.dom.KeyboardEvent
 import components.table.Table
 import components.toolbar.Toolbar
 import org.scalajs.dom.HTMLInputElement
-import components.table.toggleInput
+import model.AuroraDataModel
+import org.scalajs.dom.MouseEvent
+import scala.scalajs.js
 
-def addEventListeners[T](dataVar: Var[List[T]]): Unit = {
+def addEventListeners[T](model: AuroraDataModel): Unit = {
 
     dom.document.addEventListener(
       "keydown",
@@ -145,7 +147,12 @@ def addEventListeners[T](dataVar: Var[List[T]]): Unit = {
                   }
                   if (event.ctrlKey && event.key == "Enter" && tableIsFocused) {
                       event.preventDefault()
-                      toggleInput(cell, dataVar)
+                      val simulatedEvent = new MouseEvent(
+                        "dblclick",
+                        js.undefined
+                      )
+                      cell.dispatchEvent(simulatedEvent)
+                      //   toggleInput(cell, model)
                   }
               }
           }

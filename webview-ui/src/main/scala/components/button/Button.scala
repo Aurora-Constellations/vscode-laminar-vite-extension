@@ -4,8 +4,9 @@ import com.raquo.laminar.api.L.{*, given}
 import components.utils.AuroraElement
 import types.Patient
 import java.sql.Date
+import model.AuroraDataModel
 
-case class Button[T](value: String, dataVar: Var[List[T]])
+case class Button[T](value: String, dataModel: AuroraDataModel)
     extends AuroraElement {
 
     def render(): Element = {
@@ -37,13 +38,7 @@ case class Button[T](value: String, dataVar: Var[List[T]])
                 None,
                 None
               )
-              dataVar.update((items) => {
-                  items.::(newPatient.asInstanceOf[T])
-              })
-              FetchStream.post(
-                "http://192.168.250.125:9000/patients",
-                _.body(newPatient.toJson())
-              )
+              dataModel.addEntryToDataModelVar(newPatient)
           ) --> { responseText =>
               println(responseText)
           }

@@ -9,77 +9,85 @@ import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.FocusEvent
 import components.utils.DomUtils.removeClassnameFromAll
 import components.utils.DomUtils.addClassnameToElement
-// import models.dbUtils.update
+import model.AuroraDataModel
+import types.Patient
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import com.raquo.laminar.nodes.ReactiveHtmlElement
+import cats.instances.boolean
 
-//   val patient = items
-//       .find(_.asInstanceOf[Patient].unitNumber == "TB00000000")
-//       .get
-//       .asInstanceOf[Patient]
-//   val updatedPatient = patient
-//   updatedPatient.firstName = "Did this change?"
-//   items.updated(
-//     items.indexOf(patient),
-//     updatedPatient.asInstanceOf[T]
-//   )
+case class TableCell[T](
+    content: String,
+    model: AuroraDataModel,
+    fieldName: String,
+    item: Patient
+) extends AuroraElement {
 
-def toggleInput[T](cell: HTMLTableCellElement, data: Var[List[T]]): Unit = {
-    val originalValue = cell.innerText
-    cell.innerHTML = "<input id='cell-input'/>"
-    cell.children.map(child =>
-        val input = child.asInstanceOf[dom.html.Input]
-        input.style.width = "90%"
-        input.value = originalValue
-        input.onkeydown = (e: KeyboardEvent) => {
-            e.key match {
-                case "Enter" => {
-                    cell.innerHTML = ""
-                    cell.innerText = e.currentTarget
-                        .asInstanceOf[dom.html.Input]
-                        .value
-                    val row = cell.parentElement.asInstanceOf[dom.html.TableRow]
-                    // update(row, data)
-                    // val updatedPatient = data.filter(patient => patient._1 == row.)
-                }
-                case "Escape" => {
-                    cell.innerHTML = ""
-                    cell.innerText = originalValue
-                }
-                case _ =>
-            }
+    val showInputVar = Var(false)
+    val cellContent = Var(content)
+
+    def renderInput(content: String) = {
+        input(
+          idAttr := "toggledInput",
+          value := content,
+          width := "90%",
+          onKeyDown --> (e => {
+              e.key match {
+                  case "Enter" =>
+                      cellContent.set(
+                        e.target.asInstanceOf[dom.html.Input].value
+                      )
+                      showInputVar.update(bool => !bool)
+                  //   model.updateEntryInDataModelVar(
+                  //     item.unitNumber,
+                  //     fieldName,
+                  //     e.currentTarget
+                  //         .asInstanceOf[dom.html.Input]
+                  //         .value
+                  //   )
+                  case "Escape" => {
+                      showInputVar.update(bool => !bool)
+                      //   cell.innerHTML = ""
+                      //   cell.innerText = originalValue
+                  }
+                  case _ =>
+              }
+          }),
+          onBlur --> (e => showInputVar.update(bool => !bool))
+        )
+    }
+
+    def ToggleableInput(
+        showInput: Signal[Boolean]
+    ): Signal[HtmlElement] = {
+        showInput.map {
+            case true  => renderInput(content)
+            case false => div(child.text <-- cellContent)
         }
-        input.onblur = (event: FocusEvent) => {
-            cell.innerText = originalValue
-        }
-        input.focus()
-    )
-}
-
-case class TableCell[T](content: String, dataVar: Var[List[T]])
-    extends AuroraElement {
+    }
 
     def handleCellClick(event: MouseEvent): Unit = {
         removeClassnameFromAll("selectedCell")
         removeClassnameFromAll("selectedRow")
         addClassnameToElement(
           "selectedCell",
-          event.target.asInstanceOf[HTMLTableCellElement]
+          event.target.asInstanceOf[HTMLElement].parentElement
         )
         addClassnameToElement(
           "selectedRow",
-          event.target.asInstanceOf[HTMLTableCellElement].parentElement
+          event.target.asInstanceOf[HTMLElement].parentElement.parentElement
         )
     }
 
-    def render(): Element = {
+    def render() = {
         td(
-          content,
+          child <-- ToggleableInput(showInputVar.signal),
           onClick --> handleCellClick,
-          onDblClick --> { (e) =>
-              toggleInput[T](
-                e.currentTarget.asInstanceOf[HTMLTableCellElement],
-                dataVar
-              )
-          }
+          onDblClick --> (e =>
+              showInputVar.update(bool => !bool)
+              Option(dom.document.getElementById("toggledInput"))
+                  .map(_.asInstanceOf[HTMLElement].focus())
+          )
         )
     }
 

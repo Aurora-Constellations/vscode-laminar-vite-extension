@@ -23,6 +23,7 @@ case class TableBody[T](
 ) extends AuroraElement {
 
     def render(): Element = {
+
         tbody(
           // Fetch the data on component mount, update table
           FetchStream.get(dataUrl, _.headers(("Authorization", ""))) --> {
