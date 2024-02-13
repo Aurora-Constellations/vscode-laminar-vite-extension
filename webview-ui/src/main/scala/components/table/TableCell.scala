@@ -63,47 +63,11 @@ case class TableCell[T](
         }
     }
 
-    def handleCellClick(event: MouseEvent): Unit = {
-
-        removeClassnameFromAll("selectedCell")
-        removeClassnameFromAll("selectedRow")
-
-        event.target match {
-            // Handles clicks on empty cells
-            case elem: HTMLTableCellElement => {
-                addClassnameToElement(
-                  "selectedCell",
-                  elem
-                )
-                addClassnameToElement(
-                  "selectedRow",
-                  elem.parentElement
-                )
-            }
-            // Handles clicks on cells with divs and inputs
-            case _ => {
-                addClassnameToElement(
-                  "selectedCell",
-                  event.target.asInstanceOf[HTMLElement].parentElement
-                )
-                addClassnameToElement(
-                  "selectedRow",
-                  event.target
-                      .asInstanceOf[HTMLElement]
-                      .parentElement
-                      .parentElement
-                )
-            }
-
-        }
-
-    }
-
     def render() = {
         td(
           child <-- ToggleableInput(showInputVar.signal),
           tabIndex := 0,
-          onClick --> handleCellClick,
+          onClick --> (e => e.target.asInstanceOf[HTMLElement].focus()),
           onDblClick --> (e =>
               showInputVar.update(bool => !bool)
               Option(dom.document.getElementById("toggledInput"))

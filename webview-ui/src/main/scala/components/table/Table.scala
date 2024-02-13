@@ -19,7 +19,6 @@ trait Table[T](model: AuroraDataModel) {
 
     val headers: List[String]
     val dataUrl: String
-    // val dataVar: Var[List[T]] = Var(List.empty[T])
     val dataSignal: StrictSignal[List[Patient]] = model.dataModelVar.signal
     def decodeJson(jsonString: String): List[Patient] =
         decode[List[Patient]](jsonString) match {

@@ -145,3 +145,10 @@ table {
 .selectedRow {
 	background-color: rgb(53, 53, 53);
 }
+
+td:hover {
+	background-color: rgb(53, 53, 53);
+}
+td:focus {
+	background-color: rgb(104, 104, 104);
+}
