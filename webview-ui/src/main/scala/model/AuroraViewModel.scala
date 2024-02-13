@@ -73,7 +73,6 @@ class RenderView(model: AuroraDataModel)
     // val model.dataModelVar: Var[List[Patient]] = Var(List.empty[Patient])
 
     def render() = {
-        addEventListeners[Patient](model)
         div(
           width := "100%",
           renderToolbar(),

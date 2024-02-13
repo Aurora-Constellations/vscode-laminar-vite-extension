@@ -31,7 +31,7 @@ case class TableCell[T](
           idAttr := "toggledInput",
           value := content,
           width := "90%",
-          onKeyUp
+          onKeyDown
               .filter(_.key == "Enter")
               .flatMap(e =>
                   cellContent.set(
@@ -44,7 +44,7 @@ case class TableCell[T](
                     e.target.asInstanceOf[dom.html.Input].value
                   )
               ) --> { resp => println(resp) },
-          onKeyDown --> (e => {
+          onKeyUp --> (e => {
               e.key match {
                   case "Escape" => showInputVar.update(bool => !bool)
                   case _        =>
@@ -64,21 +64,45 @@ case class TableCell[T](
     }
 
     def handleCellClick(event: MouseEvent): Unit = {
+
         removeClassnameFromAll("selectedCell")
         removeClassnameFromAll("selectedRow")
-        addClassnameToElement(
-          "selectedCell",
-          event.target.asInstanceOf[HTMLElement].parentElement
-        )
-        addClassnameToElement(
-          "selectedRow",
-          event.target.asInstanceOf[HTMLElement].parentElement.parentElement
-        )
+
+        event.target match {
+            // Handles clicks on empty cells
+            case elem: HTMLTableCellElement => {
+                addClassnameToElement(
+                  "selectedCell",
+                  elem
+                )
+                addClassnameToElement(
+                  "selectedRow",
+                  elem.parentElement
+                )
+            }
+            // Handles clicks on cells with divs and inputs
+            case _ => {
+                addClassnameToElement(
+                  "selectedCell",
+                  event.target.asInstanceOf[HTMLElement].parentElement
+                )
+                addClassnameToElement(
+                  "selectedRow",
+                  event.target
+                      .asInstanceOf[HTMLElement]
+                      .parentElement
+                      .parentElement
+                )
+            }
+
+        }
+
     }
 
     def render() = {
         td(
           child <-- ToggleableInput(showInputVar.signal),
+          tabIndex := 0,
           onClick --> handleCellClick,
           onDblClick --> (e =>
               showInputVar.update(bool => !bool)

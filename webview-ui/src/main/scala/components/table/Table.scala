@@ -9,6 +9,11 @@ import model.AuroraDataModel
 import types.Patient
 import io.circe.parser._
 import io.circe.generic.auto._
+import org.scalajs.dom
+import org.scalajs.dom.HTMLTableCellElement
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import scala.scalajs.js
 
 trait Table[T](model: AuroraDataModel) {
 
@@ -29,6 +34,7 @@ trait Table[T](model: AuroraDataModel) {
         div(
           className := "table-container",
           table(
+            // tabIndex := 0,
             idAttr := "myTable",
             TableHeader(headers).render(),
             TableBody(
@@ -37,9 +43,60 @@ trait Table[T](model: AuroraDataModel) {
               dataSignal,
               decodeJson,
               getAsTableRow
+            ).render(),
+            TableFooter().render(),
+            onKeyDown --> (e =>
+                val activeCell = dom.document.activeElement
+                    .asInstanceOf[HTMLTableCellElement]
+                // println(
+                //   activeCell.nextElementSibling
+                //       .asInstanceOf[HTMLElement]
+                //       .focus()
+                // )
+
+                (e.ctrlKey, e.key) match {
+                    case (_, "ArrowDown") =>
+                        activeCell
+                            .closest("tr")
+                            .nextElementSibling
+                            .asInstanceOf[HTMLTableRowElement]
+                            .cells
+                            .find(cell =>
+                                cell.asInstanceOf[HTMLTableCellElement]
+                                    .cellIndex == activeCell.cellIndex
+                            )
+                            .map(_.asInstanceOf[HTMLElement].focus())
+                    case (_, "ArrowUp") =>
+                        activeCell
+                            .closest("tr")
+                            .previousElementSibling
+                            .asInstanceOf[HTMLTableRowElement]
+                            .cells
+                            .find(cell =>
+                                cell.asInstanceOf[HTMLTableCellElement]
+                                    .cellIndex == activeCell.cellIndex
+                            )
+                            .map(_.asInstanceOf[HTMLElement].focus())
+                    case (_, "ArrowLeft") =>
+                        activeCell.previousElementSibling
+                            .asInstanceOf[HTMLElement]
+                            .focus()
+                    case (_, "ArrowRight") =>
+                        activeCell.nextElementSibling
+                            .asInstanceOf[HTMLElement]
+                            .focus()
+                    case (true, "Enter") => {
+                        e.preventDefault()
+                        val simulatedEvent = new MouseEvent(
+                          "dblclick",
+                          js.undefined
+                        )
+                        activeCell.dispatchEvent(simulatedEvent)
+                    }
+
+                    case _ =>
+                }
             )
-                .render(),
-            TableFooter().render()
           )
         )
     }

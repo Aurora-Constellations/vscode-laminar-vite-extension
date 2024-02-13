@@ -15,6 +15,21 @@ import org.scalajs.dom.HTMLInputElement
 import model.AuroraDataModel
 import org.scalajs.dom.MouseEvent
 import scala.scalajs.js
+import org.scalajs.dom.HTMLElement
+
+def getRowParent(cell: HTMLElement): HTMLTableRowElement = {
+    cell.parentElement match {
+        case elem: HTMLTableRowElement => elem
+        case elem: HTMLTableCellElement =>
+            elem.parentElement.asInstanceOf[HTMLTableRowElement]
+        case _ => {
+            println(
+              "Could not find row parent with match, something with wrong with the table cell elements..."
+            )
+            cell.parentElement.parentElement.asInstanceOf[HTMLTableRowElement]
+        }
+    }
+}
 
 def addEventListeners[T](model: AuroraDataModel): Unit = {
 

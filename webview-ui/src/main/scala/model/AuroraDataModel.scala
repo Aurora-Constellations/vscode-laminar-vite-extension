@@ -13,7 +13,7 @@ class AuroraDataModel {
     def addEntryToDataModelVar(newPatient: Patient): EventStream[String] = {
         println(s"Adding new  entry ${newPatient.unitNumber}...")
         dataModelVar.update((items) => {
-            items.::(newPatient)
+            newPatient :: items
         })
         FetchStream.post(
           "http://192.168.250.125:9000/patients",
@@ -40,7 +40,6 @@ class AuroraDataModel {
                         }
                         case false => patient
                     }
-
                 })
             })
         FetchStream.put(
