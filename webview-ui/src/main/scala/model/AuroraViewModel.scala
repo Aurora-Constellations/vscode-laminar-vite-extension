@@ -22,6 +22,7 @@ import components.toolbar.Toolbar
 import auroraview.addEventListeners
 import org.scalajs.dom.BodyInit
 import model.AuroraDataModel
+import components.button.DeleteButton
 // import sttp.client4._
 // import sttp.client4.httpclient.HttpClientSyncBackend
 
@@ -137,7 +138,8 @@ class RenderView(model: AuroraDataModel)
             "hosp",
             item
           )
-              .render()
+              .render(),
+          DeleteButton[Patient](item, "➖", model).render()
         )
     }
 
