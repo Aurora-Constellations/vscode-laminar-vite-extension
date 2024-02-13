@@ -9,7 +9,7 @@ webview-ui/package-lock.json
 webview-ui/project/**
 webview-ui/target/**
 webview-ui/target/build/**
-webview-ui/bloop/
+webview-ui/.bloop/
 project/target
 target
 tmp
