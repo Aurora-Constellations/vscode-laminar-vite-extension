@@ -5,17 +5,21 @@ import components.utils.AuroraElement
 import types.Patient
 import java.sql.Date
 import model.AuroraDataModel
+import scala.util.Random
 
-case class Button[T](value: String, dataModel: AuroraDataModel)
+case class AddButton[T](value: String, dataModel: AuroraDataModel)
     extends AuroraElement {
 
     def render(): Element = {
+
         button(
           value,
           onClick.flatMap(_ =>
+              val random = new Random()
+              val randomNumber = random.nextInt(90000000) + 10000000
               // TODO make the unit number random
               val newPatient = Patient(
-                "TB123456",
+                "TB" + randomNumber.toString(),
                 "",
                 "",
                 "",

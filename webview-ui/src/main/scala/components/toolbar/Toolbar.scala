@@ -5,7 +5,7 @@ import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
 import models.*
-import components.button.Button
+import components.button.AddButton
 import model.AuroraDataModel
 
 trait Toolbar[T](dataModel: AuroraDataModel) {
@@ -23,7 +23,7 @@ trait Toolbar[T](dataModel: AuroraDataModel) {
           // SearchInput().render(),
           Text("Show:").render(),
           Select("All" :: showOptions).render(),
-          Button[T]("➕", dataModel).render()
+          AddButton[T]("➕", dataModel).render()
         )
     }
 

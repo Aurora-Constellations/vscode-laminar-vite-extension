@@ -31,26 +31,23 @@ case class TableCell[T](
           idAttr := "toggledInput",
           value := content,
           width := "90%",
+          onKeyUp
+              .filter(_.key == "Enter")
+              .flatMap(e =>
+                  cellContent.set(
+                    e.target.asInstanceOf[dom.html.Input].value
+                  )
+                  showInputVar.update(bool => !bool)
+                  model.updateEntryInDataModelVar(
+                    item,
+                    fieldName,
+                    e.target.asInstanceOf[dom.html.Input].value
+                  )
+              ) --> { resp => println(resp) },
           onKeyDown --> (e => {
               e.key match {
-                  case "Enter" =>
-                      cellContent.set(
-                        e.target.asInstanceOf[dom.html.Input].value
-                      )
-                      showInputVar.update(bool => !bool)
-                  //   model.updateEntryInDataModelVar(
-                  //     item.unitNumber,
-                  //     fieldName,
-                  //     e.currentTarget
-                  //         .asInstanceOf[dom.html.Input]
-                  //         .value
-                  //   )
-                  case "Escape" => {
-                      showInputVar.update(bool => !bool)
-                      //   cell.innerHTML = ""
-                      //   cell.innerText = originalValue
-                  }
-                  case _ =>
+                  case "Escape" => showInputVar.update(bool => !bool)
+                  case _        =>
               }
           }),
           onBlur --> (e => showInputVar.update(bool => !bool))
