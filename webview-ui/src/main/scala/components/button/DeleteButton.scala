@@ -4,9 +4,10 @@ import com.raquo.laminar.api.L.{*, given}
 import components.utils.AuroraElement
 import types.Patient
 import java.sql.Date
-import model.AuroraDataModel
 
-case class DeleteButton[T](item: T, value: String, dataModel: AuroraDataModel)
+import client.AuroraClient
+
+case class DeleteButton[T](item: T, value: String, dataModel: AuroraClient)
     extends AuroraElement {
 
     val showConfirmVar = Var(false)

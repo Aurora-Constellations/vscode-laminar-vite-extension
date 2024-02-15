@@ -74,9 +74,6 @@ case class Search(options: List[String]) extends AuroraElement {
                                 .cellIndex == headerIndex
                         )
                         .map(cell => {
-                            // println(
-                            //   cell.asInstanceOf[HTMLTableCellElement].cellIndex
-                            // )
                             cell.asInstanceOf[HTMLTableCellElement].innerText
                         })
                         .toList

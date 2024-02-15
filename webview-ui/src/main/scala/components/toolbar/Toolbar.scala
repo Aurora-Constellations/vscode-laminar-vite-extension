@@ -4,26 +4,33 @@ import org.scalajs.dom
 import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.MouseEvent
-import models.*
+// import models.*
 import components.button.AddButton
-import model.AuroraDataModel
 
-trait Toolbar[T](dataModel: AuroraDataModel) {
+import client.AuroraClient
+import components.utils.AuroraElement
 
-    val searchByOption: List[String]
-    val showOptions: List[String]
+case class Toolbar(client: AuroraClient) extends AuroraElement {
 
-    def renderToolbar(): Element = {
+    val searchByOption: List[String] = List(
+      "Unit Number",
+      "First Name",
+      "Last Name",
+      "Sex",
+      "Date of Birth",
+      "In Hopsital",
+      "Flag"
+    )
+    val showOptions: List[String] = List("Flagged")
+
+    def render(): Element = {
         div(
           className := "toolbar",
-          // justifyContent := "space-around",
           Text("Search By:", ml = "").render(),
           Search("All" :: searchByOption).render(),
-          // Select(searchByOption).render(),
-          // SearchInput().render(),
           Text("Show:").render(),
           Select("All" :: showOptions).render(),
-          AddButton[T]("➕", dataModel).render()
+          AddButton("➕", client).render()
         )
     }
 

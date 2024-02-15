@@ -5,7 +5,7 @@ import com.raquo.laminar.api.L.{*, given}
 import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLTableRowElement
 import com.raquo.airstream.state.Var
-import model.AuroraDataModel
+
 import types.Patient
 import io.circe.parser._
 import io.circe.generic.auto._
@@ -14,22 +14,22 @@ import org.scalajs.dom.HTMLTableCellElement
 import org.scalajs.dom.HTMLElement
 import org.scalajs.dom.MouseEvent
 import scala.scalajs.js
+import components.utils.DomUtils.getHTMLTableRowElementOpt
+import client.AuroraClient
 
-trait Table[T](model: AuroraDataModel) {
+case class Table(client: AuroraClient) extends AuroraElement {
 
-    val headers: List[String]
-    val dataUrl: String
-    val dataSignal: StrictSignal[List[Patient]] = model.dataModelVar.signal
-    def decodeJson(jsonString: String): List[Patient] =
-        decode[List[Patient]](jsonString) match {
-            case Right(patients) => patients
-            case Left(error) =>
-                throw new RuntimeException(s"Failed to parse JSON: $error")
-        }
-    def getAsTableRow(
-        item: Patient
-    ): ReactiveHtmlElement[HTMLTableRowElement]
-    def renderTable(): Element = {
+    val headers: List[String] = List(
+      "Unit Number",
+      "First Name",
+      "Last Name",
+      "Sex",
+      "Date of Birth",
+      "In Hopsital",
+      "Flag"
+    )
+
+    def render(): Element = {
         div(
           className := "table-container",
           table(
@@ -37,34 +37,23 @@ trait Table[T](model: AuroraDataModel) {
             idAttr := "myTable",
             TableHeader(headers).render(),
             TableBody(
-              dataUrl,
-              model.dataModelVar,
-              dataSignal,
-              decodeJson,
-              getAsTableRow
+              client
             ).render(),
             TableFooter().render(),
             onKeyDown --> (e =>
                 val activeCell = dom.document.activeElement
                     .asInstanceOf[HTMLTableCellElement]
-                // println(
-                //   activeCell.nextElementSibling
-                //       .asInstanceOf[HTMLElement]
-                //       .focus()
-                // )
-
                 (e.ctrlKey, e.key) match {
-                    case (_, "ArrowDown") =>
-                        activeCell
-                            .closest("tr")
-                            .nextElementSibling
-                            .asInstanceOf[HTMLTableRowElement]
-                            .cells
-                            .find(cell =>
-                                cell.asInstanceOf[HTMLTableCellElement]
-                                    .cellIndex == activeCell.cellIndex
-                            )
-                            .map(_.asInstanceOf[HTMLElement].focus())
+                    case (_, "ArrowDown") => {
+                        getHTMLTableRowElementOpt(
+                          activeCell.closest("tr").nextElementSibling
+                        ).map(
+                          _.cells.find(cell =>
+                              cell.asInstanceOf[HTMLTableCellElement]
+                                  .cellIndex == activeCell.cellIndex
+                          )
+                        ).map(_.map(_.asInstanceOf[HTMLElement].focus()))
+                    }
                     case (_, "ArrowUp") =>
                         activeCell
                             .closest("tr")

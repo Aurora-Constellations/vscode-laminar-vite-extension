@@ -1,22 +1,111 @@
-// package client
+package client
 
-// import zio._
+import com.raquo.laminar.api.L.{*, given}
+import org.scalajs.dom
+import org.scalajs.dom.HttpMethod
+import types.Patient
 
-// import zio.http._
+class AuroraClient() {
 
-// object SimpleClient extends ZIOAppDefault {
-//     val url = URL
-//         .decode("http://sports.api.decathlon.com/groups/water-aerobics")
-//         .toOption
-//         .get
+    val dataModelVar = Var(List.empty[Patient])
 
-//     val program = for {
-//         client <- ZIO.service[Client]
-//         res <- client.url(url).get("/")
-//         data <- res.body.asString
-//         _ <- Console.printLine(data)
-//     } yield ()
+    val GETUrl: String = "http://192.168.250.125:9000/patients"
 
-//     override val run = program.provide(Client.default, Scope.default)
+    def addEntryToDataModelVar(newPatient: Patient): EventStream[String] = {
+        println(s"Adding new  entry ${newPatient.unitNumber}...")
+        dataModelVar.update((items) => {
+            newPatient :: items
+        })
+        FetchStream.post(
+          "http://192.168.250.125:9000/patients",
+          _.body(newPatient.toJson())
+        )
+    }
 
-// }
+    def updateEntryInDataModelVar(
+        item: Patient,
+        fieldName: String,
+        newValue: String
+    ): EventStream[String] = {
+        println(s"Updating ${item.unitNumber} at field ${fieldName}...")
+        dataModelVar
+            .update((items) => {
+                items.map(patient => {
+                    patient.unitNumber == item.unitNumber match {
+                        case true => {
+                            updatePatient(
+                              patient,
+                              fieldName,
+                              newValue
+                            )
+                        }
+                        case false => patient
+                    }
+                })
+            })
+        FetchStream.put(
+          s"http://192.168.250.125:9000/patients/${item.unitNumber}",
+          _.body(
+            updatePatient(
+              item,
+              fieldName,
+              newValue
+            )
+                .toJson()
+          )
+        )
+    }
+
+    def deleteEntryInDataModelVar(unitNumber: String): EventStream[String] = {
+        println("Deleting " + unitNumber + "...")
+        dataModelVar.update((items) => {
+            items.filter(_.unitNumber != unitNumber)
+        })
+        FetchStream.apply(
+          method = _.DELETE,
+          url = s"http://192.168.250.125:9000/patients/${unitNumber}"
+        )
+    }
+
+    def updatePatient(
+        patient: Patient,
+        fieldName: String,
+        newValue: String
+    ): Patient = {
+        fieldName match {
+            case "unitNumber" =>
+                println("Cannot change unitnumber")
+            case "lastName"  => patient.lastName = newValue
+            case "firstName" => patient.firstName = newValue
+            case "sex"       => patient.sex = newValue
+            case "dob"       => patient.dob = newValue
+            case "hcn"       => patient.hcn = Option(newValue)
+            case "family"    => patient.family = Option(newValue)
+            case "famPriv"   => patient.famPriv = Option(newValue)
+            case "hosp"      => patient.hosp = Option(newValue)
+            case "flag"      => patient.flag = Option(newValue)
+            case "address1" =>
+                patient.address1 = Option(newValue)
+            case "address2" =>
+                patient.address2 = Option(newValue)
+            case "city" => patient.city = Option(newValue)
+            case "province" =>
+                patient.province = Option(newValue)
+            case "postalCode" =>
+                patient.postalCode = Option(newValue)
+            case "homePhoneNumber" =>
+                patient.homePhoneNumber = Option(newValue)
+            case "workPhoneNumber" =>
+                patient.workPhoneNumber = Option(newValue)
+            case "OHIP" => patient.OHIP = Option(newValue)
+            case "familyPhysician" =>
+                patient.familyPhysician = Option(newValue)
+            case "attending" =>
+                patient.attending = Option(newValue)
+            case "collab1" => patient.collab1 = Option(newValue)
+            case "collab2" => patient.collab2 = Option(newValue)
+        }
+        patient
+    }
+
+}

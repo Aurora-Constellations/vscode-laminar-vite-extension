@@ -7,7 +7,7 @@ case class TableFooter() extends AuroraElement {
     def render(): Element = {
         tfoot(
           tr(
-            // td(button("➕")),
+            // td(button("➕"))
             // td(),
             // td(),
             // td(child.text <-- model.dataSignal.map(data => "%.2f".format(data.map(_.fullPrice).sum))),

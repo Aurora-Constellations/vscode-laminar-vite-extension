@@ -4,10 +4,11 @@ import com.raquo.laminar.api.L.{*, given}
 import components.utils.AuroraElement
 import types.Patient
 import java.sql.Date
-import model.AuroraDataModel
-import scala.util.Random
 
-case class AddButton[T](value: String, dataModel: AuroraDataModel)
+import scala.util.Random
+import client.AuroraClient
+
+case class AddButton(value: String, client: AuroraClient)
     extends AuroraElement {
 
     def render(): Element = {
@@ -42,7 +43,7 @@ case class AddButton[T](value: String, dataModel: AuroraDataModel)
                 None,
                 None
               )
-              dataModel.addEntryToDataModelVar(newPatient)
+              client.addEntryToDataModelVar(newPatient)
           ) --> { responseText =>
               println(responseText)
           }

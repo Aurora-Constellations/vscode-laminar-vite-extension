@@ -9,16 +9,17 @@ import org.scalajs.dom.KeyboardEvent
 import org.scalajs.dom.FocusEvent
 import components.utils.DomUtils.removeClassnameFromAll
 import components.utils.DomUtils.addClassnameToElement
-import model.AuroraDataModel
+
 import types.Patient
 import org.scalajs.dom.Element
 import org.scalajs.dom.HTMLElement
 import com.raquo.laminar.nodes.ReactiveHtmlElement
 import cats.instances.boolean
+import client.AuroraClient
 
-case class TableCell[T](
+case class TableCell(
     content: String,
-    model: AuroraDataModel,
+    model: AuroraClient,
     fieldName: String,
     item: Patient
 ) extends AuroraElement {
