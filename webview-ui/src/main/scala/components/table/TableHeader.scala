@@ -6,7 +6,7 @@ import utilities.SortGrid.SortOrder.*
 import utilities.SortGrid.*
 import org.scalajs.dom
 
-case class TableHeader(headers: List[String]) extends AuroraElement {
+case class TableHeader(headers: List[(String, String)]) extends AuroraElement {
 
     var ascendingSort = true
     def setAscendingSort(value: Boolean): Unit = {
@@ -40,8 +40,8 @@ case class TableHeader(headers: List[String]) extends AuroraElement {
         thead(
           tr(
             idAttr := "myTableHeader",
-            headers.map(header => {
-                th(header, onClick --> onHeaderClick)
+            headers.map((header: String, widthString: String) => {
+                th(header, width := widthString, onClick --> onHeaderClick)
             })
           )
         )

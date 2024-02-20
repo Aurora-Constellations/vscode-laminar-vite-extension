@@ -19,14 +19,14 @@ import client.AuroraClient
 
 case class Table(client: AuroraClient) extends AuroraElement {
 
-    val headers: List[String] = List(
-      "Unit Number",
-      "First Name",
-      "Last Name",
-      "Sex",
-      "Date of Birth",
-      "In Hopsital",
-      "Flag"
+    val headers: List[(String, String)] = List(
+      ("Flag", "50px"),
+      ("Unit Number", "150px"),
+      ("First Name", "150px"),
+      ("Last Name", "150px"),
+      ("Sex", "150px"),
+      ("Date of Birth", "150px"),
+      ("In Hopsital", "150px")
     )
 
     def render(): Element = {

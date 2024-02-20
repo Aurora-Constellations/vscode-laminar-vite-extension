@@ -13,6 +13,9 @@ import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLTableRowElement
 import client.AuroraClient
 import components.button.DeleteButton
+import components.cells.Icon
+import components.cells.UneditableDiv
+import components.cells.ToggleableInput
 
 case class TableBody(client: AuroraClient) extends AuroraElement {
 
@@ -28,13 +31,15 @@ case class TableBody(client: AuroraClient) extends AuroraElement {
     ): ReactiveHtmlElement[HTMLTableRowElement] = {
         tr(
           width := "100%",
-          TableCell(item.unitNumber, client, "unitNumber", item).render(),
-          TableCell(item.firstName, client, "firstName", item).render(),
-          TableCell(item.lastName, client, "lastName", item).render(),
-          TableCell(item.sex, client, "sex", item).render(),
-          TableCell(item.dob, client, "dob", item).render(),
-          TableCell(item.flag.getOrElse(""), client, "flag", item).render(),
-          TableCell(item.hosp.getOrElse(""), client, "hosp", item).render(),
+          Icon(item.flag.getOrElse(""), client, "flag", item)
+              .render(),
+          UneditableDiv(item.unitNumber, client, "unitNumber", item).render(),
+          ToggleableInput(item.firstName, client, "firstName", item).render(),
+          ToggleableInput(item.lastName, client, "lastName", item).render(),
+          ToggleableInput(item.sex, client, "sex", item).render(),
+          ToggleableInput(item.dob, client, "dob", item).render(),
+          ToggleableInput(item.hosp.getOrElse(""), client, "hosp", item)
+              .render(),
           DeleteButton[Patient](item, "➖", client).render()
         )
     }

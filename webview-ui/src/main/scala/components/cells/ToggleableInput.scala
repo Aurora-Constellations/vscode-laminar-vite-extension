@@ -1,4 +1,4 @@
-package components.table
+package components.cells
 
 import components.utils.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
@@ -17,7 +17,7 @@ import com.raquo.laminar.nodes.ReactiveHtmlElement
 import cats.instances.boolean
 import client.AuroraClient
 
-case class TableCell(
+case class ToggleableInput(
     content: String,
     model: AuroraClient,
     fieldName: String,
@@ -55,7 +55,7 @@ case class TableCell(
         )
     }
 
-    def ToggleableInput(
+    def ToggleInput(
         showInput: Signal[Boolean]
     ): Signal[HtmlElement] = {
         showInput.map {
@@ -66,7 +66,7 @@ case class TableCell(
 
     def render() = {
         td(
-          child <-- ToggleableInput(showInputVar.signal),
+          child <-- ToggleInput(showInputVar.signal),
           tabIndex := 0,
           onClick --> (e => e.target.asInstanceOf[HTMLElement].focus()),
           onDblClick --> (e =>

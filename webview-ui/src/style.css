@@ -152,3 +152,7 @@ td:hover {
 td:focus {
 	background-color: rgb(104, 104, 104);
 }
+
+tr:focus-within {
+	background-color: rgb(53, 53, 53);
+}
