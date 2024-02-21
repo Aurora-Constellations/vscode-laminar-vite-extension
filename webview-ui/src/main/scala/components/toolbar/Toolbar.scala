@@ -8,7 +8,7 @@ import org.scalajs.dom.MouseEvent
 import components.button.AddButton
 
 import client.AuroraClient
-import components.utils.AuroraElement
+import components.AuroraElement
 
 case class Toolbar(client: AuroraClient) extends AuroraElement {
 

@@ -8,6 +8,7 @@ import {
 } from "vscode"
 import { getUri } from "../utilities/getUri"
 import { getNonce } from "../utilities/getNonce"
+import { openFileInEditor } from "../utilities/openFile"
 
 /**
  * This class manages the state and behavior of HelloWorld webview panels.
@@ -160,13 +161,23 @@ export class HelloWorldPanel {
 	private _setWebviewMessageListener(webview: Webview) {
 		webview.onDidReceiveMessage(
 			(message: any) => {
-				const command = message.command
-				const text = message.text
-
-				switch (command) {
+				console.log("Received message!", message)
+				switch (message.command) {
 					case "hello":
 						// Code that should run in response to the hello message command
-						window.showInformationMessage(text)
+						window.showInformationMessage(message.text)
+						return
+					case "openFile":
+						// Code that should run in response to the hello message command
+						openFileInEditor(
+							message.firstName +
+								"_" +
+								message.lastName +
+								"_" +
+								message.unitNumber,
+							1,
+							1
+						)
 						return
 					// Add more switch case statements here as more webview message commands
 					// are created within the webview context (i.e. inside media/main.js)

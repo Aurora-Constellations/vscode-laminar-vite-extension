@@ -1,9 +1,10 @@
 package components.table
 
-import components.utils.AuroraElement
+import components.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 
 import types.Patient
+import types.OpenFileMessage
 import scala.scalajs.js.JSON
 import scala.scalajs.js
 import io.circe.parser._
@@ -13,9 +14,10 @@ import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLTableRowElement
 import client.AuroraClient
 import components.button.DeleteButton
-import components.cells.Icon
+import components.cells.FlagIcon
 import components.cells.UneditableDiv
 import components.cells.ToggleableInput
+import components.utils.VscodeAPI.getVscodeApi
 
 case class TableBody(client: AuroraClient) extends AuroraElement {
 
@@ -31,7 +33,13 @@ case class TableBody(client: AuroraClient) extends AuroraElement {
     ): ReactiveHtmlElement[HTMLTableRowElement] = {
         tr(
           width := "100%",
-          Icon(item.flag.getOrElse(""), client, "flag", item)
+          onClick --> { (e) =>
+              getVscodeApi().postMessage(
+                OpenFileMessage(item.firstName, item.lastName, item.unitNumber)
+                    .toJson()
+              )
+          },
+          FlagIcon(item.flag.getOrElse(""), client, "flag", item)
               .render(),
           UneditableDiv(item.unitNumber, client, "unitNumber", item).render(),
           ToggleableInput(item.firstName, client, "firstName", item).render(),

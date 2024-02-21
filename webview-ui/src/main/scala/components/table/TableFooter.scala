@@ -1,6 +1,6 @@
 package components.table
 
-import components.utils.AuroraElement
+import components.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 
 case class TableFooter() extends AuroraElement {

@@ -1,5 +1,3 @@
-package auroraview
-
 import org.scalajs.dom
 import com.raquo.laminar.api.L.{*, given}
 import typings.vscodeWebview.mod.global.*
@@ -30,9 +28,9 @@ def Main(): Unit = {
       )
     )
 
-    println(BasicMessage("something", "Hello!").toJson())
-    acquireVsCodeApi().postMessage(
-      BasicMessage("something", "Hello!").toJson()
-    )
+    // println(BasicMessage("Hello!").toJson())
+    // acquireVsCodeApi().postMessage(
+    //   BasicMessage("Hello!").toJson()
+    // )
 }
 end Main

@@ -8,10 +8,18 @@ import {
 } from "vscode"
 import { getUri } from "../utilities/getUri"
 import { getNonce } from "../utilities/getNonce"
+import { openFileInEditor } from "../utilities/openFile"
 
 type BasicMessage = {
 	command: string
 	content: string
+}
+
+type OpenFileMessage = {
+	command: string
+	firstName: string
+	lastName: string
+	unitNumber: string
 }
 
 export class AuroraProvider implements WebviewViewProvider {
@@ -82,11 +90,27 @@ export class AuroraProvider implements WebviewViewProvider {
 
 	private _setWebviewMessageListener(webviewView: WebviewView) {
 		webviewView.webview.onDidReceiveMessage((messageJson) => {
-			const message: BasicMessage = JSON.parse(messageJson)
+			const message: OpenFileMessage = JSON.parse(messageJson)
 			console.log("got a message from the webview!")
 			console.log(message)
-			console.log((message as BasicMessage).content)
-			console.log((message as BasicMessage).command)
+			switch (message.command) {
+				// case "hello":
+				// 	// Code that should run in response to the hello message command
+				// 	window.showInformationMessage(message.text)
+				// 	return
+				case "openFile":
+					// Code that should run in response to the hello message command
+					openFileInEditor(
+						(message as OpenFileMessage).firstName +
+							"_" +
+							message.lastName +
+							"_" +
+							message.unitNumber,
+						1,
+						1
+					)
+					return
+			}
 			//   const command = message.command;
 			//   const messageLifecycle = AllExtensionMessages.filter(lc => lc.id == command)
 			//   messageLifecycle.length == 0? console.log("Message handler not found for: "+message.command) : messageLifecycle[0].onReceive(webviewView, message)

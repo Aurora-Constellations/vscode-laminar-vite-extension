@@ -1,7 +1,7 @@
 package components.button
 
 import com.raquo.laminar.api.L.{*, given}
-import components.utils.AuroraElement
+import components.AuroraElement
 import types.Patient
 import java.sql.Date
 

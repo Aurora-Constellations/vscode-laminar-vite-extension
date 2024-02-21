@@ -10,16 +10,32 @@ import io.circe.parser._
 
 trait Message {
     val command: String
-    val content: String
-
 }
 
-case class BasicMessage(command: String, content: String) extends Message {
+case class BasicMessage(content: String) extends Message {
+    val command: String = "basicMessage"
     def toJson(): String = {
         Printer.noSpaces
             .copy(dropNullValues = true)
             .print(
               Encoder[BasicMessage]
+                  .apply(this)
+            )
+    }
+}
+
+case class OpenFileMessage(
+    firstName: String,
+    lastName: String,
+    unitNumber: String,
+    command: String = "openFile"
+) extends Message {
+
+    def toJson(): String = {
+        Printer.noSpaces
+            .copy(dropNullValues = true)
+            .print(
+              Encoder[OpenFileMessage]
                   .apply(this)
             )
     }

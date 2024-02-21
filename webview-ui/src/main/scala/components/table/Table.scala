@@ -1,6 +1,6 @@
 package components.table
 
-import components.utils.AuroraElement
+import components.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLTableRowElement
@@ -24,9 +24,9 @@ case class Table(client: AuroraClient) extends AuroraElement {
       ("Unit Number", "150px"),
       ("First Name", "150px"),
       ("Last Name", "150px"),
-      ("Sex", "150px"),
+      ("Sex", "50px"),
       ("Date of Birth", "150px"),
-      ("In Hopsital", "150px")
+      ("In Hopsital", "100px")
     )
 
     def render(): Element = {

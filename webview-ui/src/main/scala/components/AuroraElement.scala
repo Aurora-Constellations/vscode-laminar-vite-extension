@@ -1,4 +1,4 @@
-package components.utils
+package components
 
 import com.raquo.laminar.api.L.{*, given}
 
