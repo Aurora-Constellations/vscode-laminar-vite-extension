@@ -1,7 +1,6 @@
 import org.scalajs.dom
 import com.raquo.laminar.api.L.{*, given}
 import typings.vscodeWebview.mod.global.*
-// import models.RenderView
 import types.BasicMessage
 import scala.scalajs.js
 import types.Patient
@@ -24,13 +23,7 @@ def Main(): Unit = {
           Toolbar(client).render(),
           Table(client).render()
         )
-        // RenderView(model).render()
       )
     )
-
-    // println(BasicMessage("Hello!").toJson())
-    // acquireVsCodeApi().postMessage(
-    //   BasicMessage("Hello!").toJson()
-    // )
 }
 end Main
