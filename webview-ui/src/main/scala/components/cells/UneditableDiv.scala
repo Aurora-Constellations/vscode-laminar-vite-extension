@@ -10,7 +10,6 @@ import org.scalajs.dom.FocusEvent
 import components.utils.DomUtils.removeClassnameFromAll
 import components.utils.DomUtils.addClassnameToElement
 
-import types.Patient
 import org.scalajs.dom.Element
 import org.scalajs.dom.HTMLElement
 import com.raquo.laminar.nodes.ReactiveHtmlElement

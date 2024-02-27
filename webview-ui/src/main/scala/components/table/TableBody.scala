@@ -3,7 +3,6 @@ package components.table
 import components.AuroraElement
 import com.raquo.laminar.api.L.{*, given}
 
-import types.Patient
 import types.OpenFileMessage
 import scala.scalajs.js.JSON
 import scala.scalajs.js
@@ -23,38 +22,6 @@ import types.{given}
 
 case class TableBody[T](config: TableConfig[T]) extends AuroraElement {
 
-    // def getAsTableRow(
-    //     item: Patient
-    // ): ReactiveHtmlElement[HTMLTableRowElement] = {
-    //     tr(
-    //       width := "100%",
-    //       onClick --> { (e) =>
-    //           getVscodeApi().postMessage(
-    //             OpenFileMessage(item.firstName, item.lastName, item.unitNumber)
-    //                 .toJson()
-    //           )
-    //       },
-    //       FlagIcon(item.flag.getOrElse(""), config.client, "flag", "item")
-    //           .render(),
-    //       UneditableDiv(item.unitNumber, config.client, "unitNumber", "item")
-    //           .render(),
-    //       ToggleableInput(item.firstName, config.client, "firstName", "item")
-    //           .render(),
-    //       ToggleableInput(item.lastName, config.client, "lastName", "item")
-    //           .render(),
-    //       ToggleableInput(item.sex, config.client, "sex", "item").render(),
-    //       ToggleableInput(item.dob, config.client, "dob", "item").render(),
-    //       ToggleableInput(
-    //         item.hosp.getOrElse(""),
-    //         config.client,
-    //         "hosp",
-    //         "item"
-    //       )
-    //           .render(),
-    //       DeleteButton[Patient](item, "➖", config.client).render()
-    //     )
-    // }
-
     def render(): Element = {
 
         tbody(
@@ -66,13 +33,11 @@ case class TableBody[T](config: TableConfig[T]) extends AuroraElement {
           children <-- config.client.dataModelVar.signal.map(data =>
               data.map { item =>
                   val children = config.columnConfigs.map(column => {
-                      //   println(column.cellHTML())
                       column.cellHTML(
                         config,
                         item.asInstanceOf[T]
                       )
                   })
-                  //   getAsTableRow(item)
                   tr(
                     width := "100%",
                     onClick --> { (e) =>

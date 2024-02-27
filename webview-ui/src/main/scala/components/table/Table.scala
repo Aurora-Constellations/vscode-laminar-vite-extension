@@ -6,7 +6,6 @@ import com.raquo.laminar.nodes.ReactiveHtmlElement
 import org.scalajs.dom.HTMLTableRowElement
 import com.raquo.airstream.state.Var
 
-import types.Patient
 import io.circe.parser._
 import io.circe.generic.auto._
 import org.scalajs.dom
