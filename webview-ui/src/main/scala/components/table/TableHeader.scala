@@ -5,8 +5,9 @@ import com.raquo.laminar.api.L.{*, given}
 import utilities.SortGrid.SortOrder.*
 import utilities.SortGrid.*
 import org.scalajs.dom
+import types.ColumnConfig
 
-case class TableHeader(headers: List[(String, String)]) extends AuroraElement {
+case class TableHeader(headers: List[ColumnConfig[_]]) extends AuroraElement {
 
     var ascendingSort = true
     def setAscendingSort(value: Boolean): Unit = {
@@ -40,8 +41,12 @@ case class TableHeader(headers: List[(String, String)]) extends AuroraElement {
         thead(
           tr(
             idAttr := "myTableHeader",
-            headers.map((header: String, widthString: String) => {
-                th(header, width := widthString, onClick --> onHeaderClick)
+            headers.map(columnConfig => {
+                th(
+                  columnConfig.headerTitle,
+                  width := columnConfig.width,
+                  onClick --> onHeaderClick
+                )
             })
           )
         )

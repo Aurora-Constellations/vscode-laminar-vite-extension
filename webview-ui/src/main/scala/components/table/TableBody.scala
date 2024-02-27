@@ -18,52 +18,80 @@ import components.cells.FlagIcon
 import components.cells.UneditableDiv
 import components.cells.ToggleableInput
 import components.utils.VscodeAPI.getVscodeApi
+import types.TableConfig
+import types.{given}
 
-case class TableBody(client: AuroraClient) extends AuroraElement {
+case class TableBody[T](config: TableConfig[T]) extends AuroraElement {
 
-    def jsonDecoder(jsonString: String): List[Patient] =
-        decode[List[Patient]](jsonString) match {
-            case Right(patients) => patients
-            case Left(error) =>
-                throw new RuntimeException(s"Failed to parse JSON: $error")
-        }
-
-    def getAsTableRow(
-        item: Patient
-    ): ReactiveHtmlElement[HTMLTableRowElement] = {
-        tr(
-          width := "100%",
-          onClick --> { (e) =>
-              getVscodeApi().postMessage(
-                OpenFileMessage(item.firstName, item.lastName, item.unitNumber)
-                    .toJson()
-              )
-          },
-          FlagIcon(item.flag.getOrElse(""), client, "flag", item)
-              .render(),
-          UneditableDiv(item.unitNumber, client, "unitNumber", item).render(),
-          ToggleableInput(item.firstName, client, "firstName", item).render(),
-          ToggleableInput(item.lastName, client, "lastName", item).render(),
-          ToggleableInput(item.sex, client, "sex", item).render(),
-          ToggleableInput(item.dob, client, "dob", item).render(),
-          ToggleableInput(item.hosp.getOrElse(""), client, "hosp", item)
-              .render(),
-          DeleteButton[Patient](item, "➖", client).render()
-        )
-    }
+    // def getAsTableRow(
+    //     item: Patient
+    // ): ReactiveHtmlElement[HTMLTableRowElement] = {
+    //     tr(
+    //       width := "100%",
+    //       onClick --> { (e) =>
+    //           getVscodeApi().postMessage(
+    //             OpenFileMessage(item.firstName, item.lastName, item.unitNumber)
+    //                 .toJson()
+    //           )
+    //       },
+    //       FlagIcon(item.flag.getOrElse(""), config.client, "flag", "item")
+    //           .render(),
+    //       UneditableDiv(item.unitNumber, config.client, "unitNumber", "item")
+    //           .render(),
+    //       ToggleableInput(item.firstName, config.client, "firstName", "item")
+    //           .render(),
+    //       ToggleableInput(item.lastName, config.client, "lastName", "item")
+    //           .render(),
+    //       ToggleableInput(item.sex, config.client, "sex", "item").render(),
+    //       ToggleableInput(item.dob, config.client, "dob", "item").render(),
+    //       ToggleableInput(
+    //         item.hosp.getOrElse(""),
+    //         config.client,
+    //         "hosp",
+    //         "item"
+    //       )
+    //           .render(),
+    //       DeleteButton[Patient](item, "➖", config.client).render()
+    //     )
+    // }
 
     def render(): Element = {
 
         tbody(
           // Fetch the data on component mount, update table
-          FetchStream.get(client.GETUrl) --> { responseText =>
-              jsonDecoder(responseText)
-                  .map(item => client.dataModelVar.update(_ :+ item))
+          FetchStream.get(config.client.GETUrl) --> { responseText =>
+              config.client.populateTable(responseText)
           },
           idAttr := "myTableBody",
-          children <-- client.dataModelVar.signal.map(data =>
+          children <-- config.client.dataModelVar.signal.map(data =>
               data.map { item =>
-                  getAsTableRow(item)
+                  val children = config.columnConfigs.map(column => {
+                      //   println(column.cellHTML())
+                      column.cellHTML(
+                        config,
+                        item.asInstanceOf[T]
+                      )
+                  })
+                  //   getAsTableRow(item)
+                  tr(
+                    width := "100%",
+                    onClick --> { (e) =>
+                        getVscodeApi().postMessage(
+                          OpenFileMessage(
+                            item.firstName,
+                            item.lastName,
+                            item.unitNumber
+                          )
+                              .toJson()
+                        )
+                    },
+                    children :+ DeleteButton(
+                      config.rowIdentifier(item.asInstanceOf[T]),
+                      "➖",
+                      config.client
+                    )
+                        .render()
+                  )
               }
           )
         )

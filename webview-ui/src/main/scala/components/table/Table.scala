@@ -16,18 +16,12 @@ import org.scalajs.dom.MouseEvent
 import scala.scalajs.js
 import components.utils.DomUtils.getHTMLTableRowElementOpt
 import client.AuroraClient
+import types.TableConfig
+import types.ColumnConfig
 
-case class Table(client: AuroraClient) extends AuroraElement {
+case class Table[A](tableConfig: TableConfig[A]) extends AuroraElement {
 
-    val headers: List[(String, String)] = List(
-      ("Flag", "50px"),
-      ("Unit Number", "150px"),
-      ("First Name", "150px"),
-      ("Last Name", "150px"),
-      ("Sex", "50px"),
-      ("Date of Birth", "150px"),
-      ("In Hopsital", "100px")
-    )
+    val headers: List[ColumnConfig[A]] = tableConfig.columnConfigs
 
     def render(): Element = {
         div(
@@ -36,8 +30,8 @@ case class Table(client: AuroraClient) extends AuroraElement {
             // tabIndex := 0,
             idAttr := "myTable",
             TableHeader(headers).render(),
-            TableBody(
-              client
+            TableBody[A](
+              tableConfig
             ).render(),
             TableFooter().render(),
             onKeyDown --> (e =>

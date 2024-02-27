@@ -21,7 +21,7 @@ case class UneditableDiv(
     content: String,
     model: AuroraClient,
     fieldName: String,
-    item: Patient
+    rowId: String
 ) extends AuroraElement {
 
     def render() = {

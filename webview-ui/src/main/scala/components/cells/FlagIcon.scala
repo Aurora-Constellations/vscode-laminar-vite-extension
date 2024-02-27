@@ -22,7 +22,7 @@ case class FlagIcon(
     content: String,
     model: AuroraClient,
     fieldName: String,
-    item: Patient
+    rowId: String
 ) extends AuroraElement {
 
     val showIconSelectVar = Var(false)
@@ -82,7 +82,7 @@ case class FlagIcon(
                   showIconSelectVar.update(bool => !bool)
                   flagId.update(value => "1")
                   model.updateEntryInDataModelVar(
-                    item.asInstanceOf[Patient],
+                    rowId,
                     fieldName,
                     "1"
                   )
@@ -94,7 +94,7 @@ case class FlagIcon(
                   showIconSelectVar.update(bool => !bool)
                   flagId.update(value => "2")
                   model.updateEntryInDataModelVar(
-                    item.asInstanceOf[Patient],
+                    rowId,
                     fieldName,
                     "2"
                   )
@@ -106,7 +106,7 @@ case class FlagIcon(
                   showIconSelectVar.update(bool => !bool)
                   flagId.update(value => "3")
                   model.updateEntryInDataModelVar(
-                    item.asInstanceOf[Patient],
+                    rowId,
                     fieldName,
                     "3"
                   )
@@ -118,7 +118,7 @@ case class FlagIcon(
                   showIconSelectVar.update(bool => !bool)
                   flagId.update(value => "4")
                   model.updateEntryInDataModelVar(
-                    item.asInstanceOf[Patient],
+                    rowId,
                     fieldName,
                     "4"
                   )
@@ -130,7 +130,7 @@ case class FlagIcon(
                   showIconSelectVar.update(bool => !bool)
                   flagId.update(value => "")
                   model.updateEntryInDataModelVar(
-                    item.asInstanceOf[Patient],
+                    rowId,
                     fieldName,
                     ""
                   )

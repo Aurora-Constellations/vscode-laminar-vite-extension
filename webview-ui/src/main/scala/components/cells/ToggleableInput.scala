@@ -21,7 +21,7 @@ case class ToggleableInput(
     content: String,
     model: AuroraClient,
     fieldName: String,
-    item: Patient
+    rowId: String
 ) extends AuroraElement {
 
     val showInputVar = Var(false)
@@ -40,7 +40,7 @@ case class ToggleableInput(
                   )
                   showInputVar.update(bool => !bool)
                   model.updateEntryInDataModelVar(
-                    item,
+                    rowId,
                     fieldName,
                     e.target.asInstanceOf[dom.html.Input].value
                   )

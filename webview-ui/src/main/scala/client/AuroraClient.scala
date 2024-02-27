@@ -4,29 +4,71 @@ import com.raquo.laminar.api.L.{*, given}
 import org.scalajs.dom
 import org.scalajs.dom.HttpMethod
 import types.Patient
+import io.circe.parser._
+import io.circe.generic.auto._
+import utilities.JsonImplicits._
+import scala.util.Random
 
-class AuroraClient() {
+case class AuroraClient() {
 
     val dataModelVar = Var(List.empty[Patient])
 
-    val GETUrl: String = "http://192.168.250.125:9000/patients"
+    val GETUrl: String = "http://localhost:9000/patients"
 
-    def addEntryToDataModelVar(newPatient: Patient): EventStream[String] = {
-        println(s"Adding new  entry ${newPatient.unitNumber}...")
+    def populateTable(respString: String): Unit = {
+        jsonDecoder(respString).map(item => dataModelVar.update(_ :+ item))
+    }
+
+    def jsonDecoder(jsonString: String): List[Patient] =
+        decode[List[Patient]](jsonString) match {
+            case Right(patients) => patients
+            case Left(error) =>
+                throw new RuntimeException(s"Failed to parse JSON: $error")
+        }
+
+    def addEntryToDataModelVar(): EventStream[String] = {
+        // println(s"Adding new  entry ${newPatient.unitNumber}...")
+        val random = new Random()
+        val randomNumber = random.nextInt(90000000) + 10000000
+        val newPatient = Patient(
+          "TB" + randomNumber.toString(),
+          "",
+          "",
+          "",
+          "2023-04-04",
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None,
+          None
+        )
         dataModelVar.update((items) => {
             newPatient :: items
         })
         FetchStream.post(
-          "http://192.168.250.125:9000/patients",
+          "http://localhost:9000/patients",
           _.body(newPatient.toJson())
         )
     }
 
     def updateEntryInDataModelVar(
-        item: Patient,
+        itemId: String,
         fieldName: String,
         newValue: String
     ): EventStream[String] = {
+        val item = dataModelVar.now().find(_.unitNumber == itemId).get
         println(s"Updating ${item.unitNumber} at field ${fieldName}...")
         dataModelVar
             .update((items) => {
@@ -44,7 +86,7 @@ class AuroraClient() {
                 })
             })
         FetchStream.put(
-          s"http://192.168.250.125:9000/patients/${item.unitNumber}",
+          s"http://localhost:9000/patients/${item.unitNumber}",
           _.body(
             updatePatient(
               item,
@@ -57,13 +99,14 @@ class AuroraClient() {
     }
 
     def deleteEntryInDataModelVar(unitNumber: String): EventStream[String] = {
+
         println("Deleting " + unitNumber + "...")
         dataModelVar.update((items) => {
             items.filter(_.unitNumber != unitNumber)
         })
         FetchStream.apply(
           method = _.DELETE,
-          url = s"http://192.168.250.125:9000/patients/${unitNumber}"
+          url = s"http://localhost:9000/patients/${unitNumber}"
         )
     }
 
