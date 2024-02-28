@@ -17,7 +17,14 @@ object PatientTrackerConfig {
           "50px",
           _.flag.getOrElse(""),
           "flag",
-          true
+          Some(
+            List(
+              ShowFilter("flag", "Good Condition", "1"),
+              ShowFilter("flag", "Caution", "2"),
+              ShowFilter("flag", "Critical Condition", "3"),
+              ShowFilter("flag", "Discharge Early", "4")
+            )
+          )
         ),
         ColumnConfig[Patient](
           UneditableDivType,

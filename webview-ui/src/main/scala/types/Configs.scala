@@ -20,13 +20,19 @@ case class TableConfig[T](
     val columnConfigs: List[ColumnConfig[T]]
 )
 
+case class ShowFilter(
+    fieldName: String,
+    display: String,
+    value: String
+)
+
 case class ColumnConfig[T](
     cellType: CellType,
     headerTitle: String,
     width: String,
     cellContent: T => String,
     fieldName: String,
-    showFilterable: Boolean = false
+    showFilterable: Option[List[ShowFilter]] = None
 ) {
     // Remeber to implement any new cell types here
     def cellHTML(config: TableConfig[T], item: T) = {

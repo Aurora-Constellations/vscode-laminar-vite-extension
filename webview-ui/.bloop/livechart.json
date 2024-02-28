@@ -22,6 +22,8 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\circe\\circe-generic_sjs1_3\\0.14.3\\circe-generic_sjs1_3-0.14.3.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\circe\\circe-parser_sjs1_3\\0.14.3\\circe-parser_sjs1_3-0.14.3.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.13.12\\scala-reflect-2.13.12.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_3\\2.0.13\\zio_3-2.0.13.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC1\\zio-http_3-3.0.0-RC1.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\olvind\\scalablytyped-runtime_sjs1_3\\2.4.2\\scalablytyped-runtime_sjs1_3-2.4.2.jar",
             "C:\\Users\\yashb\\.ivy2\\local\\org.scalablytyped\\vscode-webview_sjs1_3\\1.57.5-2783c5\\jars\\vscode-webview_sjs1_3.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.12\\scala-library-2.13.12.jar",
@@ -32,8 +34,44 @@
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\circe\\circe-numbers_sjs1_3\\0.14.3\\circe-numbers_sjs1_3-0.14.3.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-core_sjs1_3\\2.8.0\\cats-core_sjs1_3-2.8.0.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\circe\\circe-scalajs_sjs1_3\\0.14.3\\circe-scalajs_sjs1_3-0.14.3.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-internal-macros_3\\2.0.13\\zio-internal-macros_3-2.0.13.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_3\\2.0.13\\zio-stacktracer_3-2.0.13.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.2.2\\scala3-library_3-3.2.2.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect_3\\2.3.1\\izumi-reflect_3-2.3.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.91.Final\\netty-codec-http-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler-proxy\\4.1.91.Final\\netty-handler-proxy-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.91.Final\\netty-transport-native-epoll-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.91.Final\\netty-transport-native-epoll-4.1.91.Final-linux-x86_64.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.91.Final\\netty-transport-native-epoll-4.1.91.Final-linux-aarch_64.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-kqueue\\4.1.91.Final\\netty-transport-native-kqueue-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-kqueue\\4.1.91.Final\\netty-transport-native-kqueue-4.1.91.Final-osx-x86_64.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-kqueue\\4.1.91.Final\\netty-transport-native-kqueue-4.1.91.Final-osx-aarch_64.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-streams_3\\2.0.12\\zio-streams_3-2.0.12.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema_3\\0.4.8\\zio-schema_3-0.4.8.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-json_3\\0.4.8\\zio-schema-json_3-0.4.8.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-native-io_uring\\0.0.19.Final\\netty-incubator-transport-native-io_uring-0.0.19.Final-linux-x86_64.jar",
             "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\app\\tulz\\tuplez-full-light_sjs1_3\\0.4.0\\tuplez-full-light_sjs1_3-0.4.0.jar",
-            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_sjs1_3\\2.8.0\\cats-kernel_sjs1_3-2.8.0.jar"
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_sjs1_3\\2.8.0\\cats-kernel_sjs1_3-2.8.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_3\\2.3.1\\izumi-reflect-thirdparty-boopickle-shaded_3-2.3.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.91.Final\\netty-common-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.91.Final\\netty-buffer-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.91.Final\\netty-transport-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.91.Final\\netty-codec-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.91.Final\\netty-handler-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-socks\\4.1.91.Final\\netty-codec-socks-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.91.Final\\netty-transport-native-unix-common-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-classes-epoll\\4.1.91.Final\\netty-transport-classes-epoll-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-classes-kqueue\\4.1.91.Final\\netty-transport-classes-kqueue-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-macros_3\\0.4.8\\zio-schema-macros_3-0.4.8.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude_3\\1.0.0-RC16\\zio-prelude_3-1.0.0-RC16.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-constraintless_3\\0.3.1\\zio-constraintless_3-0.3.1.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-derivation_3\\0.4.8\\zio-schema-derivation_3-0.4.8.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.3.0-RC9\\zio-json_3-0.3.0-RC9.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-classes-io_uring\\0.0.19.Final\\netty-incubator-transport-classes-io_uring-0.0.19.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.91.Final\\netty-resolver-4.1.91.Final.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC16\\zio-prelude-macros_3-1.0.0-RC16.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.5.0\\scala-collection-compat_3-2.5.0.jar",
+            "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.0.0\\magnolia_3-1.0.0.jar"
         ],
         "out": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\.bloop\\livechart",
         "classesDir": "C:\\Users\\yashb\\Documents\\vscode-laminar-vite-extension\\webview-ui\\.bloop\\livechart\\scala-3\\classes",
@@ -319,6 +357,40 @@
                     ]
                 },
                 {
+                    "organization": "dev.zio",
+                    "name": "zio_3",
+                    "version": "2.0.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_3\\2.0.13\\zio_3-2.0.13.jar"
+                        },
+                        {
+                            "name": "zio_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio_3\\2.0.13\\zio_3-2.0.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-http_3",
+                    "version": "3.0.0-RC1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-http_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC1\\zio-http_3-3.0.0-RC1.jar"
+                        },
+                        {
+                            "name": "zio-http_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-http_3\\3.0.0-RC1\\zio-http_3-3.0.0-RC1-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "com.olvind",
                     "name": "scalablytyped-runtime_sjs1_3",
                     "version": "2.4.2",
@@ -489,6 +561,193 @@
                     ]
                 },
                 {
+                    "organization": "dev.zio",
+                    "name": "zio-internal-macros_3",
+                    "version": "2.0.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-internal-macros_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-internal-macros_3\\2.0.13\\zio-internal-macros_3-2.0.13.jar"
+                        },
+                        {
+                            "name": "zio-internal-macros_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-internal-macros_3\\2.0.13\\zio-internal-macros_3-2.0.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-stacktracer_3",
+                    "version": "2.0.13",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-stacktracer_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_3\\2.0.13\\zio-stacktracer_3-2.0.13.jar"
+                        },
+                        {
+                            "name": "zio-stacktracer_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-stacktracer_3\\2.0.13\\zio-stacktracer_3-2.0.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala3-library_3",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala3-library_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.2.2\\scala3-library_3-3.2.2.jar"
+                        },
+                        {
+                            "name": "scala3-library_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala3-library_3\\3.2.2\\scala3-library_3-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "izumi-reflect_3",
+                    "version": "2.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "izumi-reflect_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect_3\\2.3.1\\izumi-reflect_3-2.3.1.jar"
+                        },
+                        {
+                            "name": "izumi-reflect_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect_3\\2.3.1\\izumi-reflect_3-2.3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-http",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-http",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.91.Final\\netty-codec-http-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-http",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-http\\4.1.91.Final\\netty-codec-http-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler-proxy",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler-proxy",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler-proxy\\4.1.91.Final\\netty-handler-proxy-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler-proxy",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler-proxy\\4.1.91.Final\\netty-handler-proxy-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-epoll",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.91.Final\\netty-transport-native-epoll-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-epoll",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-epoll\\4.1.91.Final\\netty-transport-native-epoll-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-kqueue",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-kqueue",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-kqueue\\4.1.91.Final\\netty-transport-native-kqueue-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-kqueue",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-kqueue\\4.1.91.Final\\netty-transport-native-kqueue-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-streams_3",
+                    "version": "2.0.12",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-streams_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-streams_3\\2.0.12\\zio-streams_3-2.0.12.jar"
+                        },
+                        {
+                            "name": "zio-streams_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-streams_3\\2.0.12\\zio-streams_3-2.0.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-schema_3",
+                    "version": "0.4.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-schema_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema_3\\0.4.8\\zio-schema_3-0.4.8.jar"
+                        },
+                        {
+                            "name": "zio-schema_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema_3\\0.4.8\\zio-schema_3-0.4.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-schema-json_3",
+                    "version": "0.4.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-schema-json_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-json_3\\0.4.8\\zio-schema-json_3-0.4.8.jar"
+                        },
+                        {
+                            "name": "zio-schema-json_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-json_3\\0.4.8\\zio-schema-json_3-0.4.8-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "app.tulz",
                     "name": "tuplez-full-light_sjs1_3",
                     "version": "0.4.0",
@@ -519,6 +778,346 @@
                             "name": "cats-kernel_sjs1_3",
                             "classifier": "sources",
                             "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\typelevel\\cats-kernel_sjs1_3\\2.8.0\\cats-kernel_sjs1_3-2.8.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "izumi-reflect-thirdparty-boopickle-shaded_3",
+                    "version": "2.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "izumi-reflect-thirdparty-boopickle-shaded_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_3\\2.3.1\\izumi-reflect-thirdparty-boopickle-shaded_3-2.3.1.jar"
+                        },
+                        {
+                            "name": "izumi-reflect-thirdparty-boopickle-shaded_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\izumi-reflect-thirdparty-boopickle-shaded_3\\2.3.1\\izumi-reflect-thirdparty-boopickle-shaded_3-2.3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-common",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-common",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.91.Final\\netty-common-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-common\\4.1.91.Final\\netty-common-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-buffer",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-buffer",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.91.Final\\netty-buffer-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-buffer",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-buffer\\4.1.91.Final\\netty-buffer-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.91.Final\\netty-transport-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport\\4.1.91.Final\\netty-transport-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.91.Final\\netty-codec-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec\\4.1.91.Final\\netty-codec-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-handler",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-handler",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.91.Final\\netty-handler-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-handler",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-handler\\4.1.91.Final\\netty-handler-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-codec-socks",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-codec-socks",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-socks\\4.1.91.Final\\netty-codec-socks-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-codec-socks",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-codec-socks\\4.1.91.Final\\netty-codec-socks-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-native-unix-common",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.91.Final\\netty-transport-native-unix-common-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-native-unix-common",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-native-unix-common\\4.1.91.Final\\netty-transport-native-unix-common-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-classes-epoll",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-classes-epoll\\4.1.91.Final\\netty-transport-classes-epoll-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-classes-epoll",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-classes-epoll\\4.1.91.Final\\netty-transport-classes-epoll-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-transport-classes-kqueue",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-transport-classes-kqueue",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-classes-kqueue\\4.1.91.Final\\netty-transport-classes-kqueue-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-transport-classes-kqueue",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-transport-classes-kqueue\\4.1.91.Final\\netty-transport-classes-kqueue-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-schema-macros_3",
+                    "version": "0.4.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-schema-macros_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-macros_3\\0.4.8\\zio-schema-macros_3-0.4.8.jar"
+                        },
+                        {
+                            "name": "zio-schema-macros_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-macros_3\\0.4.8\\zio-schema-macros_3-0.4.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-prelude_3",
+                    "version": "1.0.0-RC16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-prelude_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude_3\\1.0.0-RC16\\zio-prelude_3-1.0.0-RC16.jar"
+                        },
+                        {
+                            "name": "zio-prelude_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude_3\\1.0.0-RC16\\zio-prelude_3-1.0.0-RC16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-constraintless_3",
+                    "version": "0.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-constraintless_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-constraintless_3\\0.3.1\\zio-constraintless_3-0.3.1.jar"
+                        },
+                        {
+                            "name": "zio-constraintless_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-constraintless_3\\0.3.1\\zio-constraintless_3-0.3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-schema-derivation_3",
+                    "version": "0.4.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-schema-derivation_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-derivation_3\\0.4.8\\zio-schema-derivation_3-0.4.8.jar"
+                        },
+                        {
+                            "name": "zio-schema-derivation_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-schema-derivation_3\\0.4.8\\zio-schema-derivation_3-0.4.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-json_3",
+                    "version": "0.3.0-RC9",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-json_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.3.0-RC9\\zio-json_3-0.3.0-RC9.jar"
+                        },
+                        {
+                            "name": "zio-json_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-json_3\\0.3.0-RC9\\zio-json_3-0.3.0-RC9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty.incubator",
+                    "name": "netty-incubator-transport-classes-io_uring",
+                    "version": "0.0.19.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-incubator-transport-classes-io_uring",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-classes-io_uring\\0.0.19.Final\\netty-incubator-transport-classes-io_uring-0.0.19.Final.jar"
+                        },
+                        {
+                            "name": "netty-incubator-transport-classes-io_uring",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\incubator\\netty-incubator-transport-classes-io_uring\\0.0.19.Final\\netty-incubator-transport-classes-io_uring-0.0.19.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.netty",
+                    "name": "netty-resolver",
+                    "version": "4.1.91.Final",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "netty-resolver",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.91.Final\\netty-resolver-4.1.91.Final.jar"
+                        },
+                        {
+                            "name": "netty-resolver",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\io\\netty\\netty-resolver\\4.1.91.Final\\netty-resolver-4.1.91.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "dev.zio",
+                    "name": "zio-prelude-macros_3",
+                    "version": "1.0.0-RC16",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "zio-prelude-macros_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC16\\zio-prelude-macros_3-1.0.0-RC16.jar"
+                        },
+                        {
+                            "name": "zio-prelude-macros_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\dev\\zio\\zio-prelude-macros_3\\1.0.0-RC16\\zio-prelude-macros_3-1.0.0-RC16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_3",
+                    "version": "2.5.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.5.0\\scala-collection-compat_3-2.5.0.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-collection-compat_3\\2.5.0\\scala-collection-compat_3-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.softwaremill.magnolia1_3",
+                    "name": "magnolia_3",
+                    "version": "1.0.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "magnolia_3",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.0.0\\magnolia_3-1.0.0.jar"
+                        },
+                        {
+                            "name": "magnolia_3",
+                            "classifier": "sources",
+                            "path": "C:\\Users\\yashb\\AppData\\Local\\Coursier\\Cache\\v1\\https\\repo1.maven.org\\maven2\\com\\softwaremill\\magnolia1_3\\magnolia_3\\1.0.0\\magnolia_3-1.0.0-sources.jar"
                         }
                     ]
                 }

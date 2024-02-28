@@ -52,7 +52,6 @@ case class FlagIcon(
 
     def handleDblClick(e: MouseEvent) = {
         showIconSelectVar.update(bool => !bool)
-        println(showIconSelectVar.signal.now())
     }
 
     def handleSelectButtonClick(e: MouseEvent) = {}
@@ -75,7 +74,7 @@ case class FlagIcon(
           flexDirection := "column",
           "Select:",
           div(
-            button(
+            div(
               greenFlagElement,
               onClick.flatMap(_ =>
                   showIconSelectVar.update(bool => !bool)
@@ -87,7 +86,7 @@ case class FlagIcon(
                   )
               ) --> { resp => println(resp) }
             ),
-            button(
+            div(
               yellowFlagElement,
               onClick.flatMap(_ =>
                   showIconSelectVar.update(bool => !bool)
@@ -99,7 +98,7 @@ case class FlagIcon(
                   )
               ) --> { resp => println(resp) }
             ),
-            button(
+            div(
               redFlagElement,
               onClick.flatMap(_ =>
                   showIconSelectVar.update(bool => !bool)
@@ -111,7 +110,7 @@ case class FlagIcon(
                   )
               ) --> { resp => println(resp) }
             ),
-            button(
+            div(
               blueFlagElement,
               onClick.flatMap(_ =>
                   showIconSelectVar.update(bool => !bool)
@@ -123,7 +122,7 @@ case class FlagIcon(
                   )
               ) --> { resp => println(resp) }
             ),
-            button(
+            div(
               "No Flag",
               onClick.flatMap(_ =>
                   showIconSelectVar.update(bool => !bool)
