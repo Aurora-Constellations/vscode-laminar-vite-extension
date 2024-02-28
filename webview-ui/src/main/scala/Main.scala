@@ -27,7 +27,8 @@ def Main(): Unit = {
           "Flag",
           "50px",
           _.flag.getOrElse(""),
-          "flag"
+          "flag",
+          true
         ),
         ColumnConfig[Patient](
           UneditableDivType,
@@ -80,7 +81,7 @@ def Main(): Unit = {
         width := "100%",
         div(
           width := "100%",
-          Toolbar(tableConfig.client).render(),
+          Toolbar[Patient](tableConfig).render(),
           Table[Patient](tableConfig).render()
         )
       )

@@ -25,7 +25,8 @@ case class ColumnConfig[T](
     headerTitle: String,
     width: String,
     cellContent: T => String,
-    fieldName: String
+    fieldName: String,
+    showFilterable: Boolean = false
 ) {
     // Remeber to implement any new cell types here
     def cellHTML(config: TableConfig[T], item: T) = {
@@ -51,7 +52,6 @@ case class ColumnConfig[T](
                   fieldName,
                   config.rowIdentifier(item)
                 ).render()
-            case _ => div("Unknown cell type given")
         }
     }
 }

@@ -48,20 +48,19 @@ case class Table[A](tableConfig: TableConfig[A]) extends AuroraElement {
                         ).map(_.map(_.asInstanceOf[HTMLElement].focus()))
                     }
                     case (_, "ArrowUp") =>
-                        activeCell
-                            .closest("tr")
-                            .previousElementSibling
-                            .asInstanceOf[HTMLTableRowElement]
-                            .cells
-                            .find(cell =>
-                                cell.asInstanceOf[HTMLTableCellElement]
-                                    .cellIndex == activeCell.cellIndex
-                            )
-                            .map(_.asInstanceOf[HTMLElement].focus())
+                        getHTMLTableRowElementOpt(
+                          activeCell.closest("tr").previousElementSibling
+                        ).map(
+                          _.cells.find(cell =>
+                              cell.asInstanceOf[HTMLTableCellElement]
+                                  .cellIndex == activeCell.cellIndex
+                          )
+                        ).map(_.map(_.asInstanceOf[HTMLElement].focus()))
                     case (_, "ArrowLeft") =>
-                        activeCell.previousElementSibling
-                            .asInstanceOf[HTMLElement]
-                            .focus()
+                        Option(activeCell.previousElementSibling).map(
+                          _.asInstanceOf[HTMLElement]
+                              .focus()
+                        )
                     case (_, "ArrowRight") =>
                         activeCell.nextElementSibling
                             .asInstanceOf[HTMLElement]

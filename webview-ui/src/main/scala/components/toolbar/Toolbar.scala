@@ -9,19 +9,14 @@ import components.button.AddButton
 
 import client.AuroraClient
 import components.AuroraElement
+import types.TableConfig
 
-case class Toolbar(client: AuroraClient) extends AuroraElement {
+case class Toolbar[A](config: TableConfig[A]) extends AuroraElement {
 
-    val searchByOption: List[String] = List(
-      "Unit Number",
-      "First Name",
-      "Last Name",
-      "Sex",
-      "Date of Birth",
-      "In Hopsital",
-      "Flag"
-    )
-    val showOptions: List[String] = List("Flagged")
+    val searchByOption: List[String] = config.columnConfigs.map(_.headerTitle)
+
+    val showOptions: List[String] =
+        config.columnConfigs.filter(_.showFilterable).map(_.headerTitle)
 
     def render(): Element = {
         div(
@@ -30,7 +25,7 @@ case class Toolbar(client: AuroraClient) extends AuroraElement {
           Search("All" :: searchByOption).render(),
           Text("Show:").render(),
           Select("All" :: showOptions).render(),
-          AddButton("➕", client).render()
+          AddButton("➕", config.client).render()
         )
     }
 
