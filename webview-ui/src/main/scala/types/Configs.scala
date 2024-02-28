@@ -27,6 +27,7 @@ case class ColumnConfig[T](
     cellContent: T => String,
     fieldName: String
 ) {
+    // Remeber to implement any new cell types here
     def cellHTML(config: TableConfig[T], item: T) = {
         cellType match {
             case ToggleableInputType =>

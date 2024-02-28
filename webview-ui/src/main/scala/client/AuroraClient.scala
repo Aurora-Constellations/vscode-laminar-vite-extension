@@ -27,7 +27,6 @@ case class AuroraClient() {
         }
 
     def addEntryToDataModelVar(): EventStream[String] = {
-        // println(s"Adding new  entry ${newPatient.unitNumber}...")
         val random = new Random()
         val randomNumber = random.nextInt(90000000) + 10000000
         val newPatient = Patient(

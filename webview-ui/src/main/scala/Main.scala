@@ -74,15 +74,13 @@ def Main(): Unit = {
       )
     )
 
-    val client = new AuroraClient()
-
     renderOnDomContentLoaded(
       dom.document.body,
       div(
         width := "100%",
         div(
           width := "100%",
-          Toolbar(client).render(),
+          Toolbar(tableConfig.client).render(),
           Table[Patient](tableConfig).render()
         )
       )
