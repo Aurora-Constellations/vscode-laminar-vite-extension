@@ -41,14 +41,19 @@ case class TableBody[T](config: TableConfig[T]) extends AuroraElement {
                   tr(
                     width := "100%",
                     onClick --> { (e) =>
-                        getVscodeApi().postMessage(
-                          OpenFileMessage(
-                            item.firstName,
-                            item.lastName,
-                            item.unitNumber
-                          )
-                              .toJson()
-                        )
+                        e.ctrlKey match {
+                            case true =>
+                            case false =>
+                                getVscodeApi().postMessage(
+                                  OpenFileMessage(
+                                    item.firstName,
+                                    item.lastName,
+                                    item.unitNumber
+                                  )
+                                      .toJson()
+                                )
+                        }
+
                     },
                     children :+ DeleteButton(
                       config.rowIdentifier(item.asInstanceOf[T]),

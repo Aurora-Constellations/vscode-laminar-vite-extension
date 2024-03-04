@@ -67,12 +67,21 @@ case class ToggleableInput(
         td(
           child <-- ToggleInput(showInputVar.signal),
           tabIndex := 0,
-          onClick --> (e => e.target.asInstanceOf[HTMLElement].focus()),
-          onDblClick --> (e =>
-              showInputVar.update(bool => !bool)
-              Option(dom.document.getElementById("toggledInput"))
-                  .map(_.asInstanceOf[HTMLElement].focus())
+          onClick --> (e =>
+              e.ctrlKey match {
+                  case true => {
+                      showInputVar.update(bool => !bool)
+                      Option(dom.document.getElementById("toggledInput"))
+                          .map(_.asInstanceOf[HTMLElement].focus())
+                  }
+                  case false => e.target.asInstanceOf[HTMLElement].focus()
+              }
           )
+          //   onDblClick --> (e =>
+          //       showInputVar.update(bool => !bool)
+          //       Option(dom.document.getElementById("toggledInput"))
+          //           .map(_.asInstanceOf[HTMLElement].focus())
+          //   )
         )
     }
 

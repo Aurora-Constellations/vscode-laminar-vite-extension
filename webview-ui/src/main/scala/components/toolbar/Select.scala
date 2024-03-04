@@ -31,7 +31,6 @@ case class Select[A](options: List[ShowFilter], config: TableConfig[A])
                             .value
                       )
                       .head
-                  println("Filtering by " + filter.display)
                   val table = dom.document
                       .getElementById("myTableBody")
                       .asInstanceOf[HTMLTableElement];
